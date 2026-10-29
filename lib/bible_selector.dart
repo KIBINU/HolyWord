@@ -1,7 +1,10 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
 import 'data/bible_content.dart';
+import 'theme_controller.dart';
 
 class BibleSelector extends StatefulWidget {
   const BibleSelector({super.key});
@@ -11,25 +14,13 @@ class BibleSelector extends StatefulWidget {
 }
 
 class _BibleSelectorState extends State<BibleSelector> {
-  static const Color background = Color(0xFF10111B);
-  static const Color panel = Color(0xFF1B1D2B);
   static const Color purple = Color(0xFF8B78F6);
   static const Color gold = Color(0xFFE7C77A);
-  static const Color white = Color(0xFFF7F5FF);
-  static const Color muted = Color(0xFFAAA9BC);
 
   final ScrollController _bibleScrollController = ScrollController();
-
-  // A unique key for every verse in every version, book and chapter.
   final Map<String, GlobalKey> _verseKeys = {};
 
-  final List<String> versions = const [
-    'OG',
-    'WEB',
-    'BSB',
-    'ASV',
-    'KJV',
-  ];
+  final List<String> versions = const ['OG', 'WEB', 'BSB', 'ASV', 'KJV'];
 
   final Map<String, int> books = const {
     'Genesis': 50,
@@ -105,9 +96,7 @@ class _BibleSelectorState extends State<BibleSelector> {
     'WEB': {},
     'BSB': {},
     'ASV': {},
-    'OG': {
-      'Genesis': 'KĨAMBĨRĨRIA',
-    },
+    'OG': {'Genesis': 'KĨAMBĨRĨRIA'},
   };
 
   String selectedVersion = 'KJV';
@@ -119,6 +108,8 @@ class _BibleSelectorState extends State<BibleSelector> {
   String readingFontFamily = 'Georgia';
 
   bool _isLoadingPreferences = true;
+  bool _showSelectors = true;
+  bool _showChapterHeading = true;
 
   int get chapterCount => books[selectedBook] ?? 1;
 
@@ -128,12 +119,10 @@ class _BibleSelectorState extends State<BibleSelector> {
   }
 
   Map<int, String> get currentChapterVerses {
-    return bibleVersions[selectedVersion]?[selectedBook]
-            ?[selectedChapter] ??
+    return bibleVersions[selectedVersion]?[selectedBook]?[selectedChapter] ??
         <int, String>{};
   }
 
-  // Use the actual verse numbers present in the Bible data.
   List<int> get availableVerseNumbers {
     final numbers = currentChapterVerses.keys.toList()..sort();
     return numbers;
@@ -144,10 +133,7 @@ class _BibleSelectorState extends State<BibleSelector> {
   }
 
   GlobalKey _keyForVerse(int verse) {
-    return _verseKeys.putIfAbsent(
-      _verseKey(verse),
-      () => GlobalKey(),
-    );
+    return _verseKeys.putIfAbsent(_verseKey(verse), () => GlobalKey());
   }
 
   int _firstAvailableVerseFor(
@@ -176,6 +162,27 @@ class _BibleSelectorState extends State<BibleSelector> {
     super.dispose();
   }
 
+  // Hide selectors when scrolling down and show them when scrolling up.
+  bool _handleScrollNotification(UserScrollNotification notification) {
+    if (notification.direction == ScrollDirection.reverse) {
+      if (_showSelectors || _showChapterHeading) {
+        setState(() {
+          _showSelectors = false;
+          _showChapterHeading = false;
+        });
+      }
+    } else if (notification.direction == ScrollDirection.forward) {
+      if (!_showSelectors || !_showChapterHeading) {
+        setState(() {
+          _showSelectors = true;
+          _showChapterHeading = true;
+        });
+      }
+    }
+
+    return false;
+  }
+
   Future<void> _loadPreferences() async {
     try {
       final prefs = await SharedPreferences.getInstance();
@@ -190,9 +197,7 @@ class _BibleSelectorState extends State<BibleSelector> {
 
       if (!mounted) return;
 
-      final validBook =
-          books.containsKey(savedBook) ? savedBook : 'Genesis';
-
+      final validBook = books.containsKey(savedBook) ? savedBook : 'Genesis';
       final validVersion =
           versions.contains(savedVersion) ? savedVersion : 'KJV';
 
@@ -203,9 +208,9 @@ class _BibleSelectorState extends State<BibleSelector> {
               ? savedChapter
               : 1;
 
-      final verses = bibleVersions[validVersion]?[validBook]
-              ?[validChapter] ??
-          <int, String>{};
+      final verses =
+          bibleVersions[validVersion]?[validBook]?[validChapter] ??
+              <int, String>{};
 
       final validVerse = verses.containsKey(savedVerse)
           ? savedVerse
@@ -220,10 +225,7 @@ class _BibleSelectorState extends State<BibleSelector> {
         selectedVersion = validVersion;
         selectedChapter = validChapter;
         selectedVerse = validVerse;
-
-        readingFontSize =
-            savedFontSize.clamp(14.0, 34.0).toDouble();
-
+        readingFontSize = savedFontSize.clamp(14.0, 34.0).toDouble();
         readingFontFamily = savedFontFamily;
       });
     } catch (error) {
@@ -231,7 +233,6 @@ class _BibleSelectorState extends State<BibleSelector> {
     } finally {
       if (mounted) {
         setState(() => _isLoadingPreferences = false);
-
         _scrollToVerse(selectedVerse);
       }
     }
@@ -252,8 +253,6 @@ class _BibleSelectorState extends State<BibleSelector> {
     }
   }
 
-  // The SingleChildScrollView builds all verse widgets, so the target
-  // GlobalKey can be found even when the verse is far down the chapter.
   void _scrollToVerse(int verse, {int attempt = 0}) {
     WidgetsBinding.instance.addPostFrameCallback((_) async {
       if (!mounted) return;
@@ -263,34 +262,32 @@ class _BibleSelectorState extends State<BibleSelector> {
       if (targetContext == null) {
         if (attempt < 3) {
           _scrollToVerse(verse, attempt: attempt + 1);
-        } else {
-          debugPrint(
-            'Could not find $selectedBook '
-            '$selectedChapter:$verse ($selectedVersion). '
-            'Check bible_content.dart for this verse.',
-          );
         }
         return;
       }
 
       await Scrollable.ensureVisible(
         targetContext,
-        duration: const Duration(milliseconds: 600),
-        curve: Curves.easeInOutCubic,
+        duration: const Duration(milliseconds: 500),
+        curve: Curves.easeInOut,
         alignment: 0.12,
-        alignmentPolicy: ScrollPositionAlignmentPolicy.explicit,
       );
     });
   }
 
   void _selectBook(String value) {
-    final firstVerse =
-        _firstAvailableVerseFor(selectedVersion, value, 1);
+    final firstVerse = _firstAvailableVerseFor(
+      selectedVersion,
+      value,
+      1,
+    );
 
     setState(() {
       selectedBook = value;
       selectedChapter = 1;
       selectedVerse = firstVerse;
+      _showSelectors = true;
+      _showChapterHeading = true;
     });
 
     _savePreferences();
@@ -298,13 +295,18 @@ class _BibleSelectorState extends State<BibleSelector> {
   }
 
   void _selectVersion(String value) {
-    final firstVerse =
-        _firstAvailableVerseFor(value, selectedBook, 1);
+    final firstVerse = _firstAvailableVerseFor(
+      value,
+      selectedBook,
+      1,
+    );
 
     setState(() {
       selectedVersion = value;
       selectedChapter = 1;
       selectedVerse = firstVerse;
+      _showSelectors = true;
+      _showChapterHeading = true;
     });
 
     _savePreferences();
@@ -321,6 +323,8 @@ class _BibleSelectorState extends State<BibleSelector> {
     setState(() {
       selectedChapter = value;
       selectedVerse = firstVerse;
+      _showSelectors = true;
+      _showChapterHeading = true;
     });
 
     _savePreferences();
@@ -328,16 +332,12 @@ class _BibleSelectorState extends State<BibleSelector> {
   }
 
   void _selectVerse(int value) {
-    if (!currentChapterVerses.containsKey(value)) {
-      debugPrint(
-        'Verse $value is missing from '
-        '$selectedBook $selectedChapter ($selectedVersion).',
-      );
-      return;
-    }
+    if (!currentChapterVerses.containsKey(value)) return;
 
     setState(() {
       selectedVerse = value;
+      _showSelectors = true;
+      _showChapterHeading = true;
     });
 
     _savePreferences();
@@ -345,17 +345,389 @@ class _BibleSelectorState extends State<BibleSelector> {
   }
 
   void _goToChapter(int chapter) {
-    if (chapter < 1 || chapter > chapterCount) return;
-    _selectChapter(chapter);
+    if (chapter >= 1 && chapter <= chapterCount) {
+      _selectChapter(chapter);
+    }
   }
+
+  // --------------------------------------------------
+  // BIBLE SEARCH
+  // --------------------------------------------------
+
+  Future<void> _showSearchDialog() async {
+    final controller = TextEditingController();
+    final colors = Theme.of(context).colorScheme;
+
+    await showDialog<void>(
+      context: context,
+      builder: (dialogContext) {
+        return StatefulBuilder(
+          builder: (context, setDialogState) {
+            final query = controller.text.trim().toLowerCase();
+
+            final results = <Map<String, dynamic>>[];
+
+            if (query.isNotEmpty) {
+              for (final bookEntry in books.entries) {
+                final book = bookEntry.key;
+                final chapters = bibleVersions[selectedVersion]?[book];
+
+                if (chapters == null) continue;
+
+                for (final chapterEntry in chapters.entries) {
+                  for (final verseEntry in chapterEntry.value.entries) {
+                    final verseText = verseEntry.value;
+
+                    final matchesBook = book.toLowerCase().contains(query);
+                    final matchesText =
+                        verseText.toLowerCase().contains(query);
+
+                    if (matchesBook || matchesText) {
+                      results.add({
+                        'book': book,
+                        'chapter': chapterEntry.key,
+                        'verse': verseEntry.key,
+                        'text': verseText,
+                      });
+
+                      if (results.length >= 50) break;
+                    }
+                  }
+
+                  if (results.length >= 50) break;
+                }
+
+                if (results.length >= 50) break;
+              }
+            }
+
+            return AlertDialog(
+              backgroundColor: colors.surface,
+              title: const Text('Search the Bible'),
+              content: SizedBox(
+                width: 450,
+                height: 420,
+                child: Column(
+                  children: [
+                    TextField(
+                      controller: controller,
+                      autofocus: true,
+                      onChanged: (_) => setDialogState(() {}),
+                      decoration: InputDecoration(
+                        hintText: 'Enter a word or book name',
+                        prefixIcon: const Icon(Icons.search),
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 12),
+                    Expanded(
+                      child: query.isEmpty
+                          ? Center(
+                              child: Text(
+                                'Search within the selected Bible version.',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  color: colors.onSurfaceVariant,
+                                ),
+                              ),
+                            )
+                          : results.isEmpty
+                              ? const Center(
+                                  child: Text('No results found.'),
+                                )
+                              : ListView.builder(
+                                  itemCount: results.length,
+                                  itemBuilder: (context, index) {
+                                    final result = results[index];
+
+                                    return ListTile(
+                                      contentPadding:
+                                          const EdgeInsets.symmetric(
+                                        horizontal: 0,
+                                        vertical: 3,
+                                      ),
+                                      title: Text(
+                                        '${result['book']} '
+                                        '${result['chapter']}:'
+                                        '${result['verse']}',
+                                        style: const TextStyle(
+                                          color: purple,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      subtitle: Text(
+                                        result['text'] as String,
+                                        maxLines: 3,
+                                        overflow: TextOverflow.ellipsis,
+                                      ),
+                                      onTap: () {
+                                        final book =
+                                            result['book'] as String;
+                                        final chapter =
+                                            result['chapter'] as int;
+                                        final verse =
+                                            result['verse'] as int;
+
+                                        Navigator.pop(dialogContext);
+
+                                        setState(() {
+                                          selectedBook = book;
+                                          selectedChapter = chapter;
+                                          selectedVerse = verse;
+                                          _showSelectors = true;
+                                          _showChapterHeading = true;
+                                        });
+
+                                        _savePreferences();
+
+                                        WidgetsBinding.instance
+                                            .addPostFrameCallback((_) {
+                                          if (mounted) {
+                                            _scrollToVerse(verse);
+                                          }
+                                        });
+                                      },
+                                    );
+                                  },
+                                ),
+                    ),
+                  ],
+                ),
+              ),
+              actions: [
+                TextButton(
+                  onPressed: () => Navigator.pop(dialogContext),
+                  child: const Text('Close'),
+                ),
+              ],
+            );
+          },
+        );
+      },
+    );
+
+    controller.dispose();
+  }
+
+  // --------------------------------------------------
+  // READING SETTINGS
+  // --------------------------------------------------
+
+  Future<void> _showSettingsDialog() async {
+    double tempFontSize = readingFontSize;
+    String tempFontFamily = readingFontFamily;
+
+    const fonts = ['Georgia', 'Roboto', 'Serif', 'Monospace'];
+
+    await showDialog<void>(
+      context: context,
+      builder: (dialogContext) {
+        return StatefulBuilder(
+          builder: (context, setDialogState) {
+            final colors = Theme.of(context).colorScheme;
+
+            return AlertDialog(
+              backgroundColor: colors.surface,
+              title: const Text('Reading settings'),
+              content: SizedBox(
+                width: 350,
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Text(
+                      'Font size',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    Row(
+                      children: [
+                        const Text('A'),
+                        Expanded(
+                          child: Slider(
+                            value: tempFontSize,
+                            min: 14,
+                            max: 34,
+                            divisions: 20,
+                            activeColor: purple,
+                            label: tempFontSize.round().toString(),
+                            onChanged: (value) {
+                              setDialogState(() {
+                                tempFontSize = value;
+                              });
+                            },
+                          ),
+                        ),
+                        const Text(
+                          'A',
+                          style: TextStyle(fontSize: 24),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 12),
+                    const Text(
+                      'Font family',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    const SizedBox(height: 8),
+                    DropdownButtonFormField<String>(
+                      initialValue: fonts.contains(tempFontFamily)
+                          ? tempFontFamily
+                          : 'Georgia',
+                      isExpanded: true,
+                      decoration: const InputDecoration(
+                        border: OutlineInputBorder(),
+                      ),
+                      items: fonts.map((font) {
+                        return DropdownMenuItem<String>(
+                          value: font,
+                          child: Text(
+                            font,
+                            style: TextStyle(fontFamily: font),
+                          ),
+                        );
+                      }).toList(),
+                      onChanged: (value) {
+                        if (value != null) {
+                          setDialogState(() {
+                            tempFontFamily = value;
+                          });
+                        }
+                      },
+                    ),
+                    const SizedBox(height: 16),
+                    Center(
+                      child: Text(
+                        'Sample Bible text',
+                        style: TextStyle(
+                          fontSize: tempFontSize,
+                          fontFamily: tempFontFamily,
+                          height: 1.6,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              actions: [
+                TextButton(
+                  onPressed: () => Navigator.pop(dialogContext),
+                  child: const Text('Cancel'),
+                ),
+                FilledButton(
+                  style: FilledButton.styleFrom(
+                    backgroundColor: purple,
+                    foregroundColor: Colors.white,
+                  ),
+                  onPressed: () {
+                    setState(() {
+                      readingFontSize = tempFontSize;
+                      readingFontFamily = tempFontFamily;
+                    });
+
+                    _savePreferences();
+                    Navigator.pop(dialogContext);
+                  },
+                  child: const Text('Apply'),
+                ),
+              ],
+            );
+          },
+        );
+      },
+    );
+  }
+
+  // --------------------------------------------------
+  // REUSABLE DROPDOWN SELECTOR
+  // --------------------------------------------------
+
+  Widget _selector<T>({
+    required String label,
+    required T value,
+    required List<T> items,
+    String Function(T)? displayText,
+    required ValueChanged<T?> onChanged,
+  }) {
+    final colors = Theme.of(context).colorScheme;
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Padding(
+          padding: const EdgeInsets.only(left: 4, bottom: 6),
+          child: Text(
+            label,
+            style: TextStyle(
+              fontSize: 10,
+              fontWeight: FontWeight.bold,
+              letterSpacing: 1.2,
+              color: colors.onSurfaceVariant,
+            ),
+          ),
+        ),
+        Container(
+          padding: const EdgeInsets.symmetric(horizontal: 10),
+          decoration: BoxDecoration(
+            color: colors.surfaceContainerHighest.withValues(alpha: 0.45),
+            borderRadius: BorderRadius.circular(12),
+            border: Border.all(
+              color: colors.outlineVariant.withValues(alpha: 0.5),
+            ),
+          ),
+          child: DropdownButtonHideUnderline(
+            child: DropdownButton<T>(
+              value: items.contains(value) ? value : null,
+              isExpanded: true,
+              isDense: true,
+              dropdownColor: colors.surface,
+              icon: const Icon(
+                Icons.keyboard_arrow_down,
+                color: purple,
+              ),
+              style: TextStyle(
+                color: colors.onSurface,
+                fontSize: 13,
+                fontWeight: FontWeight.w600,
+              ),
+              items: items.map((item) {
+                return DropdownMenuItem<T>(
+                  value: item,
+                  child: Text(
+                    displayText != null
+                        ? displayText(item)
+                        : item.toString(),
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                );
+              }).toList(),
+              onChanged: onChanged,
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
+  // --------------------------------------------------
+  // MAIN SCREEN
+  // --------------------------------------------------
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final colors = theme.colorScheme;
+    final background = theme.scaffoldBackgroundColor;
+    final panel = colors.surface;
+    final primaryText = colors.onSurface;
+    final mutedText = colors.onSurfaceVariant;
+
     if (_isLoadingPreferences) {
-      return const Scaffold(
+      return Scaffold(
         backgroundColor: background,
         body: Center(
-          child: CircularProgressIndicator(color: purple),
+          child: CircularProgressIndicator(color: colors.primary),
         ),
       );
     }
@@ -367,8 +739,6 @@ class _BibleSelectorState extends State<BibleSelector> {
         ? selectedVerse
         : (verseNumbers.isNotEmpty ? verseNumbers.first : 1);
 
-    // IMPORTANT: sort entries before mapping them to Widgets.
-    // Do not cascade .sort() and .map() onto the spread expression.
     final sortedVerses = verses.entries.toList()
       ..sort((a, b) => a.key.compareTo(b.key));
 
@@ -376,7 +746,7 @@ class _BibleSelectorState extends State<BibleSelector> {
       backgroundColor: background,
       appBar: AppBar(
         backgroundColor: background,
-        foregroundColor: white,
+        foregroundColor: primaryText,
         elevation: 0,
         title: const Text(
           'HOLY WORD',
@@ -392,6 +762,21 @@ class _BibleSelectorState extends State<BibleSelector> {
             onPressed: _showSearchDialog,
             icon: const Icon(Icons.search),
           ),
+          AnimatedBuilder(
+            animation: themeController,
+            builder: (context, child) {
+              return Transform.scale(
+                scale: 0.8,
+                child: Switch.adaptive(
+                  value: themeController.isDarkMode,
+                  activeTrackColor: purple,
+                  onChanged: (value) {
+                    themeController.setDarkMode(value);
+                  },
+                ),
+              );
+            },
+          ),
           IconButton(
             tooltip: 'Reading settings',
             onPressed: _showSettingsDialog,
@@ -403,288 +788,340 @@ class _BibleSelectorState extends State<BibleSelector> {
       body: SafeArea(
         child: Column(
           children: [
-            Padding(
-              padding: const EdgeInsets.fromLTRB(16, 8, 16, 12),
-              child: Row(
-                children: [
-                  Expanded(
-                    flex: 3,
-                    child: _selector<String>(
-                      label: 'BOOK',
-                      value: selectedBook,
-                      items: books.keys.toList(),
-                      displayText: bookNameFor,
-                      onChanged: (value) {
-                        if (value != null) _selectBook(value);
-                      },
-                    ),
-                  ),
-                  const SizedBox(width: 10),
-                  Expanded(
-                    flex: 2,
-                    child: _selector<String>(
-                      label: 'VERSION',
-                      value: selectedVersion,
-                      items: versions,
-                      onChanged: (value) {
-                        if (value != null) _selectVersion(value);
-                      },
-                    ),
-                  ),
-                ],
+            // BOOK, VERSION, CHAPTER AND VERSE SELECTORS
+            ClipRect(
+              child: AnimatedSize(
+                duration: const Duration(milliseconds: 250),
+                curve: Curves.easeInOut,
+                alignment: Alignment.topCenter,
+                child: _showSelectors
+                    ? Padding(
+                        padding: const EdgeInsets.fromLTRB(16, 8, 16, 12),
+                        child: Column(
+                          children: [
+                            Row(
+                              children: [
+                                Expanded(
+                                  flex: 3,
+                                  child: _selector<String>(
+                                    label: 'BOOK',
+                                    value: selectedBook,
+                                    items: books.keys.toList(),
+                                    displayText: bookNameFor,
+                                    onChanged: (value) {
+                                      if (value != null) {
+                                        _selectBook(value);
+                                      }
+                                    },
+                                  ),
+                                ),
+                                const SizedBox(width: 10),
+                                Expanded(
+                                  flex: 2,
+                                  child: _selector<String>(
+                                    label: 'VERSION',
+                                    value: selectedVersion,
+                                    items: versions,
+                                    onChanged: (value) {
+                                      if (value != null) {
+                                        _selectVersion(value);
+                                      }
+                                    },
+                                  ),
+                                ),
+                              ],
+                            ),
+                            const SizedBox(height: 12),
+                            Row(
+                              children: [
+                                Expanded(
+                                  child: _selector<int>(
+                                    label: 'CHAPTER',
+                                    value: selectedChapter,
+                                    items: List.generate(
+                                      chapterCount,
+                                      (index) => index + 1,
+                                    ),
+                                    onChanged: (value) {
+                                      if (value != null) {
+                                        _selectChapter(value);
+                                      }
+                                    },
+                                  ),
+                                ),
+                                const SizedBox(width: 10),
+                                Expanded(
+                                  child: _selector<int>(
+                                    label: 'VERSE',
+                                    value: dropdownVerse,
+                                    items: verseNumbers.isEmpty
+                                        ? [1]
+                                        : verseNumbers,
+                                    onChanged: (value) {
+                                      if (value != null) {
+                                        _selectVerse(value);
+                                      }
+                                    },
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      )
+                    : const SizedBox(width: double.infinity),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
-              child: Row(
-                children: [
-                  Expanded(
-                    child: _selector<int>(
-                      label: 'CHAPTER',
-                      value: selectedChapter,
-                      items: List.generate(
-                        chapterCount,
-                        (index) => index + 1,
-                      ),
-                      onChanged: (value) {
-                        if (value != null) _selectChapter(value);
-                      },
-                    ),
-                  ),
-                  const SizedBox(width: 10),
-                  Expanded(
-                    child: _selector<int>(
-                      label: 'VERSE',
-                      value: dropdownVerse,
-                      items: verseNumbers.isEmpty ? [1] : verseNumbers,
-                      onChanged: (value) {
-                        if (value != null) _selectVerse(value);
-                      },
-                    ),
-                  ),
-                ],
+
+            // LARGE BOOK AND CHAPTER HEADING
+            ClipRect(
+              child: AnimatedSize(
+                duration: const Duration(milliseconds: 250),
+                curve: Curves.easeInOut,
+                alignment: Alignment.topCenter,
+                child: _showChapterHeading
+                    ? Padding(
+                        padding: const EdgeInsets.only(
+                          top: 12,
+                          bottom: 16,
+                        ),
+                        child: Column(
+                          children: [
+                            Text(
+                              bookNameFor(selectedBook),
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                color: mutedText,
+                                fontFamily: 'Georgia',
+                                fontSize: 24,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            Text(
+                              '$selectedChapter',
+                              style: TextStyle(
+                                color: primaryText,
+                                fontFamily: 'Georgia',
+                                fontSize: 70,
+                                fontWeight: FontWeight.bold,
+                                height: 1.15,
+                              ),
+                            ),
+                          ],
+                        ),
+                      )
+                    : const SizedBox(width: double.infinity),
               ),
             ),
-            const SizedBox(height: 24),
-            Text(
-              bookNameFor(selectedBook),
-              textAlign: TextAlign.center,
-              style: const TextStyle(
-                color: muted,
-                fontFamily: 'Georgia',
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            Text(
-              '$selectedChapter',
-              style: const TextStyle(
-                color: white,
-                fontFamily: 'Georgia',
-                fontSize: 70,
-                fontWeight: FontWeight.bold,
-                height: 1.15,
-              ),
-            ),
-            const SizedBox(height: 18),
+
+            // BIBLE READING PANEL
             Expanded(
               child: Container(
                 width: double.infinity,
-                margin: const EdgeInsets.fromLTRB(12, 0, 12, 12),
+                margin: const EdgeInsets.fromLTRB(12, 4, 12, 12),
                 padding: const EdgeInsets.all(20),
                 decoration: BoxDecoration(
                   color: panel,
                   borderRadius: BorderRadius.circular(22),
                   border: Border.all(
-                    color: Colors.white.withOpacity(0.06),
+                    color: colors.outlineVariant.withValues(alpha: 0.35),
                   ),
                 ),
-
-                // Use a SingleChildScrollView with a Column instead of
-                // ListView so all verse GlobalKeys have contexts.
-                child: SingleChildScrollView(
-                  controller: _bibleScrollController,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
-                      Row(
-                        children: [
-                          Container(
-                            width: 4,
-                            height: 25,
-                            decoration: BoxDecoration(
-                              color: gold,
-                              borderRadius: BorderRadius.circular(4),
-                            ),
-                          ),
-                          const SizedBox(width: 10),
-                          Expanded(
-                            child: Text(
-                              '${bookNameFor(selectedBook)} $selectedChapter',
-                              style: const TextStyle(
+                child: NotificationListener<UserScrollNotification>(
+                  onNotification: _handleScrollNotification,
+                  child: SingleChildScrollView(
+                    controller: _bibleScrollController,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        Row(
+                          children: [
+                            Container(
+                              width: 4,
+                              height: 25,
+                              decoration: BoxDecoration(
                                 color: gold,
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold,
-                                letterSpacing: 0.5,
+                                borderRadius: BorderRadius.circular(4),
                               ),
                             ),
-                          ),
-                          Container(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 10,
-                              vertical: 5,
-                            ),
-                            decoration: BoxDecoration(
-                              color: purple.withOpacity(0.18),
-                              borderRadius: BorderRadius.circular(20),
-                            ),
-                            child: Text(
-                              selectedVersion,
-                              style: const TextStyle(
-                                color: purple,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 12,
+                            const SizedBox(width: 10),
+                            Expanded(
+                              child: Text(
+                                '${bookNameFor(selectedBook)} '
+                                '$selectedChapter',
+                                style: const TextStyle(
+                                  color: gold,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold,
+                                  letterSpacing: 0.5,
+                                ),
                               ),
                             ),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(height: 24),
-                      if (verses.isEmpty)
-                        const Padding(
-                          padding: EdgeInsets.all(16),
-                          child: Text(
-                            'No verses have been added for this chapter yet.',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                              color: muted,
-                              fontSize: 16,
+                            Container(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 10,
+                                vertical: 5,
+                              ),
+                              decoration: BoxDecoration(
+                                color: purple.withValues(alpha: 0.18),
+                                borderRadius: BorderRadius.circular(20),
+                              ),
+                              child: Text(
+                                selectedVersion,
+                                style: const TextStyle(
+                                  color: purple,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12,
+                                ),
+                              ),
                             ),
-                          ),
-                        )
-                      else
-                        ...sortedVerses.map<Widget>((entry) {
-                          final verseNumber = entry.key;
-                          final isSelected =
-                              verseNumber == selectedVerse;
-                          final verseKey = _keyForVerse(verseNumber);
+                          ],
+                        ),
+                        const SizedBox(height: 24),
 
-                          return Padding(
-                            key: verseKey,
-                            padding: const EdgeInsets.only(bottom: 16),
-                            child: InkWell(
-                              borderRadius: BorderRadius.circular(10),
-                              onTap: () => _selectVerse(verseNumber),
-                              child: Container(
-                                padding: const EdgeInsets.all(8),
-                                decoration: BoxDecoration(
-                                  color: isSelected
-                                      ? purple.withOpacity(0.12)
-                                      : Colors.transparent,
-                                  borderRadius: BorderRadius.circular(10),
-                                  border: isSelected
-                                      ? Border.all(
-                                          color: purple.withOpacity(0.4),
+                        if (verses.isEmpty)
+                          Padding(
+                            padding: const EdgeInsets.all(16),
+                            child: Text(
+                              'No verses have been added for this chapter yet.',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                color: mutedText,
+                                fontSize: 16,
+                              ),
+                            ),
+                          )
+                        else
+                          ...sortedVerses.map<Widget>((entry) {
+                            final verseNumber = entry.key;
+                            final isSelected =
+                                verseNumber == selectedVerse;
+
+                            return Padding(
+                              key: _keyForVerse(verseNumber),
+                              padding: const EdgeInsets.only(bottom: 16),
+                              child: InkWell(
+                                borderRadius: BorderRadius.circular(10),
+                                onTap: () => _selectVerse(verseNumber),
+                                child: Container(
+                                  padding: const EdgeInsets.all(8),
+                                  decoration: BoxDecoration(
+                                    color: isSelected
+                                        ? purple.withValues(alpha: 0.12)
+                                        : Colors.transparent,
+                                    borderRadius: BorderRadius.circular(10),
+                                    border: isSelected
+                                        ? Border.all(
+                                            color: purple.withValues(
+                                              alpha: 0.4,
+                                            ),
+                                          )
+                                        : null,
+                                  ),
+                                  child: Row(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Container(
+                                        width: 30,
+                                        height: 30,
+                                        alignment: Alignment.center,
+                                        decoration: BoxDecoration(
+                                          color: isSelected
+                                              ? purple
+                                              : purple.withValues(
+                                                  alpha: 0.18,
+                                                ),
+                                          borderRadius:
+                                              BorderRadius.circular(9),
+                                        ),
+                                        child: Text(
+                                          '$verseNumber',
+                                          style: TextStyle(
+                                            color: isSelected
+                                                ? Colors.white
+                                                : purple,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                      ),
+                                      const SizedBox(width: 12),
+                                      Expanded(
+                                        child: Text(
+                                          entry.value,
+                                          style: TextStyle(
+                                            color: primaryText,
+                                            fontFamily: readingFontFamily,
+                                            fontSize: readingFontSize,
+                                            height: 1.8,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            );
+                          }),
+
+                        const SizedBox(height: 16),
+
+                        // PREVIOUS AND NEXT CHAPTER
+                        Row(
+                          children: [
+                            Expanded(
+                              child: OutlinedButton.icon(
+                                onPressed: selectedChapter > 1
+                                    ? () => _goToChapter(
+                                          selectedChapter - 1,
                                         )
-                                      : null,
-                                ),
-                                child: Row(
-                                  crossAxisAlignment:
-                                      CrossAxisAlignment.start,
-                                  children: [
-                                    Container(
-                                      width: 30,
-                                      height: 30,
-                                      alignment: Alignment.center,
-                                      decoration: BoxDecoration(
-                                        color: isSelected
-                                            ? purple
-                                            : purple.withOpacity(0.18),
-                                        borderRadius:
-                                            BorderRadius.circular(9),
-                                      ),
-                                      child: Text(
-                                        '$verseNumber',
-                                        style: TextStyle(
-                                          color:
-                                              isSelected ? white : purple,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                    ),
-                                    const SizedBox(width: 12),
-                                    Expanded(
-                                      child: Text(
-                                        entry.value,
-                                        style: TextStyle(
-                                          color: white,
-                                          fontFamily: readingFontFamily,
-                                          fontSize: readingFontSize,
-                                          height: 1.8,
-                                        ),
-                                      ),
-                                    ),
-                                  ],
+                                    : null,
+                                icon: const Icon(Icons.chevron_left),
+                                label: const Text('Previous chapter'),
+                                style: OutlinedButton.styleFrom(
+                                  foregroundColor: primaryText,
+                                  side: const BorderSide(color: purple),
+                                  padding: const EdgeInsets.symmetric(
+                                    vertical: 14,
+                                  ),
                                 ),
                               ),
                             ),
-                          );
-                        }),
-                      const SizedBox(height: 16),
-                      Row(
-                        children: [
-                          Expanded(
-                            child: OutlinedButton.icon(
-                              onPressed: selectedChapter > 1
-                                  ? () => _goToChapter(
-                                      selectedChapter - 1,
-                                    )
-                                  : null,
-                              icon: const Icon(Icons.chevron_left),
-                              label: const Text('Previous chapter'),
-                              style: OutlinedButton.styleFrom(
-                                foregroundColor: white,
-                                side: const BorderSide(color: purple),
-                                padding: const EdgeInsets.symmetric(
-                                  vertical: 14,
+                            const SizedBox(width: 12),
+                            Expanded(
+                              child: FilledButton.icon(
+                                onPressed: selectedChapter < chapterCount
+                                    ? () => _goToChapter(
+                                          selectedChapter + 1,
+                                        )
+                                    : null,
+                                icon: const Icon(Icons.chevron_right),
+                                label: const Text('Next chapter'),
+                                style: FilledButton.styleFrom(
+                                  backgroundColor: purple,
+                                  foregroundColor: Colors.white,
+                                  padding: const EdgeInsets.symmetric(
+                                    vertical: 14,
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
-                          const SizedBox(width: 12),
-                          Expanded(
-                            child: FilledButton.icon(
-                              onPressed: selectedChapter < chapterCount
-                                  ? () => _goToChapter(
-                                      selectedChapter + 1,
-                                    )
-                                  : null,
-                              icon: const Icon(Icons.chevron_right),
-                              label: const Text('Next chapter'),
-                              style: FilledButton.styleFrom(
-                                backgroundColor: purple,
-                                foregroundColor: white,
-                                padding: const EdgeInsets.symmetric(
-                                  vertical: 14,
-                                ),
-                              ),
+                          ],
+                        ),
+                        const SizedBox(height: 20),
+                        Center(
+                          child: Text(
+                            'Read • Reflect • Grow',
+                            style: TextStyle(
+                              color: mutedText,
+                              fontStyle: FontStyle.italic,
+                              fontFamily: 'Georgia',
+                              fontSize: 14,
                             ),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(height: 20),
-                      const Center(
-                        child: Text(
-                          'Read • Reflect • Grow',
-                          style: TextStyle(
-                            color: muted,
-                            fontStyle: FontStyle.italic,
-                            fontFamily: 'Georgia',
-                            fontSize: 14,
                           ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
               ),
@@ -692,388 +1129,6 @@ class _BibleSelectorState extends State<BibleSelector> {
           ],
         ),
       ),
-    );
-  }
-
-  Future<void> _showSearchDialog() async {
-    final searchController = TextEditingController();
-    String query = '';
-
-    try {
-      await showDialog<void>(
-        context: context,
-        builder: (dialogContext) {
-          return StatefulBuilder(
-            builder: (context, setDialogState) {
-              final versionContent =
-                  bibleVersions[selectedVersion] ?? {};
-
-              final results = <Map<String, dynamic>>[];
-              final normalizedQuery = query.trim().toLowerCase();
-
-              if (normalizedQuery.isNotEmpty) {
-                for (final bookEntry in versionContent.entries) {
-                  for (final chapterEntry
-                      in bookEntry.value.entries) {
-                    for (final verseEntry
-                        in chapterEntry.value.entries) {
-                      if (verseEntry.value
-                          .toLowerCase()
-                          .contains(normalizedQuery)) {
-                        results.add({
-                          'book': bookEntry.key,
-                          'chapter': chapterEntry.key,
-                          'verse': verseEntry.key,
-                          'text': verseEntry.value,
-                        });
-                      }
-                    }
-                  }
-                }
-              }
-
-              return AlertDialog(
-                backgroundColor: panel,
-                title: const Text(
-                  'Search the Bible',
-                  style: TextStyle(color: white),
-                ),
-                content: SizedBox(
-                  width: 500,
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      TextField(
-                        controller: searchController,
-                        autofocus: true,
-                        style: const TextStyle(color: white),
-                        decoration: InputDecoration(
-                          hintText: 'Enter a word or phrase',
-                          hintStyle: const TextStyle(color: muted),
-                          prefixIcon: const Icon(
-                            Icons.search,
-                            color: purple,
-                          ),
-                          filled: true,
-                          fillColor: const Color(0xFF242638),
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(12),
-                          ),
-                        ),
-                        onChanged: (value) {
-                          setDialogState(() => query = value);
-                        },
-                      ),
-                      const SizedBox(height: 12),
-                      if (normalizedQuery.isEmpty)
-                        const Padding(
-                          padding: EdgeInsets.all(16),
-                          child: Text(
-                            'Search within the verses available for the selected version.',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(color: muted),
-                          ),
-                        )
-                      else if (results.isEmpty)
-                        const Padding(
-                          padding: EdgeInsets.all(16),
-                          child: Text(
-                            'No matching verses found in the available content.',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(color: muted),
-                          ),
-                        )
-                      else
-                        SizedBox(
-                          height: 320,
-                          child: ListView.separated(
-                            shrinkWrap: true,
-                            itemCount: results.length,
-                            separatorBuilder: (_, __) =>
-                                const Divider(
-                              color: Color(0xFF34364B),
-                            ),
-                            itemBuilder: (context, index) {
-                              final result = results[index];
-                              final resultBook =
-                                  result['book'] as String;
-                              final resultChapter =
-                                  result['chapter'] as int;
-                              final resultVerse =
-                                  result['verse'] as int;
-
-                              return ListTile(
-                                contentPadding: EdgeInsets.zero,
-                                title: Text(
-                                  '${bookNameFor(resultBook)} '
-                                  '$resultChapter:$resultVerse',
-                                  style: const TextStyle(
-                                    color: gold,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                                subtitle: Text(
-                                  result['text'] as String,
-                                  maxLines: 3,
-                                  overflow: TextOverflow.ellipsis,
-                                  style: const TextStyle(color: white),
-                                ),
-                                onTap: () {
-                                  setState(() {
-                                    selectedBook = resultBook;
-                                    selectedChapter = resultChapter;
-                                    selectedVerse = resultVerse;
-                                  });
-
-                                  _savePreferences();
-
-                                  Navigator.of(dialogContext).pop();
-
-                                  _scrollToVerse(resultVerse);
-                                },
-                              );
-                            },
-                          ),
-                        ),
-                    ],
-                  ),
-                ),
-                actions: [
-                  TextButton(
-                    onPressed: () =>
-                        Navigator.of(dialogContext).pop(),
-                    child: const Text(
-                      'Close',
-                      style: TextStyle(color: purple),
-                    ),
-                  ),
-                ],
-              );
-            },
-          );
-        },
-      );
-    } finally {
-      searchController.dispose();
-    }
-  }
-
-  Future<void> _showSettingsDialog() async {
-    double temporaryFontSize = readingFontSize;
-    String temporaryFontFamily = readingFontFamily;
-
-    await showDialog<void>(
-      context: context,
-      builder: (dialogContext) {
-        return StatefulBuilder(
-          builder: (context, setDialogState) {
-            return AlertDialog(
-              backgroundColor: panel,
-              title: const Text(
-                'Reading settings',
-                style: TextStyle(color: white),
-              ),
-              content: SizedBox(
-                width: 360,
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const Text(
-                      'Text size',
-                      style: TextStyle(
-                        color: gold,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    Row(
-                      children: [
-                        const Icon(
-                          Icons.text_fields,
-                          color: muted,
-                        ),
-                        Expanded(
-                          child: Slider(
-                            value: temporaryFontSize,
-                            min: 14,
-                            max: 34,
-                            divisions: 10,
-                            activeColor: purple,
-                            label:
-                                temporaryFontSize.round().toString(),
-                            onChanged: (value) {
-                              setDialogState(() {
-                                temporaryFontSize = value;
-                              });
-                            },
-                          ),
-                        ),
-                        Text(
-                          temporaryFontSize.round().toString(),
-                          style: const TextStyle(color: white),
-                        ),
-                      ],
-                    ),
-                    const SizedBox(height: 12),
-                    const Text(
-                      'Reading font',
-                      style: TextStyle(
-                        color: gold,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    const SizedBox(height: 8),
-                    DropdownButtonFormField<String>(
-                      value: temporaryFontFamily,
-                      dropdownColor: const Color(0xFF242638),
-                      style: const TextStyle(color: white),
-                      decoration: InputDecoration(
-                        filled: true,
-                        fillColor: const Color(0xFF242638),
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(12),
-                        ),
-                      ),
-                      items: const [
-                        DropdownMenuItem(
-                          value: 'Georgia',
-                          child: Text('Georgia'),
-                        ),
-                        DropdownMenuItem(
-                          value: 'Roboto',
-                          child: Text('Roboto'),
-                        ),
-                        DropdownMenuItem(
-                          value: 'serif',
-                          child: Text('Serif'),
-                        ),
-                        DropdownMenuItem(
-                          value: 'sans-serif',
-                          child: Text('Sans serif'),
-                        ),
-                        DropdownMenuItem(
-                          value: 'arial black',
-                          child: Text('Arial black'),
-                        ),
-                        DropdownMenuItem(
-                          value: 'Algerian',
-                          child: Text('Algerian'),
-                        ),
-                      ],
-                      onChanged: (value) {
-                        if (value != null) {
-                          setDialogState(() {
-                            temporaryFontFamily = value;
-                          });
-                        }
-                      },
-                    ),
-                    const SizedBox(height: 16),
-                    Text(
-                      'Sample scripture text',
-                      style: TextStyle(
-                        color: white,
-                        fontFamily: temporaryFontFamily,
-                        fontSize: temporaryFontSize,
-                        height: 1.5,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              actions: [
-                TextButton(
-                  onPressed: () =>
-                      Navigator.of(dialogContext).pop(),
-                  child: const Text(
-                    'Cancel',
-                    style: TextStyle(color: muted),
-                  ),
-                ),
-                FilledButton(
-                  style: FilledButton.styleFrom(
-                    backgroundColor: purple,
-                  ),
-                  onPressed: () {
-                    setState(() {
-                      readingFontSize = temporaryFontSize;
-                      readingFontFamily = temporaryFontFamily;
-                    });
-
-                    _savePreferences();
-                    Navigator.of(dialogContext).pop();
-                  },
-                  child: const Text('Apply settings'),
-                ),
-              ],
-            );
-          },
-        );
-      },
-    );
-  }
-
-  Widget _selector<T>({
-    required String label,
-    required T value,
-    required List<T> items,
-    required ValueChanged<T?> onChanged,
-    String Function(T item)? displayText,
-  }) {
-    final safeItems =
-        items.contains(value) ? items : <T>[...items, value];
-
-    return DropdownButtonFormField<T>(
-      value: value,
-      isExpanded: true,
-      dropdownColor: const Color(0xFF242638),
-      icon: const Icon(
-        Icons.keyboard_arrow_down,
-        color: purple,
-      ),
-      style: const TextStyle(
-        color: white,
-        fontSize: 14,
-        fontWeight: FontWeight.w600,
-      ),
-      decoration: InputDecoration(
-        labelText: label,
-        labelStyle: const TextStyle(
-          color: purple,
-          fontSize: 11,
-          fontWeight: FontWeight.bold,
-          letterSpacing: 1,
-        ),
-        filled: true,
-        fillColor: panel,
-        contentPadding: const EdgeInsets.symmetric(
-          horizontal: 12,
-          vertical: 14,
-        ),
-        enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(14),
-          borderSide: const BorderSide(
-            color: Color(0xFF34364B),
-          ),
-        ),
-        focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(14),
-          borderSide: const BorderSide(
-            color: purple,
-            width: 1.5,
-          ),
-        ),
-      ),
-      items: safeItems.map((item) {
-        return DropdownMenuItem<T>(
-          value: item,
-          child: Text(
-            displayText != null ? displayText(item) : '$item',
-            overflow: TextOverflow.ellipsis,
-          ),
-        );
-      }).toList(),
-      onChanged: onChanged,
     );
   }
 }

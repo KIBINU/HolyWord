@@ -1,8 +1,13 @@
-
 import 'package:flutter/material.dart';
-import 'home_screen.dart';
 
-void main() {
+import 'theme_controller.dart';
+import 'home_screen.dart'; // Adjust if your home screen has a different filename.
+
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await themeController.loadTheme();
+
   runApp(const HolyWordApp());
 }
 
@@ -11,17 +16,36 @@ class HolyWordApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Holy Word',
-      theme: ThemeData(
-        useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color(0xFF8B78F6),
-          brightness: Brightness.dark,
-        ),
-      ),
-      home: const HomeScreen(),
+    return AnimatedBuilder(
+      animation: themeController,
+      builder: (context, child) {
+        return MaterialApp(
+          title: 'Holy Word',
+          debugShowCheckedModeBanner: false,
+
+          theme: ThemeData(
+            brightness: Brightness.light,
+            colorScheme: ColorScheme.fromSeed(
+              seedColor: const Color(0xFF8B78F6),
+              brightness: Brightness.light,
+            ),
+            useMaterial3: true,
+          ),
+
+          darkTheme: ThemeData(
+            brightness: Brightness.dark,
+            colorScheme: ColorScheme.fromSeed(
+              seedColor: const Color(0xFF8B78F6),
+              brightness: Brightness.dark,
+            ),
+            useMaterial3: true,
+          ),
+
+          themeMode: themeController.themeMode,
+
+          home: const HomeScreen(),
+        );
+      },
     );
   }
 }

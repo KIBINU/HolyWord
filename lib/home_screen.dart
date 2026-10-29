@@ -14,9 +14,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   int _selectedIndex = 0;
 
-  static const background = Color(0xFF10111B);
   static const purple = Color(0xFF8B78F6);
-  static const muted = Color(0xFFAAA9BC);
 
   final List<Widget> _screens = const [
     BibleSelector(),
@@ -25,16 +23,18 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final colors = Theme.of(context).colorScheme;
+
     return Scaffold(
-      backgroundColor: background,
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       body: IndexedStack(
         index: _selectedIndex,
         children: _screens,
       ),
       bottomNavigationBar: NavigationBar(
         height: 72,
-        backgroundColor: const Color(0xFF1B1D2B),
-        indicatorColor: purple.withOpacity(0.20),
+        backgroundColor: colors.surface,
+        indicatorColor: purple.withValues(alpha: 0.20),
         selectedIndex: _selectedIndex,
         onDestinationSelected: (index) {
           setState(() {
@@ -43,10 +43,7 @@ class _HomeScreenState extends State<HomeScreen> {
         },
         destinations: const [
           NavigationDestination(
-            icon: Icon(
-              Icons.menu_book_outlined,
-              color: muted,
-            ),
+            icon: Icon(Icons.menu_book_outlined),
             selectedIcon: Icon(
               Icons.menu_book_rounded,
               color: purple,
@@ -54,10 +51,7 @@ class _HomeScreenState extends State<HomeScreen> {
             label: 'Bible',
           ),
           NavigationDestination(
-            icon: Icon(
-              Icons.library_music_outlined,
-              color: muted,
-            ),
+            icon: Icon(Icons.library_music_outlined),
             selectedIcon: Icon(
               Icons.library_music_rounded,
               color: purple,

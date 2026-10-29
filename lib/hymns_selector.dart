@@ -17,8 +17,6 @@ class _HymnsSelectorState extends State<HymnsSelector> {
   String _selectedLanguageCode = 'en';
   double _fontSize = 20;
 
-  static const Color _background = Color(0xFF101027);
-  static const Color _surface = Color(0xFF191936);
   static const Color _purple = Color(0xFF8B5CF6);
   static const Color _gold = Color(0xFFFFD166);
 
@@ -66,7 +64,8 @@ class _HymnsSelectorState extends State<HymnsSelector> {
     showModalBottomSheet<void>(
       context: context,
       isScrollControlled: true,
-      backgroundColor: _surface,
+      useSafeArea: true,
+      backgroundColor: Theme.of(context).colorScheme.surface,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(
           top: Radius.circular(24),
@@ -75,7 +74,12 @@ class _HymnsSelectorState extends State<HymnsSelector> {
       builder: (sheetContext) {
         return StatefulBuilder(
           builder: (context, setSheetState) {
-            return SafeArea(
+            final theme = Theme.of(context);
+            final colors = theme.colorScheme;
+
+            return AnimatedContainer(
+              duration: const Duration(milliseconds: 200),
+              color: colors.surface,
               child: Padding(
                 padding: EdgeInsets.fromLTRB(
                   22,
@@ -84,18 +88,23 @@ class _HymnsSelectorState extends State<HymnsSelector> {
                   MediaQuery.of(context).viewInsets.bottom + 24,
                 ),
                 child: SizedBox(
-                  height: MediaQuery.of(context).size.height * 0.75,
+                  height:
+                      MediaQuery.of(context).size.height * 0.75,
                   child: Column(
                     children: [
                       Container(
                         width: 45,
                         height: 5,
                         decoration: BoxDecoration(
-                          color: Colors.white24,
+                          color: colors.onSurface.withValues(
+                            alpha: 0.2,
+                          ),
                           borderRadius: BorderRadius.circular(10),
                         ),
                       ),
+
                       const SizedBox(height: 22),
+
                       Text(
                         'HYMN ${hymn.number}',
                         style: const TextStyle(
@@ -104,30 +113,39 @@ class _HymnsSelectorState extends State<HymnsSelector> {
                           letterSpacing: 2,
                         ),
                       ),
+
                       const SizedBox(height: 8),
+
                       Text(
                         hymn.title,
                         textAlign: TextAlign.center,
-                        style: const TextStyle(
+                        style: TextStyle(
+                          color: colors.onSurface,
                           fontSize: 25,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
+
                       const SizedBox(height: 5),
+
                       Text(
                         'By ${hymn.author}',
-                        style: const TextStyle(
-                          color: Colors.white60,
+                        style: TextStyle(
+                          color: colors.onSurfaceVariant,
                         ),
                       ),
+
                       const SizedBox(height: 16),
+
                       Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
+                        mainAxisAlignment:
+                            MainAxisAlignment.center,
                         children: [
-                          const Icon(
+                          Icon(
                             Icons.text_decrease,
-                            color: Colors.white70,
+                            color: colors.onSurfaceVariant,
                           ),
+
                           Expanded(
                             child: Slider(
                               value: _fontSize,
@@ -139,17 +157,21 @@ class _HymnsSelectorState extends State<HymnsSelector> {
                                 setState(() {
                                   _fontSize = value;
                                 });
+
                                 setSheetState(() {});
                               },
                             ),
                           ),
-                          const Icon(
+
+                          Icon(
                             Icons.text_increase,
-                            color: Colors.white70,
+                            color: colors.onSurfaceVariant,
                           ),
                         ],
                       ),
-                      const Divider(color: Colors.white12),
+
+                      const Divider(),
+
                       Expanded(
                         child: ListView.separated(
                           itemCount: hymn.verses.length,
@@ -165,11 +187,14 @@ class _HymnsSelectorState extends State<HymnsSelector> {
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
+
                                 const SizedBox(height: 8),
+
                                 Text(
                                   hymn.verses[index],
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
+                                    color: colors.onSurface,
                                     fontSize: _fontSize,
                                     height: 1.7,
                                   ),
@@ -193,11 +218,15 @@ class _HymnsSelectorState extends State<HymnsSelector> {
   @override
   Widget build(BuildContext context) {
     final results = filteredHymns;
+    final theme = Theme.of(context);
+    final colors = theme.colorScheme;
 
     return Scaffold(
-      backgroundColor: _background,
+      backgroundColor: theme.scaffoldBackgroundColor,
+
       appBar: AppBar(
-        backgroundColor: _background,
+        backgroundColor: theme.scaffoldBackgroundColor,
+        foregroundColor: colors.onSurface,
         elevation: 0,
         title: const Row(
           children: [
@@ -205,16 +234,22 @@ class _HymnsSelectorState extends State<HymnsSelector> {
             SizedBox(width: 10),
             Text(
               'Holy Hymns',
-              style: TextStyle(fontWeight: FontWeight.bold),
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+              ),
             ),
           ],
         ),
       ),
+
       body: SafeArea(
         child: Column(
           children: [
+            // Welcome banner
             Padding(
-              padding: const EdgeInsets.fromLTRB(18, 8, 18, 12),
+              padding: const EdgeInsets.fromLTRB(
+                18, 8, 18, 12,
+              ),
               child: Container(
                 width: double.infinity,
                 padding: const EdgeInsets.all(20),
@@ -235,6 +270,7 @@ class _HymnsSelectorState extends State<HymnsSelector> {
                     Text(
                       'Sing praises',
                       style: TextStyle(
+                        color: Colors.white,
                         fontSize: 25,
                         fontWeight: FontWeight.bold,
                       ),
@@ -242,27 +278,42 @@ class _HymnsSelectorState extends State<HymnsSelector> {
                     SizedBox(height: 6),
                     Text(
                       'Explore hymns and worship in your language.',
-                      style: TextStyle(color: Colors.white70),
+                      style: TextStyle(
+                        color: Colors.white70,
+                      ),
                     ),
                   ],
                 ),
               ),
             ),
 
+            // Language selection
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 18),
+              padding: const EdgeInsets.symmetric(
+                horizontal: 18,
+              ),
               child: DropdownButtonFormField<String>(
-                value: _selectedLanguageCode,
-                dropdownColor: _surface,
+                initialValue: _selectedLanguageCode,
+                dropdownColor: colors.surface,
+                style: TextStyle(
+                  color: colors.onSurface,
+                ),
                 decoration: InputDecoration(
                   labelText: 'Hymn language',
+                  labelStyle: TextStyle(
+                    color: colors.onSurfaceVariant,
+                  ),
                   prefixIcon: const Icon(
                     Icons.language,
                     color: _gold,
                   ),
                   filled: true,
-                  fillColor: _surface,
+                  fillColor: colors.surface,
                   border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(14),
+                    borderSide: BorderSide.none,
+                  ),
+                  enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(14),
                     borderSide: BorderSide.none,
                   ),
@@ -279,10 +330,16 @@ class _HymnsSelectorState extends State<HymnsSelector> {
 
             const SizedBox(height: 12),
 
+            // Search field
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 18),
+              padding: const EdgeInsets.symmetric(
+                horizontal: 18,
+              ),
               child: TextField(
                 controller: _searchController,
+                style: TextStyle(
+                  color: colors.onSurface,
+                ),
                 onChanged: (value) {
                   setState(() {
                     _query = value;
@@ -290,21 +347,32 @@ class _HymnsSelectorState extends State<HymnsSelector> {
                 },
                 decoration: InputDecoration(
                   hintText: 'Search hymns, lyrics, or number...',
-                  prefixIcon: const Icon(Icons.search),
+                  hintStyle: TextStyle(
+                    color: colors.onSurfaceVariant,
+                  ),
+                  prefixIcon: Icon(
+                    Icons.search,
+                    color: colors.onSurfaceVariant,
+                  ),
                   suffixIcon: _query.isEmpty
                       ? null
                       : IconButton(
                           icon: const Icon(Icons.clear),
                           onPressed: () {
                             _searchController.clear();
+
                             setState(() {
                               _query = '';
                             });
                           },
                         ),
                   filled: true,
-                  fillColor: _surface,
+                  fillColor: colors.surface,
                   border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(14),
+                    borderSide: BorderSide.none,
+                  ),
+                  enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(14),
                     borderSide: BorderSide.none,
                   ),
@@ -314,33 +382,39 @@ class _HymnsSelectorState extends State<HymnsSelector> {
 
             const SizedBox(height: 12),
 
+            // Hymn results
             Expanded(
               child: results.isEmpty
-                  ? const Center(
+                  ? Center(
                       child: Padding(
-                        padding: EdgeInsets.all(24),
+                        padding: const EdgeInsets.all(24),
                         child: Column(
                           mainAxisSize: MainAxisSize.min,
                           children: [
                             Icon(
                               Icons.library_music_outlined,
                               size: 55,
-                              color: Colors.white38,
+                              color: colors.onSurfaceVariant,
                             ),
-                            SizedBox(height: 12),
+
+                            const SizedBox(height: 12),
+
                             Text(
                               'No hymns found',
                               style: TextStyle(
+                                color: colors.onSurface,
                                 fontSize: 18,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-                            SizedBox(height: 6),
+
+                            const SizedBox(height: 6),
+
                             Text(
                               'Try another search or language.',
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                color: Colors.white60,
+                                color: colors.onSurfaceVariant,
                               ),
                             ),
                           ],
@@ -349,29 +423,33 @@ class _HymnsSelectorState extends State<HymnsSelector> {
                     )
                   : ListView.builder(
                       padding: const EdgeInsets.fromLTRB(
-                        18,
-                        4,
-                        18,
-                        20,
+                        18, 4, 18, 20,
                       ),
                       itemCount: results.length,
                       itemBuilder: (context, index) {
                         final hymn = results[index];
 
                         return Card(
-                          color: _surface,
-                          margin: const EdgeInsets.only(bottom: 12),
+                          color: colors.surface,
+                          margin: const EdgeInsets.only(
+                            bottom: 12,
+                          ),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(16),
                           ),
                           child: ListTile(
-                            contentPadding: const EdgeInsets.all(14),
+                            contentPadding:
+                                const EdgeInsets.all(14),
+
                             leading: Container(
                               width: 52,
                               height: 52,
                               decoration: BoxDecoration(
-                                color: _purple.withValues(alpha: 0.2),
-                                borderRadius: BorderRadius.circular(14),
+                                color: _purple.withValues(
+                                  alpha: 0.2,
+                                ),
+                                borderRadius:
+                                    BorderRadius.circular(14),
                               ),
                               child: Center(
                                 child: Text(
@@ -384,26 +462,33 @@ class _HymnsSelectorState extends State<HymnsSelector> {
                                 ),
                               ),
                             ),
+
                             title: Text(
                               hymn.title,
-                              style: const TextStyle(
+                              style: TextStyle(
+                                color: colors.onSurface,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
+
                             subtitle: Padding(
-                              padding: const EdgeInsets.only(top: 5),
+                              padding: const EdgeInsets.only(
+                                top: 5,
+                              ),
                               child: Text(
                                 hymn.author,
-                                style: const TextStyle(
-                                  color: Colors.white60,
+                                style: TextStyle(
+                                  color: colors.onSurfaceVariant,
                                 ),
                               ),
                             ),
+
                             trailing: const Icon(
                               Icons.play_circle_outline,
                               color: _gold,
                               size: 30,
                             ),
+
                             onTap: () => _openHymn(hymn),
                           ),
                         );
