@@ -20,6 +20,7 @@ class _HymnsSelectorState extends State<HymnsSelector> {
   static const Color _purple = Color(0xFF8B5CF6);
   static const Color _gold = Color(0xFFFFD166);
 
+  // Filter hymns by language and search query.
   List<Hymn> get filteredHymns {
     final query = _query.trim().toLowerCase();
 
@@ -36,11 +37,11 @@ class _HymnsSelectorState extends State<HymnsSelector> {
 
     return languageHymns.where((hymn) {
       return hymn.title.toLowerCase().contains(query) ||
-          hymn.author.toLowerCase().contains(query) ||
           hymn.number.toString() == query ||
           hymn.verses.any(
             (verse) => verse.toLowerCase().contains(query),
-          );
+          ) ||
+          (hymn.chorus?.toLowerCase().contains(query) ?? false);
     }).toList();
   }
 
@@ -50,6 +51,7 @@ class _HymnsSelectorState extends State<HymnsSelector> {
     super.dispose();
   }
 
+  // Change the selected hymn language.
   void _changeLanguage(String? languageCode) {
     if (languageCode == null) return;
 
@@ -60,6 +62,7 @@ class _HymnsSelectorState extends State<HymnsSelector> {
     });
   }
 
+  // Open the hymn reader.
   void _openHymn(Hymn hymn) {
     showModalBottomSheet<void>(
       context: context,
@@ -74,8 +77,7 @@ class _HymnsSelectorState extends State<HymnsSelector> {
       builder: (sheetContext) {
         return StatefulBuilder(
           builder: (context, setSheetState) {
-            final theme = Theme.of(context);
-            final colors = theme.colorScheme;
+            final colors = Theme.of(context).colorScheme;
 
             return AnimatedContainer(
               duration: const Duration(milliseconds: 200),
@@ -89,9 +91,10 @@ class _HymnsSelectorState extends State<HymnsSelector> {
                 ),
                 child: SizedBox(
                   height:
-                      MediaQuery.of(context).size.height * 0.75,
+                      MediaQuery.of(context).size.height * 0.78,
                   child: Column(
                     children: [
+                      // Bottom sheet handle
                       Container(
                         width: 45,
                         height: 5,
@@ -105,9 +108,10 @@ class _HymnsSelectorState extends State<HymnsSelector> {
 
                       const SizedBox(height: 22),
 
-                      Text(
-                        'HYMN ${hymn.number}',
-                        style: const TextStyle(
+                      // App heading
+                      const Text(
+                        'HOLY HYMNS',
+                        style: TextStyle(
                           color: _gold,
                           fontWeight: FontWeight.bold,
                           letterSpacing: 2,
@@ -116,6 +120,19 @@ class _HymnsSelectorState extends State<HymnsSelector> {
 
                       const SizedBox(height: 8),
 
+                      // Hymn number
+                      Text(
+                        'HYMN ${hymn.number}',
+                        style: const TextStyle(
+                          color: _purple,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 14,
+                        ),
+                      ),
+
+                      const SizedBox(height: 8),
+
+                      // Hymn title
                       Text(
                         hymn.title,
                         textAlign: TextAlign.center,
@@ -126,20 +143,21 @@ class _HymnsSelectorState extends State<HymnsSelector> {
                         ),
                       ),
 
-                      const SizedBox(height: 5),
+                      const SizedBox(height: 8),
 
+                      // Language
                       Text(
-                        'By ${hymn.author}',
+                        hymnLanguages[hymn.languageCode] ??
+                            hymn.languageCode,
                         style: TextStyle(
                           color: colors.onSurfaceVariant,
                         ),
                       ),
 
-                      const SizedBox(height: 16),
+                      const SizedBox(height: 12),
 
+                      // Font size adjustment
                       Row(
-                        mainAxisAlignment:
-                            MainAxisAlignment.center,
                         children: [
                           Icon(
                             Icons.text_decrease,
@@ -153,6 +171,7 @@ class _HymnsSelectorState extends State<HymnsSelector> {
                               max: 32,
                               divisions: 9,
                               activeColor: _purple,
+                              label: _fontSize.round().toString(),
                               onChanged: (value) {
                                 setState(() {
                                   _fontSize = value;
@@ -170,38 +189,131 @@ class _HymnsSelectorState extends State<HymnsSelector> {
                         ],
                       ),
 
-                      const Divider(),
+                      const Divider(height: 24),
 
+                      // Scrollable verses and chorus
                       Expanded(
-                        child: ListView.separated(
-                          itemCount: hymn.verses.length,
-                          separatorBuilder: (_, __) =>
-                              const SizedBox(height: 22),
-                          itemBuilder: (context, index) {
-                            return Column(
-                              children: [
-                                Text(
-                                  'Verse ${index + 1}',
-                                  style: const TextStyle(
-                                    color: _gold,
-                                    fontWeight: FontWeight.bold,
+                        child: ListView(
+                          padding: const EdgeInsets.only(
+                            bottom: 20,
+                          ),
+                          children: [
+                            ...List.generate(
+                              hymn.verses.length,
+                              (index) {
+                                return Padding(
+                                  padding: const EdgeInsets.only(
+                                    bottom: 24,
                                   ),
-                                ),
+                                  child: Column(
+                                    children: [
+                                      // Verse heading
+                                      Text(
+                                        'VERSE ${index + 1}',
+                                        style: const TextStyle(
+                                          color: _gold,
+                                          fontWeight:
+                                              FontWeight.bold,
+                                          letterSpacing: 1.5,
+                                        ),
+                                      ),
 
-                                const SizedBox(height: 8),
+                                      const SizedBox(height: 10),
 
-                                Text(
-                                  hymn.verses[index],
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                    color: colors.onSurface,
-                                    fontSize: _fontSize,
-                                    height: 1.7,
+                                      // Verse lyrics
+                                      Text(
+                                        hymn.verses[index],
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                          color: colors.onSurface,
+                                          fontSize: _fontSize,
+                                          height: 1.7,
+                                        ),
+                                      ),
+
+                                      const SizedBox(height: 20),
+
+                                      // Show chorus immediately
+                                      // after the first verse.
+                                      if (index == 0 &&
+                                          hymn.chorus != null &&
+                                          hymn.chorus!
+                                              .trim()
+                                              .isNotEmpty)
+                                        Container(
+                                          width: double.infinity,
+                                          padding:
+                                              const EdgeInsets.all(18),
+                                          decoration: BoxDecoration(
+                                            color: _purple.withValues(
+                                              alpha: 0.12,
+                                            ),
+                                            borderRadius:
+                                                BorderRadius.circular(
+                                              16,
+                                            ),
+                                            border: Border.all(
+                                              color:
+                                                  _purple.withValues(
+                                                alpha: 0.35,
+                                              ),
+                                            ),
+                                          ),
+                                          child: Column(
+                                            children: [
+                                              const Row(
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment
+                                                        .center,
+                                                children: [
+                                                  Icon(
+                                                    Icons.music_note,
+                                                    color: _gold,
+                                                    size: 20,
+                                                  ),
+                                                  SizedBox(width: 8),
+                                                  Text(
+                                                    'CHORUS',
+                                                    style: TextStyle(
+                                                      color: _gold,
+                                                      fontWeight:
+                                                          FontWeight
+                                                              .bold,
+                                                      fontSize: 16,
+                                                      letterSpacing: 2,
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+
+                                              const SizedBox(
+                                                height: 12,
+                                              ),
+
+                                              Text(
+                                                hymn.chorus!,
+                                                textAlign:
+                                                    TextAlign.center,
+                                                style: TextStyle(
+                                                  color:
+                                                      colors.onSurface,
+                                                  fontSize: _fontSize,
+                                                  height: 1.7,
+                                                  fontStyle:
+                                                      FontStyle.italic,
+                                                  fontWeight:
+                                                      FontWeight.w500,
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                    ],
                                   ),
-                                ),
-                              ],
-                            );
-                          },
+                                );
+                              },
+                            ),
+                          ],
                         ),
                       ),
                     ],
@@ -435,7 +547,8 @@ class _HymnsSelectorState extends State<HymnsSelector> {
                             bottom: 12,
                           ),
                           shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(16),
+                            borderRadius:
+                                BorderRadius.circular(16),
                           ),
                           child: ListTile(
                             contentPadding:
@@ -476,7 +589,10 @@ class _HymnsSelectorState extends State<HymnsSelector> {
                                 top: 5,
                               ),
                               child: Text(
-                                hymn.author,
+                                hymn.chorus != null &&
+                                        hymn.chorus!.trim().isNotEmpty
+                                    ? 'Includes chorus • ${hymn.verses.length} verses'
+                                    : '${hymn.verses.length} verses',
                                 style: TextStyle(
                                   color: colors.onSurfaceVariant,
                                 ),
@@ -484,9 +600,9 @@ class _HymnsSelectorState extends State<HymnsSelector> {
                             ),
 
                             trailing: const Icon(
-                              Icons.play_circle_outline,
+                              Icons.menu_book_rounded,
                               color: _gold,
-                              size: 30,
+                              size: 28,
                             ),
 
                             onTap: () => _openHymn(hymn),

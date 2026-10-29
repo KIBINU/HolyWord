@@ -1474,35 +1474,865 @@ final Map<String, Map<String, Map<int, Map<int, String>>>>
         25:'',
       },
 
-    
     }, 
 
-    'Jude': {
+    'Exodus': {
       1: {
-        1: 'Jude, the servant of Jesus Christ, and brother of James, '
-            'to them that are sanctified by God the Father, '
-            'and preserved in Jesus Christ, and called.',
-        2: 'Mercy unto you, and peace, and love, be multiplied.',
+    1: 'ATĨRĨRĨ, maya nĩmo marĩtwa ma ciana cia Israeli, iria ciathire igitũnya Misiri; nacio ciothe, mũndũ o mũndũ arĩ hamwe na andũ a nyũmba yake, ciatwaranire na Jakubu.',
+    2: 'Nao nĩ Reubeni, na Simeoni, na Lawii, na Juda,',
+    3: 'na Isakaru, na Zebuluni, na Benjamini,',
+    4: 'na Dani, na Nafitali, na Gadi, na Asheri.',
+    5: 'Nao andũ othe a rũciaro rũa Jakubu maarĩ andũ mĩrongo mũgwanja; nowe Jusufu, o na mbere ĩo, aakorirũo arĩ o kũu Misiri.',
+    6: 'Nake Jusufu agĩkua, o na ariũ a ithe othe, a nao andũ othe a ihinda rĩu magĩthira.',
+    7: 'Nacio ciana cia Israeli igĩciara mũno, nacio igĩkĩrĩria kũngĩha o kũngĩha, igĩthegea mũno, nacio igĩthĩkĩ kũigaga na hinya o mũno mũno; nacio ikĩiyũra thĩ ĩo yothe.',
+    8: 'NA RĨRĨ, hĩndĩ ĩo gũkĩgĩa mũthamaki ũngĩ wa gũthamaka bũrũri ũcio wa Misiri, nake agĩkorũo atoĩ ũhoro wa Jusufu.',
+    9: 'Nake akĩra andũ ake ũũ, Atĩrĩrĩ, andũ aya, ciana cia Israeli, nĩkĩingĩhite mũno, o na nĩngĩ rĩtũtũkĩtie hinya;',
+    10: 'tondũ ũcio, nĩ wega tũtware andũ aya na ũũgĩ, ita-rĩ, getha mangĩingĩha, na gũkore hihi gũtũke ita-rĩ, matigathĩ metũanĩre na andũ aria mangĩkorũo marĩ ũthũ na ithuĩ, macooke mahũrane na ithuĩ, nao moime bũrũri ũyũ more.',
+    11: 'Tondũ ũcio makĩmaigĩra akaabũrĩ nĩgo mamanyarire na mĩrigo ĩrĩa maamaagĩrĩra. Nao magĩgakĩra Firauni matũũra ma kũigagwo indo, namo nĩmo metagwo Pithomu na Ramesese.',
+    12: 'No rĩrĩ, o na kũngĩtũka atĩ andũ acio nĩmaakĩrĩrĩria kũmanyanĩrwo, ũguo noguo nao maakĩrĩrĩria kuongerereka, o na nĩngĩ magĩkĩrĩrĩria kũyũra kũndũ guothe. Nao makĩigua ũũru mũno nĩ ũndũ wa ciana cia Israeli.',
+    13: 'Nao andũ a Misiri makĩrutithia ciana cia Israeli wĩra na hinya mũno;',
+    14: 'nao magĩtũma mĩtũũrĩre yacio ĩgie na ruo rũkũrũ nĩ ũndũ wa wĩra ũrĩa ciarutithagio wa hinya, wa gũthondeka thimiti, o na kũũmba matubari, o na mĩthemba mĩingĩ ya wĩra ĩrĩa warutagwo mũgũnda. O ũguo mawĩra-inĩ mothe marĩa maacirutithagia',
+    15: 'Nake mũthamaki ũcio wa Misiri akĩarĩria atumia a Ahibirania arĩa maaciarithanagia, nao ũmwe etagwo Shifira, nake ũrĩa ũngĩ agetwo Pua,',
+    16: 'agĩkĩmera atĩrĩ, Hĩndĩ ĩrĩa mũgũciarĩtha atumia a Ahibirania, o hĩndĩ ĩrĩa me rũtĩ-inĩ, mũrũngĩona atĩ nĩ kahĩĩ gaaciarirũ-rĩ, koragai; no kangĩkorũo nĩ kaana ga kairĩtu, nĩkarekwọ gaikara.',
+    17: 'No rĩrĩ, atumia acio aciarĩthania nĩmetigĩtĩte Ngai, nao matigana gwĩka ta ũguo maathĩtũo nĩ mũthamaki ũcio wa Misiri, no kũreka maareke twana twa tũhĩĩ tũtũire muoyo.',
+    18: 'Nake mũthamaki ũcio wa Misiri agĩta aciarĩthania acio, akĩmũora atĩrĩ, Nĩ kĩ gĩtũmĩte mwĩke ũndũ ũcio, mũkahonokia twana twa tũhĩĩ atĩ nguo tũtũire muoyo?',
+    19: 'Nao aciarĩthania acio makĩra Firauni atĩrĩ, Gĩtũmĩ nĩ rĩrĩ, nĩ ũndũ atumia a Ahibirania matitarĩ ta atumia a andũ a Misiri; tondũ nĩ ahũũ mũno, nao mohokaga matarĩ marakĩnyĩrĩrũo nĩ mũciarĩthania.',
+    20: 'Nake Ngai agĩĩgĩka aciarĩthania acio maũndũ mega; nao andũ acio a Israeli magĩgĩthegea mũno, o na makĩgĩa na hinya mũnene.',
+    21: 'Na gũgĩkinya atĩrĩ, atĩ tondũ wa ũrĩa aciarĩthania acio metigĩtĩte Ngai, agĩtũma nyũmba ciao cĩhande.',
+    22: 'Nake Firauni agĩatha andũ ake othe, akĩmera atĩrĩ, Mwana o wothe ũrĩa ũrĩciaragwo wa kahĩĩ, mũikagĩe rũũĩ; na ũrĩa wothe ũrĩa ũrĩciaragwo arĩ wa kairĩtu-rĩ, mũkareke akare muoyo.',
+   },
+      
+    },
+    'Leviticus': {
+     1: {
+    1: 'NAKE Jehova agĩta Musa, akĩmwarĩria arĩ hema-inĩ-ya-gũtũnganwo, akĩmwĩra atĩrĩ,',
+    2: 'Arĩria ciana cia Israeli, ũcĩire ũũ: Hĩndĩ ĩrĩa mũndũ o na ũrĩkũ wanyu egũtwĩrĩra Jehova kũndũ gĩa kũmũrũta-rĩ, indo cianyu iria mĩrũrutaga nĩ ihũitũ, naguo ũguo nĩ ta kuuga ihũitũ wa ng\'ombe, na mbũri.',
+    3: 'Na rĩrĩ, kũndũ kĩrĩa mũndũ ekũruta kĩngĩkorũo nĩ kĩrĩa ihakĩ rĩa njino kiumĩte rũũru-inĩ rũa ng\'ombe-ĩrĩ, akaruta ka njamba ĩtarĩ na kaũgũ, amĩrũtĩre mũromo-inĩ wa hema-ya-gũtũnganwo, nĩ getha etĩkĩrĩke arĩ mbere ya Jehova.',
+    4: 'Nake aambe aigitĩre guoko gwake mũtwe wa nyamũ ĩo ĩkũrũtũo ihakĩ rĩa njino, nayo nĩĩgetĩkĩrwo nĩ ũndũ wake nĩ getha ĩmũhorohorie.',
+    5: 'Nake agathiĩnjĩra ndegwa ĩo mbere ya Jehova, nao athĩnjĩrĩ-Ngai, acio arĩo a Haruni, matwaratware thakame yayo, mamĩminjaminje mbarĩ ciothe igũrũ rĩa kigongona kĩa kĩa kũrĩ mũromo-inĩ wa hema-ya-gũtũnganwo.',
+    6: 'Nĩngĩ nyamũ ĩo ya ihakĩ rĩa njino, acoke amĩrute rũũda, amĩtanyange icunji.',
+    7: 'Nao ariũ a Haruni, mũthĩnjĩrĩ-Ngai, maake mwaki kigongona-inĩ kũu igũrũ, macoke maare ngũ wega igũrũ rĩa mwaki ũcio,',
+    8: 'nao ariũ a Haruni, acio athĩnjĩrĩ-Ngai, matandaye icunji icio wega igũrũ rĩa ngũ icio irĩ mwaki-inĩ igũrũ rĩa kigongona kĩa, hamwe na mũtwe na nyama cia maguta;',
+    9: 'no rĩrĩ, nyama ciayo cia nda, na mathagiro, mũrũti igongona arĩa aambe acithambie na maĩ nake mũthĩnjĩrĩ-Ngai acoke acicinire ciothe kigongona-inĩ kũu igũrũ, itũĩke ihakĩ rĩa njino; o ihakĩ rĩa gũcinwo na mwaki, rĩa gũtũma mũtarariko ũrĩa ũnungaga wega tĩguwo nĩ Jehova.',
+    10: 'Nĩngĩ kũngĩkorũo kũndũ kĩrĩa mũndũ ekũruta kĩrĩa ihakĩ rĩa njino gĩkuuma rũũru-inĩ rũa ng\'ondu, kana rũa mbũri-rĩ, akaruta njamba ĩtarĩ na kaũgũ;',
+    11: 'nake amĩthĩnjĩre mbere ya Jehova o hau mwena-inĩ wa kigongona ũrĩa ũrorete gathigathini; nao ariũ a Haruni, acio athĩnjĩrĩ-Ngai, mamĩminjaminje thakame yayo kigongona-inĩ kũu igũrũ mbarĩ ciothe.',
+    12: 'Acoke amĩtanyange icunji, cĩgwo hamwe na mũtwe wayo, na nyama ciayo cia maguta, nake mũthĩnjĩrĩ-Ngai acitandaye wega igũrũ rĩa ngũ iria irĩ mwaki-inĩ kigongona-inĩ igũrũ;',
+    13: 'no rĩrĩ, nyama cia nda, na mathagiro, mũruti igongona rĩa aambe acithambie na maĩ, nake mũthĩnjĩrĩ-Ngai acoke arute nyama icio ciothe, acicinire kigongona-inĩ kũu igũrũ; rĩo nĩ rĩo ihakĩ rĩa njino, o ihakĩ rĩa gũcinwo na mwaki, rĩa gũtũma mũtarariko ũrĩa ũnungaga wega tĩguwo nĩ Jehova.',
+    14: 'Nĩngĩ kũndũ gĩake gĩa kũrũtĩra Jehova kũngĩtũka nĩ ihakĩ rĩa njino rĩa mũthemba wa nyamũ iria ciumbũkaga-rĩ, hĩndĩ ĩo kũndũ gĩake gĩa kũruta gĩgatũkĩrwa ndĩrathi, kana ndutura itarĩ ngũrũ.',
+    15: 'Nake mũthĩnjĩrĩ-Ngai amĩtware kigongona-inĩ, amĩthiore mũtwe ũrĩke ngingo, amĩcinĩre kigongona-inĩ kũu igũrũ; nayo thakame yayo ĩtũwo mwena-inĩ wa kigongona;',
+    16: 'nĩngĩ arute kabutu kayo hamwe na tatha wako, agagaikĩe mwena-inĩ wa kigongona ũrĩa ũrorete irathĩro, handũ harĩa haitagwo mũhũ,',
+    17: 'na amĩtarure mathagu mayo, no ndakamĩteithũrane; nake mũthĩnjĩrĩ-Ngai amĩcinĩre kigongona-inĩ kũu igũrũ, o igũrũ rĩa ngũ iria irĩ mwaki-inĩ; rĩo nĩ rĩo ihakĩ rĩa njino, o ihakĩ rĩa gũcinwo na mwaki rĩa gũtũma mũtarariko ũrĩa ũnungaga wega tĩguwo nĩ Jehova.',
+},
+    },
+  'Numbers': {
+     1: {
+    1: 'NA RĨRĨ, Jehova agĩkĩarĩria Musa werũ-inĩ wa Sinai mwaka wa kerĩ atha thutha wa moima bũrũri wa Misiri, agĩkĩmwĩrĩra arĩ o kũu hema-inĩ-ya-gũtũnganwo, mũthenya wa mbere wa mweri wa kerĩ wa mwaka ũcío, akĩmwĩra atĩrĩ,',
+    2: 'Tara kīrĩndĩ giothe gĩa ciana cia Israeli o ta ũrĩa mbarĩ ciacio itarĩ, o na ta ũrĩa nyũmba cia maithem a cio itarĩ, ũtare mĩtwe ya arũme, mũndũ o mũndũ, o ta ũrĩa marĩtwa mao matarĩanĩte;',
+    3: 'nao andũ arĩa inyui na Haruni mũgũtarĩra mbũtũ-inĩ ciao, nĩ arĩa makinyitie mĩaka mĩrongo ĩrĩ na magĩkĩria ao, o arĩa othe matũire wa andũ a Israeli mangĩhotia kuamagara mathĩi-itũ-inĩ.',
+    4: 'Na hamwe na inyui hagĩe mũndũ ũmwe wa mũhĩrĩga o mũhĩrĩga, na akorũo arĩ ũrĩa mũtongoria thĩinĩ wa nyũmba ya ithe.',
+    5: 'Namo marĩtwa ma andũ acio makarũgama hamwe na inyui nĩ maya: wa mũhĩrĩga wa Reubeni nĩ Elizuru wa Shedeuru;',
+    6: 'wa mũhĩrĩga wa Simeoni nĩ Shelumieli wa Zurishadai;',
+    7: 'wa mũhĩrĩga wa Juda nĩ Nahashoni wa Aminadabu;',
+    8: 'wa mũhĩrĩga wa Isakaru nĩ Nethaneli wa Zuaru;',
+    9: 'wa mũhĩrĩga wa Zebuluni nĩ Eliabu wa Heloni.',
+    10: 'Naho ha ũhoro wa ciana cia Jusufu-rĩ, wa mũhĩrĩga wa Efraimu nĩ Elishama wa Amihudu, na wa mũhĩrĩga wa Manase nĩ Gamalieli wa Pedazuru;',
+    11: 'wa mũhĩrĩga wa Benjamini nĩ Abidani wa Gideoni;',
+    12: 'wa mũhĩrĩga wa Dani, nĩ Ahiezeru wa Amishadai;',
+    13: 'wa mũhĩrĩga wa Asheri nĩ Pagieli wa Okirani;',
+    14: 'wa mũhĩrĩga wa Gadi nĩ Eliasafu wa Deueli;',
+    15: 'wa mũhĩrĩga wa Nafitali nĩ Ahira wa Enani.',
+    16: 'Acio nĩo metirũo magĩthũrũo kũrĩndĩ-inĩ gĩa ciana cia Israeli, na nĩo maarĩ atongoria mĩhĩrĩga-inĩ ya maithem ao, nĩngĩ nĩo maarĩ anene a nyũmba cia maithem ao thĩinĩ wa andũ a Israeli.',
+    17: 'Musa na Haruni magĩkĩoya a acio maagwetwo marĩtwa mao,',
+    18: 'magĩgĩcokanĩrĩria kīrĩndĩ kĩu giothe gĩa ciana cia Israeli hamwe mũthenya wa mbere wa mweri ũcio wa kerĩ; naguo ũhoro wa ciao ithĩte thĩinĩ wa mbarĩ ciao-rĩ, ũkĩumbũranĩrũo, gũkĩmenyithanio ũrĩa nyũmba cia maithem ao ciatarĩ, na ũrĩa marĩtwa mao maawarĩrĩte, gũgatarĩo mĩtwe ya andũ arĩa othe maakinyĩtie mĩaka mĩrongo ĩrĩ, o na magakĩria hau.',
+    19: 'O e ta ũrĩa Jehova aathire Musa gwĩkwo-rĩ, ũguo noguo aamatarĩrũo kũu werũ-inĩ ũcio wa Sinai.',
+    20: 'Nacio njaro cia ciana cia Reubeni, irigithathi rĩa Israeli, igitarũo o ta ũrĩa mbarĩ ciao, o na nyũmba cia maithem a cio, ciatarĩ, o na ta ũrĩa marĩtwa ma arũme othe arĩa maakinyĩtie mĩaka mĩrongo ĩrĩ, na magakĩria hau, maawarĩrĩte magatarũo mĩtwe yao, naguo ũguo nĩ ta kuuga andũ othe arĩa maahotaga kuumagara mathĩi ita-inĩ;',
+    21: 'arĩa maatarĩrũo thĩinĩ wa mũhĩrĩga ũcio wa Reubeni-rĩ, maarĩ ngiri mĩrongo ĩna na ithathatũ na magana matano.',
+    22: 'Nacio njaro cia ciana cia Simeoni igitarũo o ta ũrĩa mbarĩ ciao, o na nyũmba cia maithem a cio, ciatarĩ, o na ta ũrĩa marĩtwa ma arũme othe arĩa maakinyĩtie mĩaka mĩrongo ĩrĩ, na magakĩria hau, maawarĩrĩte magatarũo mĩtwe yao, naguo ũguo nĩ ta kuuga andũ othe arĩa maahotaga kuumagara mathĩi ita-inĩ;',
+    23: 'arĩa maatarĩrũo thĩinĩ wa mũhĩrĩga ũcio wa Simeoni-rĩ, maarĩ ngiri mĩrongo ĩtano na kenda, na magana matatũ.',
+    24: 'Nacio njaro cia ciana cia Gadi igitarũo o ta ũrĩa mbarĩ ciao, o na nyũmba cia maithem a cio ciatarĩ, o na ta ũrĩa marĩtwa ma arũme othe arĩa maakinyĩtie mĩaka mĩrongo ĩrĩ, na magakĩria hau, maawarĩrĩte, naguo ũguo nĩ ta kuuga andũ othe arĩa maahotaga kuumagara mathĩi ita-inĩ;',
+    25: 'arĩa maatarĩrũo thĩinĩ wa mũhĩrĩga ũcio wa Gadi-rĩ, maarĩ ngiri mĩrongo ĩna na ithano, na magana matandatũ ma mĩrongo ĩtano.',
+    26: 'Nacio njaro cia ciana cia Juda igitarũo o ta ũrĩa mbarĩ ciao, o na nyũmba cia maithem a cio, ciatarĩ, o na ta ũrĩa marĩtwa mao othe arĩa maakinyĩtie mĩaka mĩrongo ĩrĩ, na magakĩria hau, maawarĩrĩte, naguo ũguo nĩ ta kuuga andũ othe arĩa maahotaga kuumagara mathĩi ita-inĩ;',
+    27: 'arĩa maatarĩrũo thĩinĩ wa mũhĩrĩga ũcio wa Juda-rĩ, maarĩ ngiri mĩrongo mũgwanja na inya, na magana matandatũ.',
+    28: 'Nacio njaro cia ciana cia Isakaru igitarũo o ta ũrĩa mbarĩ ciao, o na nyũmba cia maithem a cio, ciatarĩ, o na ta ũrĩa marĩtwa mao othe arĩa maakinyĩtie mĩaka mĩrongo ĩrĩ, na magakĩria hau, maawarĩrĩte, naguo ũguo nĩ ta kuuga andũ othe arĩa maahotaga kuumagara mathĩi ita-inĩ;',
+    29: 'arĩa maatarĩrũo thĩinĩ wa mũhĩrĩga ũcio wa Isakaru-rĩ, maarĩ ngiri mĩrongo ĩtano na inya, na magana mana.',
+    30: 'Nacio njaro cia ciana cia Zebuluni igitarũo o ta ũrĩa mbarĩ ciao, o na nyũmba cia maithem a cio ciatarĩ, o na ta ũrĩa marĩtwa mao othe arĩa maakinyĩtie mĩaka mĩrongo ĩrĩ, na magakĩria hau, maawarĩrĩte, naguo ũguo nĩ ta kuuga andũ othe arĩa maahotaga kuumagara mathĩi ita-inĩ;',
+    31: 'arĩa maatarĩrũo thĩinĩ wa mũhĩrĩga ũcio wa Zebuluni-rĩ, maarĩ ngiri mĩrongo ĩtano na mũgwanja, na magana mana.',
+    32: 'Naho ha ũhoro wa ciana cia Jusufu-rĩ, njaro cia ciana cia Efraimu igitarũo o ta ũrĩa mbarĩ ciao, o na nyũmba cia maithem a cio, ciatarĩ, o na ta ũrĩa marĩtwa mao othe arĩa maakinyĩtie mĩaka mĩrongo ĩrĩ, na magakĩria hau, maawarĩrĩte, naguo ũguo nĩ ta kuuga andũ othe arĩa maahotaga kuumagara mathĩi ita-inĩ;',
+    33: 'arĩa maatarĩrũo thĩinĩ wa mũhĩrĩga ũcio wa Efraimu-rĩ, maarĩ ngiri mĩrongo ĩna, na magana matano.',
+    34: 'Nacio njaro cia ciana cia Manase igitarũo o ta ũrĩa mbarĩ ciao, o na nyũmba cia maithem a cio, ciatarĩ, o na ta ũrĩa marĩtwa mao othe arĩa maakinyĩtie mĩaka mĩrongo ĩrĩ, na magakĩria hau, maawarĩrĩte, naguo ũguo nĩ ta kuuga andũ othe arĩa maahotaga kuumagara mathĩi ita-inĩ;',
+    35: 'arĩa maatarĩrũo thĩinĩ wa mũhĩrĩga ũcio wa Manase-rĩ, maarĩ ngiri mĩrongo ĩtatũ na igĩrĩ, na magana merĩ.',
+    36: 'Nacio njaro cia ciana cia Benjamini igitarũo o ta ũrĩa mbarĩ ciao, o na nyũmba cia maithem a cio, ciatarĩ, o na ta ũrĩa marĩtwa mao othe arĩa maakinyĩtie mĩaka mĩrongo ĩrĩ, na magakĩria hau, maatwararĩte, naguo ũguo nĩ ta kuuga andũ othe arĩa maahotaga kuumagara mathĩi ita-inĩ;',
+    37: 'arĩa maatarĩrũo thĩinĩ wa mũhĩrĩga ũcio wa Benjamini-rĩ, maarĩ ngiri mĩrongo ĩtatũ na ithano, na magana mana.',
+    38: 'Nacio njaro cia ciana cia Dani igitarũo o ta ũrĩa mbarĩ ciao, o na nyũmba cia maithem a cio, ciatarĩ, o na ta ũrĩa marĩtwa mao othe arĩa maakinyĩtie mĩaka mĩrongo ĩrĩ, na magakĩria hau, maawarĩrĩte, naguo ũguo nĩ ta kuuga andũ othe arĩa maahotaga kuumagara mathĩi ita-inĩ;',
+    39: 'arĩa maatarĩrũo thĩinĩ wa mũhĩrĩga ũcio wa Dani-rĩ, maarĩ ngiri mĩrongo ĩtandatũ na igĩrĩ, na magana mũgwanja.',
+    40: 'Nacio njaro cia ciana cia Asheri igitarũo o ta ũrĩa mbarĩ ciao, o na nyũmba cia maithem a cio, ciatarĩ, o na ta ũrĩa marĩtwa mao othe arĩa maakinyĩtie mĩaka mĩrongo ĩrĩ, na magakĩria hau, maatwararĩte, naguo ũguo nĩ ta kuuga andũ othe arĩa maahotaga kuumagara mathĩi ita-inĩ;',
+    41: 'arĩa maatarĩrũo thĩinĩ wa mũhĩrĩga ũcio wa Asheri-rĩ, maarĩ ngiri mĩrongo ĩna na ũmwe, na magana matano.',
+    42: 'Nacio njaro cia ciana cia Nafitali igitarũo o ta ũrĩa mbarĩ ciao, o na nyũmba cia maithem a cio ciatarĩ, o na ta ũrĩa marĩtwa mao othe arĩa maakinyĩtie mĩaka mĩrongo ĩrĩ, na magakĩria hau, maawarĩrĩte, naguo ũguo nĩ ta kuuga andũ othe arĩa maahotaga kuumagara mathĩi ita-inĩ;',
+    43: 'arĩa maatarĩrũo thĩinĩ wa mũhĩrĩga ũcio wa Nafitali-rĩ, maarĩ ngiri mĩrongo ĩtano na ithatũ, na magana mana.',
+    44: 'Acio nĩo andũ arĩa maatarĩrũo, o arĩa Musa na Haruni maatarĩre me hamwe na anene a andũ a Israeli ikũmi na erĩ, nao acio ikũmi na erĩ, mũndũ o mũndũ aathũrĩtwo arũgamĩrĩre nyũmba ya ithe.',
+    45: 'Tondũ ũcio andũ othe arĩa maatarĩrũo thĩinĩ wa ciana cia Israeli, o ta ũrĩa nyũmba cia maithem ao ciatarĩ, arĩa maakinyĩtie mĩaka mĩrongo ĩrĩ o na magakĩria hau, naguo ũguo nĩ ta kuuga andũ othe a Israeli arĩa maahotaga kuumagara mathĩi ita-inĩ,',
+    46: 'acio othe maatarĩrũo-rĩ, maarĩ ngiri magana matandatũ na ithatũ, na magana matano ma mĩrongo ĩtano.',
+    47: 'No rĩrĩ, Alawii o ta ũrĩa mũhĩrĩga wa maithem ao watarĩ, matiatara-nĩrĩo nao.',
+    48: 'Nĩ gũkõrũo Jehova nĩaarĩrĩe Musa, akĩmwĩra atĩrĩ:',
+    49: 'No mũhĩrĩga wa Lawii wiki ũtegũrara, o na kana ũtũũrĩe ũrĩa andũ aguo maigana thĩinĩ wa ciana cia Israeli;',
+    50: 'no Alawii acio ũkũmatua a kũroraga gĩkaro kĩa Ũira magĩkarĩo kĩa kũne, o na indo ciothe iria cĩkĩrĩthĩo kũo, o na indo iria ingĩ ciothe ciakĩo; nao nĩo megũtũĩka akuui a gĩkaro kĩu, o na indo ciothe iria irĩ kũo, na nĩngĩ nĩo marĩrutaga wĩra wa gũtũngata gĩkaro kũu thĩinĩ, na o marĩm-baga hema ciao megiritanĩtie na gĩkaro kĩu mĩena yothe.',
+    51: 'Na rĩrĩ, hĩndĩ ĩrĩa gĩkaro kĩu gĩgũtwarũo na mbere, Alawii acio nĩo marĩgĩakũraga, nĩngĩ hĩndĩ ĩrĩa gĩkaro kĩu gĩkũhandwo, Alawii acio nĩo marĩgĩakaga; na rĩrĩ, mũndũ wa mũhĩrĩga ũngĩ angĩgĩgakũhĩrĩa, nĩ kũũragwo akoragwo.',
+    52: 'Nacio ciana cia Israeli ikamba hema ciacio-rĩ, mũndũ o mũndũ aambage hema yake harĩa hathũrũo nĩ andũ ao, o kũbebero-inĩ kwao, o ta ũrĩa mbũtũ ciao ciarĩte.',
+    53: 'No rĩrĩ, Alawii makaambaga hema ciao megiritanĩtie na gĩkaro kĩa ũira mũena-inĩ yothe, nĩ getha gĩtigakagĩe ũndũ wa gũtũma marakara ma Jehova maikũrũke makĩnye kĩrĩndĩ-inĩ gĩa ciana cia Israeli nao Alawii matũũre maikaragia wega gĩkaro kĩa ũira.',
+    54: 'Ũguo noguo ciana cia Israeli ciekire; o ta ũrĩa maũndũ mothe maatĩrũo marĩa Musa aathĩtwo nĩ Jehova mekwọ, ũguo noguo ciekire.'
+     },
+  },
+  'Deuteronomy':{
+    1:{
+    1: 'ŨHORO ũyũ nĩguo Musa aarĩrie akĩhe Aisiraeli othe me werũ-inĩ mũrĩmo ũrĩa wa Jorodani, o kũu Araba kũringana na Sufi, gatagatĩ ga Parani na Tofeli, na Labani, na Hazerothu, na Di-zahabu.',
+    2: 'Na rĩrĩ, kuuma Horebu nginya Kadeshi-barinea, mũndũ agerete njĩra ya Kĩrĩma gĩa Seiru nĩ rũgendo rũa mĩthenya ikũmi na ũmwe.',
+    3: 'Na gũgĩkinya atĩrĩ, atĩ mwaka wa mĩrongo ĩna, mweri wa ikũmi na ũmwe waguo, o mũthenya wa mbere waguo-rĩ, Musa akĩarĩria ciana cia Isiraeli, agĩcĩra maũndũ mothe o ta ũrĩa erĩtwo nĩ Jehova aciathe.',
+    4: 'Na rĩrĩ, aarĩkia kũhũra Sihoni, mũthamaki wa Aamori, ũrĩa watũũraga Heshiboni, o na Ogu, mũthamaki wa Bashani, ũrĩa watũire Ashitarothu, o kũu Edirei-rĩ,',
+    5: 'nĩguo aagĩtĩkĩre kũheeanira ũhoro wa watho ũyũ, o kũu bũrũri wa Moabi, o kũu Jorodani, akiuga atĩrĩ,',
+    6: 'Jehova Ngai witũ, aabwarĩrie tũrĩ o kũu Horebu, akiuga ũũ: Ihinda rĩrĩa mũtũũrĩte rĩrĩ gĩkĩ nĩrĩganĩte.',
+    7: 'kĩgarũrũkei mũgwatwe rũgendo rũanyu mũkinye bũrũri ũrĩa wĩ irĩma nyingĩ wa Aamori, na kũndũ guothe kũrĩa gũkuhanĩrĩire nakuo, nakuo nĩkuo Araba, o na bũrũri ũrĩa wĩ irĩma nyingĩ, o na ituamba, o na mwena wa Gũthini, o na hũgũrũrũ-inĩ cia iria, na bũrũri wa Aakanani, o na kũu Lebanoni, o nginya rũũĩ rũrĩa rũnene, naruo nĩrũo Farati.',
+    8: 'Atĩrĩrĩ, bũrũri ũnguo ũcio ndĩmũgĩire mbere yanyu; thĩi mũkegwatwe bũrũri ũcio Jehova ehĩtire akĩĩra maithem anyu atĩ nĩakaũhe Iburahimu, na Isaaka, na Jakubu, o ene, o na njaro ciao iria igoka thutha wao.',
+    9: 'Na nĩ ngĩmwarĩria hĩndĩ ĩo, ngĩmwĩra atĩrĩ, Ndingihota gũkĩrĩrĩria ũrĩmu wa kũmũroraga ndĩ nyiki.',
+    10: 'Jehova Ngai wanyu nĩamũingĩhĩtie, na rĩu mũtũũ mũtari o ta njata ira irĩ igũrũ, nĩ ũndũ wa ũrĩa mũingĩhite.',
+    11: 'Jehova Ngai wa maithem anyu arõmuongera mũingĩhe maita ngiri gĩkĩra ũrĩa mũingĩhite rĩu, na amũrathime, o ta ũrĩa aamwĩrĩre!',
+    12: 'Kaĩ ingĩhota atĩa nĩ nyiki gũkĩrĩrĩria maũndũ manyu manditũhĩre mũno, o na mĩrĩgo wa maũndũ manyu na ngarari cianyu?',
+    13: 'Wĩthurĩrei andũ ogĩ, na arĩa amenyi maũndũ, na arĩa moĩwo, o ta ũrĩa mĩhĩrĩga yanyu itarĩ, ndĩmatue anene anyu mamũroragẹ.',
+    14: 'Na inyuĩ mũgĩkĩnjokeria, mũkiuga atĩrĩ, Ũndũ ũcio waaria nĩwagarĩre tũwĩke.',
+    15: 'Tondũ ũcio ngĩkĩnyita anene a mĩhĩrĩga yanyu, andũ arĩa ogĩ na arĩa moĩwo, ngĩkĩmatua anene anyu mamũroragẹ; ngĩkĩmatua anene a kũroraga andũ ngiri o ngiri, na anene a kũroraga andũ igana igana, na anene a kũroraga andũ mĩrongo ĩtano ĩtano, na anene a kũroraga andũ ikũmi ikũmi, o na anene a kũroraga andũ a mĩhĩrĩga yanyu itarĩ.',
+    16: 'Na hĩndĩ ĩo ngĩtaagĩra aciri aanyu, ngĩmwĩra atĩrĩ, Thikagĩrĩrai mohoro ma aciri a ithe wanyu na macira-ini mao, mũtuage cira wa mũndũ na mũndũ wa ithe na kîhooto, o na wa mũgeni ũrĩa maikaraniĩte nake.',
+    17: 'Mũtigathuranagie ũrĩa andũ matarĩ mũtũga cira; thikagĩrĩrai ũhoro wa mũndũ ũrĩa mũnyinyi o na wa mũndũ ũrĩa mũnene o ũndũ ũmwe; mũtikanetigĩre mũndũ o na tũrĩki gĩthithi gĩake; nĩ gũkõrũo ũhoro wa gũtuanĩra cira nĩ wa Ngai; naguo ũndũ ũrĩa ũrĩmũtũgĩra hinya mũtũrehage harĩ nĩi, na nĩi ngaũthikĩrĩria ũrĩa ũtarĩ.',
+    18: 'Na hĩndĩ ĩo ngĩmwaatha ngĩmwĩra maũndũ mothe marĩa mwagĩrĩrũo nĩ gwĩkaga.',
+    19: 'Tũgĩthĩi rũgendo tuumĩte Horebu, tũgĩtũrĩkania werũ ũcio wothe mũnene na wa kũmakania, ũcio mweoneire na maitho manyu, tũrorete bũrũri ũrĩa wĩ irĩma nyingĩ wa Aamori, o ta ũrĩa Jehova Ngai witũ aatwathire tũwe; tũgĩkinya Kadeshi-barinea.',
+    20: 'Ngĩcoka ngĩmwĩra atĩrĩ, Rĩu nĩmũkinyĩte bũrũri ũrĩa wĩ irĩma nyingĩ wa Aamori, ũrĩa Jehova Ngai witũ atũheaga.',
+    21: 'Ta bara wone atĩ Jehova Ngai waku nĩaigĩte bũrũri ũyũ mbere yaku; ambata ũkawigwatwe ũtũũke waku, o ta ũrĩa Jehova, Ngai wa maithem aku, akwĩrĩte; ndũkanetigĩre, kana ũmake.',
+    22: 'Na inyuĩ inyuothe mũgũkoka harĩ nĩi, mũndũ o mũndũ, mũkĩnjĩra atĩrĩ, Reka tũrekie andũ mathĩi mbere itũ, nĩguo magatũthiganĩre bũrũri, na macoke matũrehere ũhoro wa ũrĩa njĩra ĩrĩa twagĩrĩrũo nĩ kwambata ĩtarĩ, na o na matũũra marĩa tũgĩkinya.',
+    23: 'Naguo ũndũ ũcio kũngenia mũno, ngĩkĩnyita andũ ikũmi na erĩ thĩinĩ wanyu, ngoya mũndũ ũmwe ũmwe nĩ ũndũ wa mũhĩrĩga o mũhĩrĩga,',
+    24: 'nao magĩkĩhũgũka makambata kĩrĩma, magĩkinya kĩanda gĩa Eshikoli, magĩkĩthigana.',
+    25: 'Magĩgĩtua maciaro ma bũrũri ũcio, makĩmakuua na moko mao, magĩkĩrũrũka namo, magĩtũrehere, nao magĩtũcokeria ũhoro, makiuga atĩrĩ, Bũrũri ũcio Jehova Ngai witũ atũheaga nĩ mwega mũno.',
+    26: 'No rĩrĩ, mũtietĩkĩire kwambata mũthĩi kuo, tiga o kũrema mwaremire, mũkĩrega kũiga riathani rĩa Jehova Ngai wanyu.',
+    27: 'Mũgĩkĩng\'ong\'orera hema-inĩ cianyu, mũkiuga atĩrĩ, Tondũ Jehova nĩatũthũirĩte, nĩkĩo aatũrutire bũrũri wa Misiri, nĩ getha oke atũneane moko-inĩ ma Aamori, atũninithie.',
+    28: 'Kaĩ twakwambata tũthĩi kũ? Arĩa a ithe witũ nĩmatũmĩte ngoro ciitũ cĩũrũre nĩ hinya mũno, makiuga atĩrĩ, Andũ nĩ aingĩ gũtũkĩra, na nĩ araya kũrĩ ithuĩ namo matũũra mao nĩ manene, na nĩ mairĩge na thingo ikinyĩte o na matu-inĩ; o na nĩngĩ makĩma nītuonete arĩũ a Anaki kuo.',
+    29: 'Nĩĩ na nĩ ngĩmwĩra atĩrĩ, Menyai mũmake, kana mũmetigĩre.',
+    30: 'Jehova Ngai wanyu, we ũrĩa ũthiaga mbere yanyu, nĩwe ũkũmũthũranĩra, o ta ũrĩa maũndũ mothe marĩa ekire Misiri, mũkĩonagĩra na maitho manyu, maatariĩ.',
+    31: 'o na nĩngĩ kũu werũ-inĩ, mũkĩonera ũrĩa Jehova Ngai wanyu aamũtwaraga, o ta ũrĩa mũndũ aithiaga akuiite mũrũ, o njĩra-inĩ ĩrĩa yothe mwagereire, o nginya mũgĩkinya kũndũ gũkũ.',
+    32: 'No rĩrĩ, o na mwamenya ũguo mũtigana gwĩtĩkia Jehova Ngai wanyu,',
+    33: 'ũrĩa wathiaga amũtongorete njĩra-inĩ, akamũcaragĩria handũ ha kwamba hema cianyu, amũmũtĩkĩre na mwaki ũtukũ nĩguo amuonagie njĩra ĩrĩa mũkĩgera, na nĩngĩ akamũtongoragia na itu mũthenya.',
+    34: 'Nake Jehova agĩkĩigua uuge wanyu, agĩkĩrakara, akĩhĩta, akiuga atĩrĩ,',
+    35: 'Ti-itherũ hatĩrĩ mũndũ o na ũmwe wa andũ aya a rũciaro rũrũ rũũthũku ũkona bũrũri ũcio mwega, ũcio ndehĩtire ngiuga atĩ nĩngaũhe maithem anyu,',
+    36: 'tiga o Kalebu wa Jefune wiki. Ũkawona; ũcio nĩwe ngahe bũrũri ũcio akinyĩte na magũrũ make, o na \'he ciana ciake; nĩ gũkõrũo nĩaarũmĩrĩre Jehova maũndũ-inĩ mothe.',
+    37: 'O na nĩngĩ Jehova nĩaaraka-rĩre nĩi nĩi nĩ ũndũ wanyu, akĩnjĩra atĩrĩ, O nawe ndũgatonyo kuo.',
+    38: 'no Joshua wa Nuni, ndungata yaku, nĩwe ũkaũtonya; mũũmagĩrĩrie, nĩ ũndũ nĩwe ũgatũma Isiraeli maigage ũtũũke wao.',
+    39: 'O na nĩngĩ makĩria andũ anyu arĩa anyinyi, o arĩa mwoigire atĩrĩ a gũtahwo, o na ciana cianyu iria itoihĩte cia gũkũũrana wega na ũũru, andũ acio-rĩ, nĩmakautonya, na nĩo ngahe bũrũri ũcio, mawĩgwatĩre ũtũũke wao.',
+    40: 'No rĩrĩ, ha ũhoro wanyu-rĩ, hũndũkai mũgwate rũgendo, mũcoke na njĩra ya werũ mũrorete Iria Itune.',
+    41: 'Hĩndĩ ĩo mũgĩkĩnjokeria mũkĩnjĩra atĩrĩ, Nĩtũhĩtĩtie tũgõkĩrĩra Jehova; nĩtũgũkĩambata tũthĩi tũkahũrane o ta ũrĩa ũhoro wothe ũrĩa twathĩtwo nĩ Jehova Ngai witũ ũtarĩ. Na inyuĩ inyuothe, mũndũ o mũndũ akĩoha indo ciake cia mbaara, nĩguo atĩ mwambate kĩrĩma ta arĩ ũndũ mũhũthũ mũno.',
+    42: 'Nake Jehova agĩkĩnjĩra atĩrĩ, Aria nao, ũmere ũũ: Tigai kwambata, nĩngĩ menyai mũre nĩ thũ cianyu; nĩ gũkõrũo nĩĩ ndirĩ thĩinĩ wanyu;',
+    43: 'na tondũ ũcio ngĩkĩmwarĩria, no mũtigana kũigua, tiga o kũrega mwaregire riathani rĩa Jehova, mũgĩkĩambata kĩrĩma kĩu na rũnano.',
+    44: 'Nao Aamori arĩa maatũũrĩte kĩrĩma-inĩ kĩu makiuma kwao mahũrane na inyuĩ, nao magĩkĩmũhang\'ang\'ia o ta ũrĩa njũki ihang\'ahang\'agia andũ, magĩkĩmũtoreria kũu Seiru o nginya Horoma.',
+    45: 'Mũgĩgĩcoka kĩraaro-inĩ, mũgĩtĩka kũrĩrĩra mbere ya Jehova no rĩrĩ, Jehova ndaigana gũthikĩrĩria uuge wanyu, kana atege matũ make amũigue.',
+    46: 'Tondũ ũcio mũgĩgĩkara Kadeshi ihinda iraya o ta ũrĩa matukũ marĩa mwaikarĩte kuo maaiganaga.'
+    }
+  },
+   'Joshua': {
+      1: {
+    1: 'NA GŨGĨKINYA atĩrĩ, atĩ Musa, ndungata ya Jehova, aarĩkia gũkua, Jehova akĩaria na Joshua wa Nuni, ũrĩa watungatagĩra Musa, akĩmwĩra atĩrĩ,',
+    2: 'Musa ndungata yakwa nĩakuĩte; tondũ ũcio rĩu gũkũire ũringe rũũĩ rũrũ rũa Jorodani, wee mwene, o na andũ aya othe, mũthĩi mũkinye bũrũri ũrĩa ngũmahe, o ũcio ngũhe ciana cia Isiraeli.',
+    3: 'Na rĩrĩ, handũ o hothe harĩa mũgakinye na ikinya rĩa magũrũ manyu, hau nĩndamũhe, o ta ũrĩa nderire Musa.',
+    4: 'Nakuo kũndũ kũrĩa mĩhaka yanyu ĩgakinya, nĩ kuuma werũ-inĩ o nginya kũu Lebanoni, o na kuuma rũũĩ rũrĩa rũnene rũĩtagwo Farati, bũrũri wothe wa Ahiti, o nginya iria-inĩ rĩrĩa inene mwena ũrĩa rĩũa rĩthũagĩra.',
+    5: 'Gũtigagĩa mũndũ o na ũmwe ũgũkora ũgũthũĩrĩra matukũ mothe ma muoyo waku; o ta ũrĩa ũhoro witũ na Musa watarĩ, o ũguo noguo ũhoro witũ nawe ũgũkara; ndigagũtigĩrĩra, kana ndigane nawe.',
+    6: 'Gĩa tĩ nĩ ngwathĩte, wee gĩa o kũgĩa na hinya, na ũũmĩrĩre mũno, ũmenyagĩrĩre gwĩka maũndũ mothe o ta ũrĩa watho ũtarĩ ũrĩa Musa, ndungata yakwa, aagwathire wĩkage; ndũkanagarũrũke na mwena wa ũrĩo o na kana wa ũmotho, ũtĩge, nĩ getha ũcĩage na ũũgĩ maũndũ-inĩ maku handũ o hothe harĩa ũrĩthiaga.',
+    7: 'No rĩrĩ, wee gĩa o kũgĩa na hinya, na ũũmĩrĩre mũno, ũmenyagĩrĩre gwĩka maũndũ mothe o ta ũrĩa watho ũtarĩ ũrĩa Musa, ndungata yakwa, aagwathire wĩkage; ndũkanagarũrũke na mwena wa ũrĩo o na kana wa ũmotho, ũtĩge, nĩ getha ũcĩage na ũũgĩ maũndũ-inĩ maku handũ o hothe harĩa ũrĩthiaga.',
+    8: 'Ciugo cia ibuku rĩrĩ rĩa watho itikanatigẹ kwario na kanua gaku; no makĩria nĩtũegĩragia mohoro ma cio mũthenya o na ũtukũ, nĩ getha ũmenyagĩrĩre gwĩka o ta ũrĩa ũhoro wothe ũtarĩ ũrĩa wandĩkĩtwo thĩinĩ warĩo; nĩ gũkõrũo weka ũguo, nĩhĩndĩ ũkũgatũma ũgaacĩre, o na nĩngĩ nĩũkagagia na ũũgĩ maũndũ-inĩ maku.',
+    9: 'Gĩthĩ tĩ nĩ ngwathĩte, Wee gĩa o kũgĩa na hinya, ũũmĩrĩre mũno; ndũkanagĩtigĩre, o na kana ũmake, nĩ ũndũ Jehova Ngai waku e hamwe nawe handũ o hothe harĩa ũrĩthiaga.',
+    10: 'Hĩndĩ ĩo Joshua agĩatha anyabara arĩa maaroraga andũ, akĩmera atĩrĩ, Thĩi kũndũ guothe kĩraaro-inĩ mwathe andũ, mũmere atĩrĩ,',
+    11: 'Wĩthondekerei rĩgu, mũĩge, nĩ ũndũ matukũ matatũ maathira nĩguo mũkaringa rũũĩ rũrũ rũa Jorodani, nĩ getha mũthĩi mũtonye bũrũri ũrĩa Jehova Ngai wanyu amũheaga, mũkawigwatwe ũtũũke wanyu.',
+    12: 'Nĩngĩ Joshua akĩarĩria Areubeni, na Agadi, o na nuthu ĩrĩa ya mũhĩrĩga wa Manase, akĩmera atĩrĩ,',
+    13: 'Ta ririkanai ũhoro ũrĩa Musa ndungata ya Jehova aamũheire, akiuga atĩrĩ, Jehova Ngai wanyu nĩekũmũhe ũhurũko, o naguo bũrũri ũyũ nĩekũmũhe.',
+    14: 'Atumia anyu, na ciana cianyu, na ũthũĩ wanyu, megũkara bũrũri ũyũ Musa aamũheire, mũrĩmo ũyũ wa Jorodani; no rĩrĩ, inyuĩ arũme, inyuothe arĩa mũrĩ njamba irĩ hinya, nĩmũkaringa mũrĩmo mũtũike ngerewani ya ariũ a ithe wanyu, mwĩhonete indo cianyu cia ita,',
+    15: 'o nginya hĩndĩ ĩrĩa ariũ a ithe wanyu magakorũo maheetwo ũhurũko nĩ Jehova, o ta ũrĩa inyuĩ na inyuĩ mũheetwo, o nao makorũo megwatĩre bũrũri ũrĩa Jehova Ngai wanyu ekũmahe ũgatũũke wao; hĩndĩ ĩo nĩguo mũkahũndũka mũcoke bũrũri ũyũ mũheetwo ũtũũke wanyu kũmbe, o mũrĩmo ũyũ wa Jorodani, o ũyũ ũrorete irathĩro rĩrĩa rĩũa.',
+    16: 'Nao magĩcokeria Joshua makĩmwĩra atĩrĩ, Maũndũ marĩa mothe ũtwathĩte nĩtũkũmeka, o na kũrĩa guothe ũgatũtwarą, nĩtũgatũthĩ.',
+    17: 'Na atĩrĩrĩ, o ta ũrĩa twaiguaga Musa maũndũ-inĩ mothe, ũguo noguo tũrĩkũiguaga wee; no rĩrĩ, Jehova arogĩta o gũĩkara hamwe nawe, o ta ũrĩa aaikarĩte hamwe na Musa.',
+    18: 'Mũndũ othe ũgagũrema arege gwĩka ũrĩa wathanĩte, o na aage kũigua mohoro marĩa ũkũmũhe maũndũ-inĩ marĩa mothe ũkũmwĩra-rĩ, mũndũ ũcio nĩ kũũragwo akoragwo; no rĩrĩ, wee gĩa o kũgĩa na hinya, na ũũmĩrĩre.'
+      },
+   },
+
+    'Judges': {
+      1: {
+    1: 'Na gũgĩkinya atĩrĩ, atĩ Joshua aarĩkia gũkua, ciana cia Isiraeli ikũria Jehova atĩrĩ, Rĩu-rĩ, nĩa megũtata ita magatũhũranĩre harĩ Akanaani?',
+    2: 'Nake Jehova agĩkuga atĩrĩ, Andũ a Juda nĩo megũcĩtata, na atĩrĩ, bũrũri ũcio nĩndĩtũrekererie ngaũneana moko-inĩ mao.',
+    3: 'Nao andũ a Juda magĩkĩra andũ a Simeoni mũrũ wa nyina wao atĩrĩ, Arahũkai mũũke gũkũ twagwatĩre igai rĩitũ yacukwo, tũkũhũranĩre harĩ Akanaani, na thutha wa ũguo ithuĩ o na ithuĩ tũgacoka tũthĩi na inyuĩ o ro ũguo tũkũhũranĩre kũndũ kwanyu kũrĩa mwagwatĩre igai, mĩtĩ yacukwo. Magĩgĩacukwo.',
+    4: 'Ajuda magĩkĩambata; nake Jehova akĩrekereria Akanaani, o na Aperizi, akĩmaneana moko-inĩ mao; magĩkũũragia andũ ngiri ikũmi ao o kũu Bezeki.',
+    5: 'Nao magĩkĩonera Adoni-bezeki o kũu Bezeki; magĩkĩhũrana mbaara nake, magĩkĩtoria Akanaani na Aperizi.',
+    6: 'No Adoni-bezeki akĩũra, nao makĩmũrũmĩrĩra na ihenya, makĩmũnyiita, makĩmũtũnia ciara iria nene cia moko o na cia magũrũ.',
+    7: 'Nake Adoni-bezeki akiuga atĩrĩ, Nĩkwari athamaki mĩrongo mũgwanja maatĩnĩtio ciara ciao iria nene cia moko o na cia magũrũ monganagia irio ruungu rũa metha yakwa magĩcĩraga, na rĩrĩ, o ta ũrĩa nĩĩ ndekire acio angĩ-rĩ, ũguo noguo Ngai aanjĩka, andhĩtie. Nao makĩmũtwara Jerusalemu, agĩkũa kuo.',
+    8: 'Nacio ciana cia Juda ikĩhũrana mbaara na Jerusalemu, ikĩrĩtunya, ikĩrĩhũna na hiũ cia njora, igĩcoka ikĩrĩkĩa mwaki.',
+    9: 'Nĩngĩ thutha wa ũguo ciana cia Juda igĩkĩrũrũka ikahũrane mbaara na Akanaani arĩa maatũũraga bũrũri ũrĩa wĩ irĩma nyingĩ, o na mwena wa Gũthini, o na bũrũri ũrĩa wĩ gũtuamba-inĩ.',
+    10: 'Nĩngĩ ciana icio cia Juda igĩthĩi ikũhũrana mbaara na Akanaani arĩa maatũũraga Hebironi, (narĩo itũũra rĩu rĩa Hebironi tene rĩetagwo Kiriathu-ariba) nao magĩkĩũraga Sheshai, na Ahimani, na Talimai.',
+    11: 'Nĩngĩ moima kũu, magĩthĩi kũhũrana na andũ arĩa maatũũraga Debiri. (Narĩo itũũra rĩu rĩa Debiri tene rĩetagwo Kiriathu-seferi.)',
+    12: 'Nake Kalebu agĩkuga atĩrĩ, Mũndũ ũrĩa ũrĩhũra Kiriathu-seferi, nĩwe ngĩhe mwara wakwa Akisa atũũke mũka.',
+    13: 'Nake Othinieli, mũrũ wa mũrũ wa ithe na Kalebu ũrĩa mũnyinyi wĩtagwo Kenazu, nĩwe warĩtunyanie; nake Kalebu agĩkĩmũhe Akisa mwari atũũke mũka.',
+    14: 'Na gũgĩkinya atĩrĩ, atĩ hĩndĩ ĩrĩa aathire harĩ Othinieli, akĩmwĩkĩra ngoro ya kũhoya mũgũnda gwĩ ithe; nake Akisa agĩkiuma igũrũ rĩa ndigiri yake, akĩrũgama; nake Kalebu akĩmũũria atĩrĩ, Ũbatario nĩ kĩ?',
+    15: 'Agĩkĩmwĩra atĩrĩ, Ngwenda ũndathime; na tondũ nĩĩheethe bũrũri wa mwena wa Gũthini-rĩ, nĩngĩ ndagũthaitha ũhe ithima cia maĩ. Nake agĩkĩmũhe kũndũ gwĩ ithima cia maĩ rũgongo igũrũ, o na kĩa nda-inĩ.',
+    16: 'Nacio ciana cia Mũkeni, mũthoniwe wa Musa, nĩciaambataire ikoima itũũra rĩa mĩkĩndũ, irĩ hamwe na ciana cia Juda, igakinya werũ wa Juda, ũrĩa ũrĩ mwena wa gũthini wa Aradi; nacio igĩthĩi gũtũũrania nacio kuo.',
+    17: 'Nacio ciana cia Juda igĩthĩi na ciana cia Simeoni, mũrũ wa nyina wacio, ikĩhũra Akanaani arĩa maatũũraga itũũra rĩa Zefathu, ikĩrĩnina biũ. Narĩo rĩtwa rĩa itũũra rĩu rĩgĩcoka gwĩtwo Horima.',
+    18: 'Nĩngĩ ciana cia Juda igĩtunyana Gaza, o nginya mũhaka-inĩ warĩo, na Ashikeloni, o nginya mũhaka-inĩ warĩo, na Ekironi, o nginya mũhaka-inĩ warĩo.',
+    19: 'Nake Jehova akĩrĩ hamwe na ciana icio cia Juda; nake agĩkĩingata andũ arĩa maatũũraga bũrũri ũrĩa wĩ irĩma nyingĩ; no rĩrĩ, itiahotire kũingata arĩa maatũũraga ituamba-inĩ, nĩ gũkõrũo maarĩ na ngari cia igera.',
+    20: 'Nacio igĩkĩhe Kalebu Hebironi, o ta ũrĩa Musa oigĩte; nake agĩkĩingata ariũ arĩa atatũ a Anaki, akĩmaruta kuo.',
+    21: 'Nacio ciana cia Benjamini itiigana kũingata Ajebusi arĩa maatũũrĩte Jerusalemu; no rĩrĩ, Ajebusi maatũũranirie na ciana cia Benjamini o kũu Jerusalemu, o na ũmũthĩ.',
+    22: 'O nao andũ a nyũmba ya Jusufu makĩambata makahũrane na Beth-eli; nake Jehova aarĩ hamwe nao.',
+    23: 'Nao andũ a nyũmba ĩo ya Jusufu magĩkĩrekia andũ magathigane Beth-eli. (Narĩo itũũra rĩu tene rĩetagwo Luzu.)',
+    24: 'Nao athigani acio magĩkĩona mũndũ akiuma kũu itũũra-inĩ rĩu, makĩmwĩra atĩrĩ, Twagũthaitha ũtuonie harĩa itũũra rĩu rĩtonyagĩrũo, na nĩtũgũgwĩka maũndũ mega.',
+    25: 'Nake agĩkĩmonia harĩa itũũra rĩu rĩtonyagĩrũo, nao makĩhũna rĩu na hiũ cia njora; no rĩrĩ, mũndũ ũcio nĩmũmarekire athĩi hamwe na andũ othe a nyũmba yake.',
+    26: 'Nake mũndũ ũcio agĩthĩi bũrũri wa Ahiti, agĩaka itũũra kuo, akĩrĩta Luzu; narĩo rĩtwa rĩtagwo ũguo o na ũmũthĩ.',
+    27: 'Nao andũ a Manase matainga-ire andũ arĩa maatũũraga Bethi-sheani hamwe na mĩcĩĩ yarĩo, o na kana arĩa maatũũraga Taanaka, hamwe na mĩcĩĩ yarĩo, kana arĩa maatũũraga Doru, hamwe na mĩcĩĩ yarĩo, kana arĩa maatũũraga Ibileamu, hamwe na mĩcĩĩ yarĩo, kana arĩa maatũũraga Megido, hamwe na mĩcĩĩ yarĩo; no rĩrĩ, Akanaani magĩtũũra bũrũri ũcio.',
+    28: 'Na gũgĩkinya atĩrĩ, atĩ hĩndĩ ĩrĩa Aisiraeli maagire na hinya makĩria, akaheana Akanaani mawira ma kũruta o ta ũrĩa maamaathaga, na matiamain-ga-ire o kũmaingata biũ.',
+    29: 'Nao andũ a Efraimu matigana kũingata Akanaani arĩa maatũũraga Gezeri; no rĩrĩ, Akanaani acio maatũũranirie nao o kũu Gezeri.',
+    30: 'Nao andũ a Zebuluni matigana kũingata andũ arĩa maatũũraga Kitironi, kana arĩa maatũũraga Nahalolo; no rĩrĩ, Akanaani acio maatũũranirie nao, nao Azebuluni makamahaeaga mawira ma kũruta o ta ũrĩa maamaathaga.',
+    31: 'Nao andũ a Asheri matainga-ire andũ arĩa maatũũraga Ako, kana arĩa maatũũraga Zidoni, o na kana arĩa maatũũraga Ahalabu, kana arĩa maatũũraga Akizibu, o na kana arĩa maatũũraga Heliba, kana arĩa maatũũraga Afiki, o na kana arĩa maatũũraga Rehobu;',
+    32: 'no andũ acio a Asheri maatũũrĩre o kũu thĩinĩ wa Akanaani, o acio maatũũraga bũrũri ũcio, nĩ ũndũ matiamain-ga-ire.',
+    33: 'Nao andũ a Nafitali matainga-ire andũ arĩa maatũũraga Bethi-shemeshi, kana arĩa maatũũraga Bethi-anathu; no rĩrĩ, maatũũrĩre o kũu thĩinĩ wa Akanaani, o acio maatũũraga bũrũri ũcio; no rĩrĩ, andũ arĩa maatũũraga Bethi-shemeshi o na Bethi-anathu, nĩmaautũkĩre akũmarutagĩra mawira o ta ũrĩa maamaathaga.',
+    34: 'Nao Aamori makĩmathĩrĩria ciana cia Dani igĩthĩirio o kũu bũrũri ũrĩa wĩ irĩma nyingĩ na hinya; nĩ gũkõrũo nĩmaacigirire cĩkũrũke ituamba-inĩ.',
+    35: 'Nĩngĩ Aamori acio magĩtũũra kĩrĩma-inĩ kĩa Herezu, o na Aijaloni, o na Shaalibimu; no rĩrĩ, o na kũingĩtũka nĩ ũguo-rĩ, andũ acio a nyũmba ya Jusufu nĩmaamahoo-tire, magĩkĩtũka a kũmarutagĩra mawira o ta ũrĩa maamaathaga.',
+    36: 'Naguo mũhaka wa Aamori warutĩtio o rũambatiro-inĩ rĩa Akiribimu, ũgakinya o rũaro-inĩ rũa ihiga, o na na kũu mbere yaruo.'
+      },
+       },
+    'Ruth': {
+      1: {
+    1: 'NA GŨGĨKINYA atĩrĩ, atĩ matukũ marĩa atirĩrĩ-bũrũri maacragĩra andũ, gũgĩkorũo kwarĩ ng\'aragu bũrũri ũcio. Nake mũndũ ũmwe wa Bethi-lehemu-juda agĩthĩi gũtũũra e mũgeni bũrũri wa Moabi, marĩ na mũtumia wake, o na ariũ ake erĩ.',
+    2: 'Nake mũndũ ũcio etagwo Elimeleku, o nake mũka etagwo Naomi, namo marĩtwa ma ariũ acio ake erĩ, nĩ Mahaloni, na Kilioni, nao maarĩ Aefiratha a kũu Bethi-lehemu-juda. Magĩgĩkinya bũrũri wa Moabi, magĩtũũra kuo.',
+    3: 'Nake Elimeleku, mũthuriwe wa Naomi, agĩkua; nake agĩtigĩrwo o ariũ acio ake erĩ.',
+    4: 'Nao magĩtũũra aka thĩinĩ wa ariũ a Moabi; nao ũmwe etagwo Oripa, na ũmwe etagwo Ruthu; nao magĩtũũra kũu ta mĩaka ikũmi.',
+    5: 'Nao Mahaloni na Kilioni magĩkua erĩ; mũndũ-wa-nja ũcio agĩkũirũo nĩ ciana icie cierĩ, o na mũthuriwe.',
+    6: 'Nake agĩgũkĩra, me na aka acio a ariũ ake, nĩ getha acoke kwao, oime bũrũri ũcio wa Moabi; nĩ ũndũ arĩ o kũu bũrũri ũcio wa Moabi nĩaiguĩte ũrĩa Jehova aririkanĩte andũ ake, akamahe irio.',
+    7: 'Nake agĩkiumagara, akiuma kũu, marĩ na aka acio erĩ a ariũ ake; makĩgwata njĩra, nĩguo macoke bũrũri wa Juda.',
+    8: 'Nake Naomi agĩĩra aka acio erĩ a ariũ ake atĩrĩ, Wĩthĩirei, mũndũ o mũndũ acoke nyũmba ya nyina; Jehova aromwĩka maũndũ mega, o ta ũrĩa na inyuĩ mwekĩre acio maakuĩre, o na nĩi, nĩi mwene.',
+    9: 'Jehova aroetĩkĩra muone handũ ha gũkara mũhoreire, o mũndũ wanyu, mwĩ thĩinĩ wa nyũmba cia athuri anyu. Agĩkĩmamumunya, nao makĩanĩrĩra makĩrĩra.',
+    10: 'Magĩkĩmwĩra atĩrĩ, Aca-nĩ, no nĩtũgũcokania nawe kwa andũ anyu.',
+    11: 'Nĩngĩ Naomi akĩmera atĩrĩ, Aarĩ akwa, wĩhũndũkĩrei; mũgũkũnũmĩrĩra nĩkĩ? Kaĩ o na rĩu, ndĩkĩrĩ na ihĩĩ nda yakwa nĩguo igagũtũĩka athuri anyu?',
+    12: 'Wĩhũndũkĩrei, aarĩ akwa, mwĩthĩire, amu inĩ ndĩ mũtũmĩre mũno; ndingĩkora kũgĩa na mũthũme. Nĩngĩ-rĩ, o na ingĩigua atĩ ndĩ na mwihoko wa gũciara, o na ingĩgĩa na mũrũme ũtukũ ũyũ wa ũmũthĩ, ngaciara ihĩĩ-rĩ,',
+    13: 'kaĩ mũgũgĩcieterera o nginya ihĩĩ igakũra? Gĩthĩ mwakaathota kwĩhinga nĩ ũndũ wacio? Kũroaga gũtũĩka ũguo, aarĩ akwa; nĩ ũndũ ruo rũrũa ndĩ naruo nĩ ũndũ wanyu nĩ rũnene mũno; nĩ ũndũ guoko kwa Jehova nĩ gũtambũrũkie kũnjũkĩrĩre.',
+    14: 'Nao magĩkĩanĩrĩra makĩrĩra rĩngĩ; nake Oripa akĩmumumunya nyacararwa; no Ruthu akĩrũmanĩrĩra nake.',
+    15: 'Nake agĩkĩmwĩra ũũ: Atĩrĩrĩ, ta rora, mũka wa mũrũ wa nyina na mũthuri guo nĩaahũndũka, acoke kũrĩ andũ ao, o na kũrĩ ngai yake; tondũ ũcio o nawe garũrũka wĩthĩire ũrũmĩrĩre mũka ũcio wa mũrũ wa nyina na mũthuri guo.',
+    16: 'Nake Ruthu agĩkĩmwĩra atĩrĩ, Tiga kũningĩrĩria ngũtige, atĩ nĩguo ngarũrũke ndige gũkũrũmĩrĩra; rĩ ũndũ-rĩ, o kũrĩa ũgathĩi, noku o nĩi na nĩĩ ngathĩi, na kũrĩa ũgatũũra, noku o nĩi na nĩĩ ngatũũra, nao andũ anyu no-o magatũĩka andũ aitũ, nake Ngai waku nowe ũgatũĩka Ngai wakwa,',
+    17: 'na kũrĩa ũgakũĩra, noku o nĩi na nĩĩ ngakũĩra, na noku o ngathikwo. Jehova aro thũũra, o na anjĩke ũũru makĩria, kũingĩagĩa ũndũ o na ũmwe ũgũtũigithania nawe tiga o gĩkuũ gĩiki!',
+    18: 'Na rĩrĩ, hĩndĩ ĩrĩa onire atĩ nĩomĩtie ngoro agacĩĩra gũtwarana nake-rĩ, agĩtiga gũcoka kwaria nake, agĩtĩkĩra.',
+    19: 'Tondũ ũcio magĩgĩthĩi o erĩ, o nginya magĩkinya Bethi-lehemu. Na gũgĩkinya atĩrĩ, atĩ hĩndĩ ĩrĩa maakinyeire Bethi-lehemu, andũ a itũũra rĩu othe makĩgega nĩ ũndũ wao, nao andũ-a-nja magĩkiuga atĩrĩ, Hĩĩ! ũyũ nĩ Naomi?',
+    20: 'Nake akĩmera atĩrĩ, Tigai gũcoka kũnjĩta Naomi; njĩtagai Mara, nĩ ũndũ Ngai Mwene-Hinya-Wothe nĩanjĩkĩte maũndũ ma kũrũ rũo mũno.',
+    21: 'Tondũ-rĩ, ngiuma gũkũ ndathire njyũrĩtwo nĩ maũndũ mega, nake Jehova aanyinũkia gwitũ mũciĩ ndĩ mũtheri; kaĩ mũgũkĩnjĩta Naomi nĩ ũndũ kĩ, kuona atĩ Jehova nĩangararĩkĩte, o nake ũrĩa Mwene-Hinya-Wothe aka\'he ruo?',
+    22: 'Ũguo nĩguo Naomi aahũndũkire kwao; nake Ruthu, Mũmoabi ũcio mũka wa mũrũ, o ũcio maahũndũkire nake makiuma bũrũri wa Moabi, akĩnũka nake, nao magĩgĩkinya Bethi-lehemu hĩndĩ ĩrĩa cairi yaambirĩrie kũgethwo.',
+      },
+      },
+    '1 Samuel': {
+      1: {
+    1: 'NA RĨRĨ, kwarĩ mũthuri ũmwe wa itũũra rĩa Ramathaimu-zofimu, rĩa bũrũri ũrĩa wĩ irĩma nyingĩ wa Efraimu, wetagwo Elikana, mũrũ wa Jerohamu wa Elihu, mũrũ wa Tohu wa Zufu, Mũefiraimu;',
+    2: 'nake aarĩ na atumia erĩ; nao ũmwe etagwo Hana, nake ũrĩa ũngĩ agetwo Penina; Penina nĩwe wakĩrĩ na ciana, no Hana ndaarĩ na ciana.',
+    3: 'Nake mũthuri ũcio nĩaambataaga oimĩte itũũra rĩao mwaka o mwaka, agathĩi Shilo kũinamĩrĩra Jehova Mũnene wa Ita, amũthoe, na amũrutĩre igongona. Nao ariũ a Eli erĩ, Hofini na Finehasi, nĩo maarĩ athĩnjĩri-Ngai a Jehova kuo.',
+    4: 'Na rĩrĩ, mũthenya ũrĩa Elikana aaruta igongona rĩu-rĩ, akĩhe Penina, mũtumia wake, o na ciana ciake ciothe cia ihĩĩ na cia airĩtu, o wa gagai;',
+    5: 'no rĩrĩ, Hana, aamũheire rĩgai rĩkũrũ merĩ, nĩ gũkõrũo nĩamwendete; no Jehova nĩaamũhingĩte nda.',
+    6: 'Na rĩrĩ, mũiruwe akĩmũthĩrĩkia, akĩmũiguithia ruo ngoro, nĩ gũkõrũo Jehova nĩaamũhingĩte nda.',
+    7: 'Na rĩrĩ, mũthuriwe ekaga ũguo mwaka o mwaka, o nake Hana akaambataga agathĩi nyũmba ya Jehova-rĩ, mũiruwe akĩrũmanĩria kũmũthĩrĩkia; na tondũ ũcio akĩrĩra, agĩtiga kũrĩa irio.',
+    8: 'Nake Elikana, mũthuriwe, akĩmũũria atĩrĩ, Nĩ kĩ gũgũkũrĩria, Hana? Na nĩ kĩ kĩgĩtũma ũrĩe irio? Ngoro yaku ĩgũthĩithio ũũru nĩ kĩ? Gĩthĩ ndikũgũnĩte gũkĩra ihĩĩ ikũmi?',
+    9: 'Na rĩrĩ, maarĩkia kũrĩra irio kũu Shilo, o na kũnyua, Hana agĩgũkĩra. Nake Eli, mũthĩnjĩri-Ngai, nĩ gũkara aaikarĩte gĩtĩ gĩake hingĩro-inĩ ya mũngo wa hekarũ ya Jehova.',
+    10: 'Nake Hana nĩaaciguĩte ũũru mũno na ngoro, agĩkĩhoya Jehova, na akĩrĩra mũno.',
+    11: 'Agĩkĩhĩta mwĩhĩtwa, akiuga atĩrĩ, Wee Jehova, Mũnene wa Ita, ũngĩtĩkĩra kũrora wone thĩna ũrĩa rĩĩ ndungata yaku ya mũndũ-wa-nja, \'thĩnĩtio, na ũndirikanane, wage kũriganĩrũo nĩ nĩĩ ndungata yaku ya mũndũ-wa-nja, no makĩria ũhe nĩĩ ndungata yaku ya mũndũ-wa-nja mũrũ wa kahĩĩ, na nĩĩ ngahe Jehova matukũ mothe ma muoyo wako, na gatĩkahuto ka rũenji mũtwe o na rĩĩ.',
+    12: 'Na gũgĩkinya atĩrĩ, atĩ hĩndĩ ĩrĩa aarũmanĩrie kũhoya arĩ mbere ya Jehova, Eli akĩmũmbara kanua.',
+    13: 'Na rĩrĩ, Hana nĩ kũhoya aahoyaga na ngoro, nayo mĩromo yake igaikara ĩkĩoyoyaga, no mũgambo wake ndwaiguagwo; tondũ ũcio Eli agĩcĩria nĩ kũrĩwo arĩtwo.',
+    14: 'Eli agĩkĩmũũria atĩrĩ, Ũgũtũũra ũrĩtwo nginya hĩndĩ? Eheria ndibei ĩo yaku ĩgũthire.',
+    15: 'Nake Hana agĩcokia akiuga atĩrĩ, Aca, ti ũguo, mwathi wakwa, ndĩ mũndũ-wa-nja ũjũrĩtwo nĩ kĩeha mũno ngoro; ndinyuite ndibei, kana nganyua njohi; no nĩ ngoro yakwa ĩhororeire maũndũ mayo mbere ya Jehova.',
+    16: 'Tiga kũnyona, nĩĩ ndungata yaku, ta ndĩ mũndũ-wa-nja mwaganu mũno; nĩ ũndũ-rĩ, o na nginya rĩu no kwaria ndĩraaria nĩ ũndũ wa ũrĩa kĩeha, o na gũthĩnĩkio kũrĩa \'thĩnĩkĩtio, cinyingĩhĩire.',
+    17: 'Eli agĩkĩcokia atĩrĩ, Thĩi na ũhoro; Ngai wa Isiraeli aroetĩkĩra ihoya rĩaku rĩu ũmũhoete.',
+    18: 'Nao mũtumia ũcio akiuga atĩrĩ, Reka nĩĩ, ndungata yaku, njĩrĩkĩrĩre ũhoro harĩ maitho maku. Tondũ ũcio mũndũ-wa-nja ũcio agĩthĩira, akĩrĩa irio; na ndaigana gũcoka gũtuka gĩthĩithi.',
+    19: 'Nao magĩkĩroka rũkĩra, tũkĩra nĩ mũthenya, makĩinamĩrĩra Jehova makĩhũndũka, magĩkĩnũka kwao mũciĩ kũu Rama. Elikana agĩkĩonana na Hana mũtumia wake, nake Jehova akĩmũrikanĩra.',
+    20: 'Na gũgĩkinya atĩrĩ, atĩ ihinda rĩakinya, Hana akĩgĩa ihu, agĩciara kahĩĩ, agĩtatua Samueli, akiuga atĩrĩ, Nĩ gũkõrũo nĩ kũhoya ndĩkahoete kwĩ Jehova.',
+    21: 'Nake mũndũ ũcio, ti Elikana, na andũ othe a nyũmba yake, makĩambata makarutĩre Jehova igongona rĩa mwaka o mwaka, o na kũhingia mwĩhĩtwa wake ũrĩa ehĩtĩte.',
+    22: 'No rĩrĩ, Hana ndaigana kwambata; nĩ ũndũ erire mũthuriwe atĩrĩ, Ndikwambata o nginya kaana gaka gagatua iria; na hĩndĩ ĩo nĩguo ngagatwara, nĩguo gakeonanie mbere ya Jehova, na gatũũre ho matukũ mako mothe.',
+    23: 'Nake Elikana, mũthuriwe, akĩmwĩra atĩrĩ, Ĩka o ta ũrĩa ũkuona kwagĩrĩre; ikara o nginya hĩndĩ ĩrĩa ũgagatigithia iria; we Jehova aroetũũra arũmĩtie uge wake! Tondũ ũcio mũndũ-wa-nja ũcio agĩĩkara gũthĩi, agĩkĩgara akĩongithagia kaana kau gake, o nginya rĩrĩa aagatigithirie iria.',
+    24: 'Na rĩrĩ, aagatigithirie iria-rĩ, agĩkĩambata, nao magĩgĩthĩi na ndegwa ithatũ, na mũtũ wa eba ĩmwe, na gĩtete kĩa ndibei; nake agĩgatwara nyũmba ya Jehova kũu Shilo; nako kaana kau kaarĩ o kanini.',
+    25: 'Nao magĩthĩnjĩra ndegwa, magĩcoka magĩtwara kaana kau he Eli.',
+    26: 'Hana agĩkuga ũũ: Atĩrĩrĩ, mwathi wakwa, o ta ũrĩa wee mwathi wakwa ũtũũraga muoyo-rĩ, nĩĩ nĩĩ mũndũ-wa-nja ũrĩa wartigamĩte haha hakuhĩ nawe, ngĩhoya Jehova.',
+    27: 'Kaana gaka nĩko ndahoyaga; nake Jehova nĩetĩkĩrĩte kũhe kĩra ndamũhoire;',
+    28: 'tondũ ũcio, o na nĩĩ nĩndakaamũũra Jehova; hĩndĩ ĩrĩa yothe gegũtũũra muoyo-rĩ, gegũtũũra ge kaamũũre Jehova. Nao magĩkĩinamĩrĩra Jehova hau makĩmũhoya.'
       },
     },
-    'John': {
+  '2 Samuel': {
       1: {
-        1: 'In the beginning was the Word, and the Word was with God, '
-            'and the Word was God.',
-        2: 'The same was in the beginning with God.',
+    1: 'NA GŨGĨKINYA atĩrĩ, atĩ Saulu aarĩkia gũkua, nake Daudi agĩkorũo ahũndũkĩte akoima kũũraga Aamaleki, na agaakara mĩthenya ĩrĩ kũu Zikilagi-rĩ,',
+    2: 'mũthenya ũyũ ũngĩ wa itatũ hagĩtũka mũndũ oimĩte kĩraaro-inĩ gĩa Saulu, arĩ na nguo ndembũkangu, na akeetĩrĩria thĩ mũtwe; nake aakinye he Daudi, agĩtũgua thĩ, akĩmũinamĩrĩra, amwĩnyihĩrie.',
+    3: 'Nake Daudi agĩkĩmũũria atĩrĩ, Uuma kũ? Nake akĩmwĩra atĩrĩ, Nĩ kũũra njĩrĩte ngoima kĩraaro-inĩ gĩa Isiraeli.',
+    4: 'Nake Daudi agĩkĩmũũria atĩrĩ, Ũhoro ũgũkinyĩte atĩa? Ta njĩra, ndagũthaitha. Nake agĩcokia atĩrĩ, Andũ nĩ kũũra moĩte makoima ita-inĩ, o na nĩngĩ andũ aingĩ nĩmagũĩte magakua, nake Saulu, na Jonathani, mũrũ, o nao nĩmakuĩte.',
+    5: 'Daudi agĩkĩũria mwanake ũcio wamũheire ũhoro ũcio atĩrĩ, Ũmenyagĩthia nĩ kĩ atĩ Saulu na Jonathani, mũrũ, nĩmakuĩte?',
+    6: 'Nĩngĩ mwanake ũcio wamũheire ũhoro akĩuga atĩrĩ, Ndĩrakorirwo ndĩ hau kĩrĩma-inĩ kĩa Giliboa, ndĩrona Saulu etiirĩtie na itimũ rĩake; nacio ngari cia ita, na andũ arĩa mathiaga mahaicĩte mbarathi, makumũrũmĩrĩra na ihenya mũno.',
+    7: 'Na rĩrĩ, aracĩthĩrĩire na thutha wake-rĩ, aranyona, aranjĩta. Na nĩĩ ndĩragĩcokia atĩrĩ, Nĩĩ ũyũ haha.',
+    8: 'Nake arakĩnjĩria atĩrĩ, Wĩ mũndũ ũ? Na nĩĩ ndĩragĩcokia atĩrĩ, Ndĩ Mũamaleki.',
+    9: 'Arakĩnjĩra atĩrĩ, Ta rũgama haha mwena-inĩ wakwa, ũnjũrage, ndagũthaitha, amu nĩĩ mũtũbunyiku, na ndĩ o muoyo.',
+    10: 'Tondũ ũcio ndĩrakĩrũgama mwena-inĩ wake, ndĩramũũraga; nĩ ũndũ nĩndĩramenyire na ma, o ma, atĩ ndangĩcoka kũhona arĩkĩte kũgũa ita-inĩ; ndĩrakĩruta tanjĩ ĩrĩa aarĩ nayo mũtwe, o na gĩturo kĩa ararĩ nakĩo guoko; nacio indo icio nĩcio ici ndakũreherere haha, wee mwathi wakwa.',
+    11: 'Daudi agĩkĩnyita nguo ciake, agĩcĩtembũranga; o nao andũ othe arĩa maarĩ hamwe nake magĩĩka o taguo;',
+    12: 'nao magĩkĩhũtha ithũũ nĩ kĩeha, makĩrĩra, o na makĩhinga kũrĩa irio nginya o hwai-inĩ, nĩ ũndũ wa Saulu, o na mũrũwe Jonathani, o na ũndũ wa andũ a Jehova, o na wa nyũmba ya Isiraeli; nĩ ũndũ nĩmoragĩtwo na hiũ cia njora.',
+    13: 'Nake Daudi agĩkĩũria mwanake ũcio wamũheire ũhoro ũcio atĩrĩ, Uumĩte kũ? Nake agĩcokia atĩrĩ, Ndĩ mũrũ wa mũgeni, Mũamaleki.',
+    14: 'Daudi agĩkĩmũũria atĩrĩ, Nĩ kĩ kĩagĩrĩre wĩtigĩre gũtambũrũkia guoko gwaku ũũrage mũitĩrĩrio maguta wa Jehova?',
+    15: 'Daudi agĩkĩĩta mwanake ũmwe wa arĩa maarĩ hau, akĩmwĩra atĩrĩ, Thiathia hakuhĩ, ũmũgũthũkĩre. Nake agĩkĩmũgũthũka, agĩkua.',
+    16: 'Daudi agĩkĩmwĩra atĩrĩ, Thakame yaku ĩkũre harĩ mũtwe waku wee mwene nĩko gakuumbũrĩte koiga atĩrĩ, Nĩnjũragĩte mũitĩrĩrio maguta wa Jehova.',
+    17: 'Nake Daudi akĩrĩrĩra Saulu, o na mũrũwe Jonathani, akĩmarĩrĩra na cugo ici:',
+    18: 'nake agĩathana atĩ ciana cia Juda ikarutwo rũĩmbo rũrũ, rũrũtagwo Rũĩmbo rũa Ũta; na atĩrĩrĩ, rũĩmbo rũru rũandĩkĩtwo ibuku-inĩ rĩa Jasharu.',
+    19: 'Atĩrĩrĩ, wee Isiraeli, andũ aku arĩa marĩ igweta moragĩrũo ithũngũri-inĩ ciaku! Hĩ! Kaĩ andũ arĩa marĩ hinya nĩmagũĩte-rĩ!',
+    20: 'Menyai mũtheane ũhoro ũcio kũu Gathu, kana mũdũhanjanje njĩra-inĩ cia Ashikeloni; Nĩ getha airĩtu a Afilisiti matigakene, Na nĩ getha airĩtu a andũ arĩa mataruagĩte matikagĩe na gũkeno.',
+    21: 'Atĩrĩrĩ, inyuĩ irĩma cia Giliboa, Mũroaga kũgĩa ireera, kana mbura, O na mwage mĩgũnda ĩrĩa ĩngĩrutwo indo cia igongona; Nĩ gũkõrũo kũu nĩkuo ngo ya ũrĩa warĩ hinya mũno yaikĩrwo ta kĩndũ gĩtarĩ bata, Ĩĩ-nĩ, ngo ĩo ya Saulu ĩgakarwo o ta ya mũndũ ũtairĩrĩo maguta.',
+    22: 'Ũta wa Jonathani ndwahũndũkaga ũkaaga thakame ya arĩa moragĩtwo, O na ya njama noro, o naruo rũrũ rũa njora rũa Saulu rũtiahũndũkaga ũtheri.',
+    23: 'Saulu na Jonathani ndwamũyoo maitaũ ma muoyo, O na nĩ gĩkũũ-inĩ kũao, matiagĩtithĩkanio. Gũkĩra maathaiga na ihenya magakĩrĩra nderi, Naguo hinya wao ũgakĩra wa mũrũthi.',
+    24: 'Atĩrĩrĩ, inyuĩ airĩtu a Isiraeli, rĩrĩrai Saulu. O we ũrĩa wamũtemagia na kĩmũthũmba nguo ndune, o nacio nguo cianyu, agacitumĩrĩthia indo cia thahabu cia gũcengemia.',
+    25: 'Hĩ! Kaĩ andũ arĩa marĩ hinya nĩmagũĩte ita-inĩ thĩinĩ-rĩ! Jonathani nĩ mũũrage, akoragĩrũo ithũngũri-inĩ ciaku.',
+    26: 'Ndĩ na kĩeha kĩnene mũno nĩ ũndũ waku, wee Jonathani mũrũ-wa-iya. Wee ũratũũre ũnjĩkaga maũndũ mega mũno; Wendanĩ wa ũrĩa ũranyendete-rĩ, ũrĩrĩ wa kũgegania; Nĩkũrĩkĩte wendanĩ ũrĩa andũ-a-nja magĩaga naguo.',
+    27: 'Hĩ! Kaĩ andũ arĩa marĩ hinya nĩmagũĩte-rĩ! O nacio indo cia ita-rĩ, kaĩ ĩcĩirĩte o kũrĩa biũ-rĩ!'
+      },
+      },
+  '1 Kings': {
+      1: {
+        1: 'NA RĨRĨ, mũthamaki Daudi agĩkũũra, agĩtindĩkanga mĩaka ma; nao andũ magĩkĩmũhumbĩra na nguo, no ndaigana kũigua ũrugarĩ.',
+    2: 'Tondũ ũcio ndungata ciake igĩkĩmwĩra atĩrĩ, Mũthamaki ũyũ, mwathi witũ, reka hamathwo mũirĩtu gathirange, mwĩthĩ, arekwo arũgamage mbere yaku, wee mũthamaki witũ, akũmenyagĩrĩre; na akomage gĩthũri-inĩ gĩaku, nĩguo wee, mũthamaki ũyũ, mwathi witũ, ũgĩigue ũrugarĩ.',
+    3: 'Magĩkĩmatha mũirĩtu mũthaka kũndũ guothe bũrũri wa Isiraeli, makĩona Abishagi, Mũshunami, makĩmũtwara mũthamaki.',
+    4: 'Mũirĩtu ũcio aakĩrĩ mũthaka mũno; nake agĩtũĩka mũmenyeri mũthamaki, agĩkĩmũtũngatagĩra; no mũthamaki ndaigana kuonana nake.',
+    5: 'Hĩndĩ ĩo Adonija, mũrũ wa Hagithu, agĩgĩtũũgĩria, akiuga atĩrĩ, Nĩ nĩĩ ngũtũĩka mũthamaki; nake agĩgĩthondekera ngari cia ita, o na akĩga na andũ a gũthiaga mahaicĩte mbarathi, nĩngĩ agĩthondeka ũhoro wa arĩ andũ mĩrongo ĩtano mathiaga mbere yake mateng\'erete.',
+    6: 'Nake ithe o na mbere ya hĩndĩ ĩo ndarĩ aamũrakaria na ũndũ wa kũmũũria, Wĩkĩte ũna o na ũna nĩkĩ? O na nĩngĩ aarĩ mũndũ mũthaka mũno; na nĩwe waciarĩtwo thutha wa Abisalomu.',
+    7: 'Nake agĩgĩcĩranĩra na Joabu wa Zeruia na Abiatharu mũthĩnjĩri-Ngai, nao makĩmũtĩĩra Adonija makĩmũteithia.',
+    8: 'No rĩrĩ, Zadoku mũthĩnjĩri-Ngai, na Benaia wa Jehoiada, na Nathani mũnabii, na Shimei, na Rei, na njamba iria irĩ hinya cia Daudi, matiarĩ rũmwe na Adonija.',
+    9: 'Nake Adonija agĩthĩnjĩra ndũrũme na ndegwa o na nyamũ noru ihiga-inĩ rĩa Zohelethu, rĩrĩa rĩrĩ hakuhĩ na Eni-rogeli; agĩgĩĩta ariũ a ithe othe, naguo ũguo nĩ ta kuuga ariũ a mũthamaki, o na andũ othe a Juda, ndungata cia mũthamaki;',
+    10: 'no rĩrĩ, Nathani mũnabii, na Benaia, o na njamba icio, na Suleimani, mũrũ wa ithe, ndaigana kũmeta.',
+    11: 'Hĩndĩ ĩo Nathani agĩgĩtaara na Bathi-sheba, nyina wa Suleimani, akĩmũũria atĩrĩ, Kaĩ ũtaiguĩte atĩ Adonija, mũrũ wa Hagithu, nĩaitĩkĩte gũthamaka, na Daudi, mwathi witũ, ndoĩ ũhoro ũcio?',
+    12: 'Tondũ ũcio ndagũthaitha ũke ũtũe, nĩguo wĩhonokie muoyo waku, o na wa mũrũguo Suleimani.',
+    13: 'Ũtĩra ũthĩi ũtonye he mũthamaki Daudi, ũmũũrie ũũ: Atĩrĩrĩ, mũthamaki ũyũ, mwathi wakwa, gĩthĩ ndwehitire ũkĩnjĩra, na ũndungata yaku ya mũndũ-wa-nja ũũ: Ti-itherũ Suleimani, mũrũguo, nĩwe ũgathamakaga thutha wakwa, na nĩwe ũgaikara gĩtĩ gĩakwa gĩa ũthamaki? Kaĩ Adonija aagũthamaka nĩkĩ?',
+    14: 'Na atĩrĩrĩ, hĩndĩ ĩrĩa ũrĩkũrũo o kũu ũkĩaria na mũthamaki, nĩĩ o na nĩĩ njoke ndonye kuo thutha waku, ngathĩrĩie ũhoro waku ũcio ũkũmwĩra.',
+    15: 'Bathi-sheba agĩgĩtonya he mũthamaki kanyũmba thĩinĩ; nake mũthamaki aarĩ mũtũmĩre mũno, na aatũngatagĩrũo nĩ Abishagi, Mũshunami.',
+    16: 'Nake Bathi-sheba agĩkĩinamĩrĩra mũthamaki amwĩnyihĩrie. Mũthamaki agĩkĩmũũria atĩrĩ, Ũkwenda atĩa?',
+    17: 'Nake akĩmwĩra atĩrĩ, Mwathi wakwa, nĩĩ mwĩthĩwa wehĩtĩre ũkĩonĩra nĩ Jehova Ngai waku, ũkĩĩrĩra nĩĩ ndungata yaku ya mũndũ-wa-nja ũũ: Ti-itherũ Suleimani, mũrũguo, nĩwe ũgathamakaga thutha wakwa, na nĩwe ũgaikara gĩtĩ gĩakwa gĩa ũthamaki.',
+    18: 'Na atĩrĩrĩ, rĩu nĩ Adonija ũgĩtĩkĩte gũthamaka, nawe mũthamaki ũyũ, mwathi wakwa, ndũmenyete ũhoro ũcio;',
+    19: 'na rĩu nĩathĩnjĩthĩtie ndegwa, o na nyamũ iria noru, na ndũrũme, nyingĩ mũno, na nĩetĩte ariũ othe a mũthamaki, na Abiatharu mũthĩnjĩri-Ngai, na Joabu mũnene wa mbũtũ cia ita; no Suleimani ndungata yaku ndamwĩtĩte.',
+    20: 'Nawe rĩu, mũthamaki ũyũ, mwathi wakwa, nĩwe ũcũthĩrĩrĩo nĩ andũ othe a Isiraeli ũmere mũndũ ũrĩa ũgũikara gĩtĩ gĩaku gĩa ũthamaki thutha waku, wee mũthamaki ũyũ, mwathi wakwa.',
+    21: 'Ũngaga gwĩka ũguo-rĩ, nĩgũgĩkinya atĩrĩ, atĩ hĩndĩ ĩrĩa wee mũthamaki ũyũ, mwathi wakwa, ũgakoma hamwe na mathoguo, nĩĩ na mũrũ wakwa Suleimani, nĩtũtũonwo tũrĩ ehia.',
+    22: 'Na atĩrĩrĩ, hĩndĩ ĩrĩa aaragia na mũthamaki o ro ũguo, Nathani mũnabii agĩgĩtonya kuo.',
+    23: 'Nao andũ magĩthĩire mũthamaki ũhoro makiuga atĩrĩ, Nathani mũnabii ũyũ. Nake aatonya harĩ mũthamaki, akĩinamĩrĩra mũthamaki, agitũrũmithia ũthĩũ thĩ.',
+    24: 'Nake Nathani agĩkĩũria atĩrĩ, Atĩrĩrĩ, mũthamaki ũyũ, mwathi wakwa, nĩwe ũugĩte ũũ: Adonija nĩwe ũgathamakaga thutha wakwa, na nĩwe ũgaikara gĩtĩ gĩakwa gĩa ũthamaki?',
+    25: 'Nĩ ũndũ-rĩ, ũmũthĩ nĩ kũrũrũku, na nĩathĩnjĩthĩtie ndegwa, o na nyamũ noru, o na ndũrũme, nyingĩ mũno, na nĩetĩte ariũ a mũthamaki othe, na anene a mbũtũ cia ita, o na Abiatharu mũthĩnjĩri-Ngai na atĩrĩrĩ, rĩu nĩ kũrĩa mararĩa na makanyua makarĩte mbere yake, makiuga atĩrĩ, Ngai aroetũũra na Adonija, mũthamaki witũ!',
+    26: 'No rĩrĩ, nĩĩ o nĩĩ ndungata yaku, na Zadoku mũthĩnjĩri-Ngai, na Benaia wa Jehoiada, na Suleimani ndungata yaku, ndatwĩtĩte.',
+    27: 'Kaĩ ũndũ ũcio ũgĩthwo nĩwe, wee mũthamaki ũyũ, mwathi wakwa, na ũkaaga gũtuonia ithuĩ, ndungata ciaku, mũndũ ũrĩa ũngĩikara gĩtĩ gĩaku gĩa ũthamaki thutha waku, mũthamaki ũyũ, mwathi wakwa?',
+    28: 'Hĩndĩ ĩo mũthamaki Daudi agĩgĩcokia akiuga atĩrĩ, Ta njĩrĩrai Bathi-sheba. Nake agĩgĩtonya he mũthamaki, akĩrũgama o hau mbere yake.',
+    29: 'Nake mũthamaki agĩhĩta, akiuga atĩrĩ, O ta ũrĩa Jehova atũũraga muoyo, o we ũcio waahonokirie, akĩnduta mathĩna-inĩ makwa mothe-rĩ,',
+    30: 'ti-itherũ o ta ũrĩa ndehĩtire hĩndĩ ĩo ngĩkwĩra na mwĩhĩtwa ũkoniĩ Jehova Ngai wa Isiraeli, ngiuga atĩrĩ: Ti-itherũ Suleimani, mũrũguo, nĩwe ũgathamakaga thutha wakwa, na nĩwe ũgaikara gĩtĩ gĩakwa gĩa ũthamaki ithenya rĩakwa-rĩ, ti-itherũ ũndũ ũcio nĩngũwĩkĩthia ũmũthĩ.',
+    31: 'Hĩndĩ ĩo Bathi-sheba akĩinamĩrĩra, agitũrũmithia ũthĩũ thĩ, agĩkumia mũthamaki, akiuga ũũ: Mwathi wakwa, mũthamaki Daudi, aroetũũra tene na tene.',
+    32: 'Mũthamaki Daudi agĩkuga atĩrĩ, Ta njĩrĩrai Zadoku mũthĩnjĩri-Ngai, na Nathani mũnabii, o na Benaia wa Jehoiada. Nao magĩkinya mbere ya mũthamaki.',
+    33: 'Mũthamaki agĩkĩmera ũũ: Oyai ndungata ciakwa, nĩĩ mwathi wanyu, mũhaicĩthie Suleimani, mũrũ wakwa, nyũmbũ yakwa, mũmũrũkũrie Gihoni.',
+    34: 'Na mwĩ kũu, Zadoku mũthĩnjĩri-Ngai na Nathani mũnabii mamũitĩrĩrie maguta atũũke mũthamaki wa gũthamaka Isiraeli; mĩcoke mũhuhe coro mũuge atĩrĩ, Ngai aroetũũra Suleimani, mũthamaki witũ!',
+    35: 'Mũgĩcoke mwambate mũmũmũmĩte thutha, agĩtũke aikaire gĩtĩ gĩakwa gĩa ũthamaki; nĩ ũndũ nĩwe ũgũtũĩka mũthamaki ithenya rĩakwa; na nĩwe nduute mũnene wa gwatha Isiraeli o na Juda.',
+    36: 'Nake Benaia wa Jehoiada agĩgĩcokeria mũthamaki, akiuga atĩrĩ, Amen; o nake Jehova Ngai waku, wee mũthamaki ũyũ, mwathi wakwa, nĩoige o ta ũguo.',
+    37: 'O ta ũrĩa Jehova aikarĩte hamwe nawe, mũthamaki ũyũ, mwathi wakwa-rĩ, o ũguo taguo aroikara hamwe na Suleimani, o na atũme gĩtĩ gĩake gĩa ũthamaki kĩnenehe gũkĩra gĩtĩ gĩaku, wee mwathi wakwa, mũthamaki Daudi.',
+    38: 'Tondũ ũcio Zadoku mũthĩnjĩri-Ngai, na Nathani mũnabii, na Benaia wa Jehoiada, me na Akerethi na Apelethi, magĩkĩrũrũka, makĩhaicĩthia Suleimani igũrũ rĩa nyũmbũ ya mũthamaki Daudi, makĩmũtwara Gihoni.',
+    39: 'Nake Zadoku mũthĩnjĩri-Ngai akĩoya rũa gũitanĩrĩria maguta arũrũtie Hema-inĩ ya Ngai, agĩtĩrĩria Suleimani maguta naruo. Thutha wa ũguo igĩhuho coro, nao andũ othe magĩkiuga atĩrĩ, Ngai aroetũũra Suleimani, mũthamaki witũ!',
+    40: 'Nao andũ othe magĩkĩambata mamũmũmĩte thutha, makĩhuha mĩtũrĩrũ, na magĩkena gĩkeno kĩnene, gĩgĩtũma thĩ ĩrũrũme na yatũkĩte nĩ ũndũ wa mĩgambo yao.',
+    41: 'Nake Adonija o na ageni othe arĩa maarĩ hamwe nake makĩigua kayu kau o hĩndĩ ĩrĩa maakorirũo maanĩna kũrĩa. Na rĩrĩ, Joabu aagĩgua mũgambo wa coro ũcio, agĩkĩũria atĩrĩ, Ĩ inege rĩrĩ rĩratũma itũũra rĩrũrume nĩ rĩa kĩ?',
+    42: 'Na ihinda o rĩu aaragia, Jonathani, mũrũ wa Abiatharu mũthĩnjĩri-Ngai, agĩtũka; nake Adonija akiuga atĩrĩ, Tonya, nĩ ũndũ wĩ mũndũ mwĩhoke ku, na nĩ ũhoro mwega warehe.',
+    43: 'Nake Jonathani agĩgĩcokia akĩĩra Adonija atĩrĩ, Ti-itherũ mũthamaki Daudi, mwathi witũ, nĩatũĩte Suleimani mũthamaki;',
+    44: 'nake nĩareketie Zadoku mũthĩnjĩri-Ngai, na Nathani mũnabii, na Benaia wa Jehoiada, me na Akerethi, na Apelethi, nao nĩmamũhaicĩthĩtie igũrũ rĩa nyũmbũ ya mũthamaki;',
+    45: 'nĩngĩ Zadoku mũthĩnjĩri-Ngai, na Nathani mũnabii, nĩmamũitĩrĩrie maguta atũũke mũthamaki marĩ o kũu Gihoni; nao nĩmaambataire makoima kũu magĩkenaga mũno, o nginya itũũra rĩkaruruma. Rĩu nĩrĩo inege rĩrĩa mũiguĩte.',
+    46: 'O na nĩngĩ Suleimani nĩaikarĩre gĩtĩ kĩa ũnene gĩa ũthamaki.',
+    47: 'Makĩria nĩngĩ ndungata cia mũthamaki nĩĩthĩire kũrathimitha mũthamaki Daudi, mwathi witũ, ikiuga atĩrĩ, Ngai waku aroagĩria rĩtwa rĩa Suleimani rĩkĩre rĩtwa rĩaku, o nakĩo gĩtĩ gĩake gĩa ũthamaki arokinenehia gĩkĩre gĩaku; nake mũthamaki agĩkĩinamĩrĩra arĩ o hau ũrĩrĩ igũrũ.',
+    48: 'O na nĩngĩ mũthamaki oiga ũũ: Jehova Ngai wa Isiraeli arogathwo, o we ũrĩa ũheanĩte ũmũthĩ mũndũ wa gũikara gĩtĩ gĩakwa gĩa ũthamaki, o na agatũma maitho makwa meyonere ũndũ ũcio.',
+    49: 'Nao ageni othe a Adonija magĩkĩigwatwo nĩ guoya, magĩgĩũkĩra, makĩhũrũnjũka.',
+    50: 'Nake Adonija agĩgĩtigĩra nĩĩ nĩ ũndũ wa Suleimani; agĩgĩũkĩra, agĩtĩnyĩrĩra hia cia kĩgongona.',
+    51: 'Naguo ũhoro ũcio ũkĩĩheo Suleimani, akĩĩrwo atĩrĩ, Hĩ! Adonija nĩaragwĩtigĩra, wee Suleimani mũthamaki witũ, nĩ gũkõrũo enyitĩhĩre hia cia kĩgongona, akiuga atĩrĩ, Mũthamaki Suleimani nĩaambe ehĩte, anjĩĩre atĩ ndenjũragwo na rũhiũ, nĩĩ ndungata yake.',
+    52: 'Nake Suleimani agĩkuga atĩrĩ, Angĩkorũo nĩarĩonanagia arĩ nĩ mũndũ mwagĩrĩrũ-rĩ, hatirĩ rũcũirĩ o na rũmwe rũake rũngĩgũa thĩ; no rĩrĩ, angĩonwo e na waganu, nĩegũkua.',
+    53: 'Tondũ ũcio mũthamaki Suleimani agĩgĩrekana, nao andũ makĩmũkũrũkia makĩmũruta kĩgongona-inĩ kũu. Nake agĩgĩthĩi akĩinamĩrĩra mũthamaki Suleimani, akĩmũnyihĩria; nake Suleimani akĩmwĩra atĩrĩ, Wĩhũndũkĩre.'
+      },
+  },
+    '2 Kings': {
+      1: {
+    1: 'NA RĨRĨ, Ahabu aarĩkia gũkua, Amoabi magĩkĩĩra Isiraeli, makĩmarema.',
+    2: 'Nake Ahazia akĩgũa thĩ oimĩte ndirica-inĩ ya kanyũmba gake ka igũrũ o kũu Samaria, akĩrũara; agĩtũrekia andũ, akĩmera atĩrĩ, Thĩi mữkandũũrie ũhoro he Baali-zebubu, ngai ya Ekironi, mũmũũrie kana nĩngũhona ndũarĩ ĩno.',
+    3: 'No mũraika wa Jehova agĩkĩĩra Elija, Mũtishibi, atĩrĩ, Ũkĩra, ũgacemanie na arekio acio A mũthamaki wa Samaria, ũmorie atĩrĩ, Nĩ Ngai gũtarĩ thĩinĩ wa Isiraeli, atĩ nĩkĩo mũgũthĩĩ gũtũũria ũhoro he Baali-zebubu, ngai ya Ekironi?',
+    4: 'Tondũ ũcio rĩu Jehova oiga ũũ: Ndũgũimo ũrĩrĩ ũcio ũhaicĩte: no ti-ti-itherũ ũgũkua. Nake Elija agĩthĩĩra.',
+    5: 'Nao arekio acio magĩgĩcoka he mũthamaki; nake akĩmooria atĩrĩ, Kaĩ mwahũndũka nĩ ũndũ kĩ?',
+    6: 'Magĩkĩmwĩra ũũ: Nĩ mũndũ ũkĩre aacemanie na ithuĩ, aatwĩra atĩrĩ, Hũndũkai mũcoke he mũthamaki ũcio ũmũrekirie, mũmũĩre atĩrĩ, Jehova oiga ũũ: Nĩ Ngai gũtarĩ thĩinĩ wa Isiraeli atĩ nĩkĩo ũkũrekia andũ magatũũrie ũhoro he Baali-zebubu, ngai ya Ekironi? Tondũ ũcio ndũgũimo ũrĩrĩ ũcio ũhaicĩte: no ti-ti-itherũ ũgũkua.',
+    7: 'Nake mũthamaki akĩmooria atĩrĩ, Mũndũ ũcio ũkĩre aacemanie na inyuĩ, aamũhe ũhoro ũcio-rĩ, egũtarĩ atĩa?',
+    8: 'Makĩmũcokeria atĩrĩ, Nĩ mũndũ ũkũhumbĩrwo gĩthĩĩ, na akeoha mũkwa njohero. Nake agĩkuga atĩrĩ, Ũcio nĩ Elija, Mũtishibi.',
+    9: 'Hĩndĩ ĩo mũthamaki agĩkĩmũrekeria mũnene wa athigari mĩrongo ĩtano, e na athigari ake mĩrongo ĩtano, nake akĩambata agĩkinya harĩ we; na atĩrĩrĩ, aakorirũo aikarĩte o gacũmbĩrĩ ga kĩrĩma. Nake agĩkĩmwarĩria, akĩmwĩra ũũ: Atĩrĩrĩ, wee mũndũ ũyũ wa Ngai, mũthamaki witũ oiga atĩrĩ, Ikũrũka.',
+    10: 'Nake Elija agĩgĩcokia akĩĩra mũnene ũcio wa athigari mĩrongo ĩtano atĩrĩ, Ingĩkorũo ndĩ mũndũ wa Ngai-rĩ, mwaki nĩũkũrũke uume igũrũ, ũkũninanĩrie na mĩrongo ĩo yaku ĩtano. Hagĩgĩkũrũka mwaki uumĩte igũrũ, ũkĩmũninanĩria na mĩrongo ĩo yake ĩtano.',
+    11: 'Nĩngĩ mũthamaki akĩmũrekeria mũnene ũngĩ wa athigari mĩrongo ĩtano na mĩrongo yake ĩtano. Nake mũnene ũcio akĩmwĩra atĩrĩ, Wee mũndũ ũyũ wa Ngai, mũthamaki witũ oiga atĩrĩ, Ikũrũka narua.',
+    12: 'Nake Elija akĩmũcokeria akĩmwĩra atĩrĩ, Ingĩkorũo ndĩ mũndũ wa Ngai-rĩ, mwaki nĩũkũrũke uume igũrũ, ũkũninanĩrie na mĩrongo yaku ĩtano. Naguo mwaki wa Ngai ũgĩgĩkũrũka uumĩte igũrũ, ũkĩmũninanĩria na mĩrongo ĩo yake ĩtano.',
+    13: 'Nĩngĩ akĩrekia mũnene ũngĩ wa gatatũ wa athigari mĩrongo ĩtano, na mĩrongo yake ĩtano. Nake mũnene ũcio wa athigari mĩrongo ĩtano wa gatatũ akĩambata, agĩthĩi akĩmũtũũrĩra ndu, akĩmũthaitha, akĩmwĩra ũũ: Atĩrĩrĩ, wee mũndũ ũyũ wa Ngai, ndagũthaitha, ũreke muoyo wakwa, o na mioyo ya ndungata ici ciaku mĩrongo ĩtano, ionwo ta ĩrĩ kũndũ kĩa bata mũno nĩwe.',
+    14: 'Nĩnyuĩ atĩ mwaki waumĩte igũrũ, ũranina anene acio erĩ a athigari a mĩrongo ĩtano ĩtano hamwe na athigari ao mĩrongo ĩtano ĩtano; no rĩrĩ, reka muoyo wakwa wonwo ta ũrĩ kũndũ kĩa bata mũno nĩwe.',
+    15: 'Nake mũraika wa Jehova agĩkĩĩra Elija atĩrĩ, Ikũrũka ũtwarane nake; na ndũkamwĩtigĩre. Nake agĩgĩũkĩra, agĩkũrũka agĩtwarana nake, magĩgĩkinya he mũthamaki.',
+    16: 'Nake Elija akĩmwĩra atĩrĩ, Jehova oigĩte ũũ: Tondũ ũtũmĩte andũ magatũũrie ũhoro he Baali-zebubu, ngai ya Ekironi-rĩ, nĩ Ngai gũtarĩ thĩinĩ wa Isiraeli wa gũtũũria ũhoro harĩ we? Tondũ wa ũguo wĩkĩte, ndũkoima ũrĩrĩ ũcio ũhaicĩte: no ti-itherũ nĩũgũkua.',
+    17: 'Nake agĩkũa o ta ũrĩa uuge wa Jehova watarĩrũo ũcio wariitwo nĩ Elija. Nake Jehoramu, mũrũ wa ithe, akĩambĩrĩria gũthamaka ithenya rĩake o mwaka wa kẽrĩ wa Jehoramu, mũrũ wa Jehoshafatu, aakorirũo athamakĩre Juda nĩ ũndũ Ahazia ndaarĩ na mwana wa kahĩĩ.',
+    18: 'Na rĩrĩ, cĩko iria ingĩ cia Ahazia-rĩ, anga itiandĩkĩtwo ibuku-inĩ rĩa maũndũ ma ihinda rĩa athamaki a Isiraeli?'
       },
     },
+    '1 Chronicles': {
+      1: {
+    1: 'ADAMU, na Sethi, na Enoshu:',
+    2: 'Kenani, na Mahalaleli, na Jaredi;',
+    3: 'Enoku, na Methusela, na Lameku;',
+    4: 'Nuhu, na Shemu, na Hamu, na Jafethu.',
+    5: 'Ariũ a Jafethu nĩ aya; Gomeri, na Magogu, na Madai, na Javani, na Tubali, na Mesheki, na Tirasi.',
+    6: 'Nao ariũ a Gomeri nĩ aya: Ashikenazu, na Difatha, na Togarma.',
+    7: 'Nao ariũ a Javani nĩ aya: Elisha, na Tarishishi, na Kitimu, na Rodanimu.',
+    8: 'Ariũ a Hamu nĩ aya: Kushi, na Miziraimu, na Putu, na Kanaani.',
+    9: 'Nao ariũ a Kushi nĩ aya: Seba, na Havila, na Sabita, na Raama, na Sabiteka. Nao ariũ a Raama nĩ aya: Sheba na Dedani.',
+    10: 'Nake Kushi agĩciara Nimurodi ũrĩa waambire gũtũka hoti ya gwathana gũkũ thĩ.',
+    11: 'Nake Miziraimu agĩciara Ludimu, na Anamimu, na Lehabimu, na Nafutuhimu,',
+    12: 'na Pathirusimu, na Kasuluhimu (nake nĩwe kĩhumo kĩa Afilisiti), o na nĩngĩ agĩciara Kafitorimu.',
+    13: 'Nake Kanaani agĩciara Zidoni, mũrũwe wa irigithathi, na Hethi,',
+    14: 'o na mĩhĩrĩga ya Jebusi, na Amori, na Girigashi,',
+    15: 'na Hivi, na Ariki, na Sini,',
+    16: 'na Arivadi, o na Zemari, o na Hamathi.',
+    17: 'Nao ariũ a Shemu nĩ aya: Elamu, na Ashuri, na Aripakishadi, na Ludu, na Aramu, na Uzu, na Hulu, na Getheri, na Mesheki.',
+    18: 'Nake Aripakishadi agĩciara Shela, nake Shela agĩciara Eberi.',
+    19: 'Nake Eberi agĩciarĩrũo ihĩĩ igĩrĩ, kĩmwe gĩgĩtũo Pelegu, nĩ gũkõrũo matukũ make nĩmo thĩ yagayũkanĩrĩrũo; nake mũrũ wa nyina etagwo Jokitani.',
+    20: 'Nake Jokitani agĩciara Alimodadi, na Shelefu, na Hazarimavethu, na Jera,',
+    21: 'na Hadoramu, na Uzali, na Dikila,',
+    22: 'na Ebali, na Abimaeli, na Sheba,',
+    23: 'na Ofiri, na Havila, na Jobabu; acio othe maarĩ ariũ a Jokitani.',
+    24: 'Shemu, na Aripakishadi, na Shela,',
+    25: 'na Eberi, na Pelegu, na Reu,',
+    26: 'na Serugu, na Nahori, na Tera,',
+    27: 'na Aburamu (na nĩwe Iburahimu).',
+    28: 'Nao ariũ a Iburahimu nĩ Isaaka na Ishumaeli.',
+    29: 'Nacio njaro ciao nĩ ici: irigithathi rĩa Ishumaeli nĩ Nebaothu; nao ariũ ake arĩa angĩ nĩ aa Kedari, na Adibeeli, na Mibisamu,',
+    30: 'na Mishima, na Duma, na Masa, na Hadadi, na Tema,',
+    31: 'na Jeturu, na Nafishi, na Kedema. Acio nĩo ariũ a Ishumaeli.',
+    32: 'Nao ariũ a Ketura, thuria ya Iburahimu, nĩ aya: aaciarire Zimurani, na Jokishani, na Medani, na Midiani, na Ishibaku, na Shua. Nao ariũ a Jokishini nĩ aya: Sheba, na Dedani.',
+    33: 'Nao ariũ a Midiani nĩ Efa, na Eferi, na Hanoku, na Abida, na Elidaa. Acio othe maarĩ ariũ a Ketura.',
+    34: 'Nake Iburahimu agĩciara Isaaka. Nao ariũ a Isaaka nĩ Esau, na Isiraeli.',
+    35: 'Nao ariũ a Esau nĩ Elifazu, na Reueli, na Jeushu, na Jalamu, na Kora.',
+    36: 'Nao ariũ a Elifazu nĩ Temani, na Omari, na Zefi, na Gatamu, na Kenazu, na Timina, na Amaleki.',
+    37: 'Nao ariũ a Reueli nĩ Nahathu, na Zera, na Shama, na Miza.',
+    38: 'Nao ariũ a Seiru nĩ Lotani, na Shobali, na Zibeoni, na Ana, na Dishoni, na Ezeri, na Dishani.',
+    39: 'Nao ariũ a Lotani nĩ Hori, na Homamu; nake Timina aarĩ mwarĩ wa nyina na Lotani.',
+    40: 'Nao ariũ a Shobali nĩ Aliani na Manahathu, na Ebali, na Shefi, na Onamu. Nao ariũ a Zibeoni nĩ Aia, na Ana.',
+    41: 'Nao ariũ a Ana no Dishoni. Nao ariũ a Dishoni, nĩ Hamurani, na Eshibani, na Ithirani, na Kerani.',
+    42: 'Nao ariũ a Ezeri, nĩ Bilihani, na Zaavani, na Jaakani. Nao ariũ a Dishani nĩ Uzu na Arani.',
+    43: 'Na rĩrĩ, aya nĩo athamaki arĩa maathamaka bũrũri wa Edomu, o mbere ciana cia Isiraeli itaanathamakiirũo nĩ mũthamaki o na ũmwe: nĩ mũthamaki o na ũmwe: nĩ Bela, mũrũ wa Beori, narĩo itũũra rĩake rĩetagwo Dinihaba.',
+    44: 'Nake Bela agĩkua, nake Jobabu, mũrũ wa Zera wa Bozira agĩthamaka ithenya rĩake.',
+    45: 'Nake Jobabu agĩkua, nake Hushamu, wa bũrũri wa Atemani, agĩthamaka ithenya rĩake.',
+    46: 'O nake Hushamu agĩkua, nake Hadadi, mũrũ wa Bedadi, ũrĩa wahũrĩre Midiani kũu werũ wa Moabi, agĩthamaka ithenya rĩake; narĩo itũũra rĩake rĩetagwo Avithu.',
+    47: 'Nake Hadadi agĩkua nake Samula wa kũu Masereka agĩthamaka ithenya rĩake.',
+    48: 'O nake Samula agĩkua, na Shaulu wa kũu Rehobothu, gũkuhĩ na Rũũĩ rũa Farati, agĩthamaka ithenya rĩake.',
+    49: 'O nake Shaulu agĩkua, Baali-hanani, mũrũ wa Akibori, agĩgĩthamaka ithenya rĩake.',
+    50: 'O nake Baali-hanani agĩkua, Hadadi agĩgĩthamaka ithenya rĩake; narĩo itũũra rĩake rĩetagwo Pai; nake mũka etagwo Mehetabeli, mwarĩ wa Matiredi, mwarĩ wa Me-zahabu.',
+    51: 'Nake Hadadi agĩkua. Na rĩrĩ, andũ arĩa maarĩ anene a Edomu nĩ aya: nĩ mũnene Timina, na mũnene Alia, na mũnene Jethethu,',
+    52: 'na mũnene Oholibama, na mũnene Ela, na mũnene Pinoni,',
+    53: 'na mũnene Kenazu, na mũnene Temani, na mũnene Mibizaru,',
+    54: 'na mũnene Magidieli, na mũnene Iramu. Acio nĩo maarĩ anene a Edomu.'
+      },
+    },
+        '2 Chronicles': {
+      1: {
+    1: 'NA RĨRĨ, Suleimani, mũrũ wa Daudi, agĩkĩgĩa na hinya ũthamaki-inĩ wake, nake Jehova, Ngai wake, agĩkara hamwe nake, o na akĩmũnenehia mũno mũno.',
+    2: 'Nake Suleimani agĩkĩaria na andũ othe a Isiraeli aarĩa maarĩ anene a athigari ngiri o ngiri, o na igana o igana, o na aciri, o na mũndũ o wothe ũrĩa warĩ mũnene kũu Isiraeli guothe, aarĩa maarĩ ciongo cia nyũmba cia maithe ma andũ a Isiraeli.',
+    3: 'Na gũgũtũika atĩrĩ, atĩ Suleimani, me na kĩrĩndĩ kĩa giothe, magĩthĩĩ itũrĩ-inĩ rĩa kũndũ kũrĩa gũtũgũrũ kũu Gibeoni; nĩ ũndũ kũu nĩkuo hema-ya-gũtũnganwo ya Ngai yarĩ, o ĩrĩa Musa, ndungata ya Jehova, aathondekete werũ-inĩ.',
+    4: 'No ithandũkũ rĩa Ngai Daudi nĩaarĩambatiire akarĩruta Kiriathu-jearimu akarĩiga harĩa aarĩthondekeire; nĩ gũkõrũo nĩaarĩambĩre hema kũu Jerusalemu.',
+    5: 'O nakĩo Kĩgongona gĩa gĩcango kĩa Bezaleli wa Uri, mũrũ wa Huri, aathondekete, kĩa rĩ mbere ya Jehova kũu Gibeoni; nake Suleimani me na kĩrĩndĩ kĩa giothe magĩthĩĩ hau kũarĩ.',
+    6: 'Nake Suleimani agĩkĩambata agĩthĩĩ kĩgongona-inĩ kũu gĩa gĩcango, hau mbere ya Jehova, kũu kũrĩ hema-ini-ya-gũtũnganwo, agĩkĩrutĩra igĩrũ ĩmwe cia mahaki ma njino.',
+    7: 'Na rĩrĩ, ũtukũ o ro ũcio Ngai akiumĩrĩra Suleimani, akĩmwĩra atĩrĩ, Hoya kĩrĩa ngũgũtũhe.',
+    8: 'Nake Suleimani agĩkĩĩra Ngai atĩrĩ, Wee nĩwekĩre baba, Daudi, maũndũ manene ma tha, na nĩĩ ũkũndua mũthamaki wa gũcoka ithenya rĩake.',
+    9: 'Na rĩu, wee Jehova Ngai, tũma atĩ kĩrĩanĩro gĩaku kĩrĩa werĩire baba, Daudi, gĩkare kĩrũmĩtie; nĩ ũndũ-rĩ, nĩũndũite mũthamaki thamakĩre andũ maingĩte o ta rũkũngũ rũa thĩ.',
+    10: 'Rĩu ndagũgũthaitha ũhe ũũgĩ, o na ũhoro wa kũmenya maũndũ, nĩ getha menye mĩthĩĩre ĩrĩa njagĩrĩrũo nĩ gũthiaga nayo ndĩ hamwe na andũ aya aku; nĩ ũndũ-rĩ, andũ aya aku aingĩ ũũ-rĩ, nĩ ũngĩhota kũmacirĩra?',
+    11: 'Nake Ngai agĩkĩĩra Suleimani atĩrĩ, Kuona atĩ ũndũ ũcio warĩ ngoro-inĩ yaku, na ndwaahoe ũtonga, kana kũgĩa indo nyingĩ, o na kana gĩtĩĩo, kana atĩ mĩoyo ya thũ ciaku ininwo, o na kana ũkĩthoera atĩ ũtũũre muoyo matukũ maingĩ, o na kana ũkĩheoere, o na ũmenyi wega maũndũ, o na gĩtĩha ũhotage gũcirĩra andũ akwa arĩa ndagũtũire gwathĩĩre, na-wa-rĩ,',
+    12: 'nĩndetĩkĩre gũkũhe ũũgĩ, o na ũmenyi wega maũndũ; o na makĩria nĩngũkũhe ũtonga, o na indo nyingĩ, o na gĩtĩĩo, gũkĩra mũthamaki o na ũrĩkũ wa arĩa maarĩ mbere yaku, o na nĩngĩ thutha waku gũtĩkagĩa ũngĩ o na ũrĩkũ wĩ na maũndũ ta macio.',
+    13: 'Thutha wa ũguo Suleimani agĩkiuma itũrĩ-inĩ rĩu rĩa handũ hatũgũrũ kũu Gibeoni, hau hema-ini-ya-gũtũnganwo, agĩcoka Jerusalemu; nake agĩgĩthamaka Isiraeli.',
+    14: 'Nake Suleimani akĩtũnganithia ngari cia ita, o na andũ arĩa mathiaga mahaicĩte mbarathi; akĩgĩa na ngari ngiri ĩmwe na magana mana cia ita, o na andũ ngiri ikũmi na igĩrĩ arĩa mathiaga mahaicĩte mbarathi, akĩmaiga matũũra-inĩ marĩa maaigagwo ngari icio, o na hamwe na mũthamaki kũu Jerusalemu.',
+    15: 'Nake mũthamaki agĩkĩgĩtũmia betha na thahabu, ikonawagwo ihaanwa o ta irĩ mahiga kũu Jerusalemu, nayo mĩtaraka akĩmĩngĩhia o ta mĩborothandi ĩrĩa ĩyũrĩte bũrũri ũrĩa mũgũgũ.',
+    16: 'Nacio mbarathi iria Suleimani aarĩ nacio ciarutwogwo Misiri, nao andũ arĩa maarutagira mũthamaki wĩra wa wonjoria, nĩo maacithogaraga irĩ ndũrũ nene, o rũũru thogora waruo.',
+    17: 'Nacio ngari cia ita iria maambataaga marutĩte Misiri, ĩmwe yarutagĩrũo cekeri magana matandatũ ma betha, nayo mbarathi ĩmwe ĩkarutĩrũo cekeri igana rĩa mĩrongo ĩtano; naguo ũguo nĩguo athamaki othe a Ahiti, na athamaki a Suriata, maacithogaraga matwarĩrũo nĩ andũ acio a Suleimani a wonjoria.'
+      },
+        },
+
+    'Ezra': {
+      1: {
+    1: 'NA RĨRĨ, mwaka wa mbere ũrĩa Kurusu, mũthamaki wa Perisia, aakorirũo athamakĩte-rĩ, Jehova akĩtarahĩra roho wa Kurusu, ũcio mũthamaki wa Perisia, nĩ getha ũhoro wa Jehova ũrĩa waarirwo na kanua ka Jeremia ũhingio, agĩtũma ahunjanie ũhoro mabũrũri mothe marĩa aathamakaga, o na awandĩke, oige ũũ:',
+    2: 'Atĩrĩrĩ, mũthamaki wa Perisia, oiga ũũ: Jehova, Ngai wa igũrũ, nĩaheete mabũrũri mothe ma gũkũ thĩ ndĩmaathage; na nĩanjathĩte ngamwakĩre nyũmba Jerusalemu, itũũra rĩa Juda.',
+    3: 'Tondũ ũcio, mũndũ o wothe wa andũ ake ũrĩa wĩ thĩinĩ wanyu-rĩ, Ngai wake aroikara hamwe nake, nake nĩambate athĩi Jerusalemu, kũu Juda, agaakĩre Jehova, Ngai wa Isiraeli ũrĩa ũrĩ kũu Jerusalemu, nyũmba yake, (tondũ nĩwe Ngai wa ma).',
+    4: 'Na rĩrĩ, mũndũ o wothe ũrĩa ũtigarĩte kũndũ o na kũrĩkũ kũrĩa atũũrĩte arĩ mũgeni-rĩ, nĩateithio nĩ andũ akuo, aheo betha, na thahabu, o na indo ingĩ, o na ũthũũ, hamwe na indo iria mangĩruta na kwĩendera ikonĩĩ nyũmba ya Jehova ĩrĩa ĩrĩ o kũu Jerusalemu.',
+    5: 'Hĩndĩ ĩo hagĩgũkĩra anene a nyũmba cia maithe ma andũ a Juda na Benjamini, o na athĩnjĩri-Ngai, o na Alawi, o andũ othe arĩa Ngai aarahũrite ngoro ciao nĩguo maambate magaake nyũmba ya Jehova kũu Jerusalemu.',
+    6: 'Nao andũ othe arĩa maamaikarĩte na ndwere ciothe makĩmekĩra hinya makĩmahe indo ica betha, na thahabu, o na indo ingĩ, o na ũthũũ, o na indo cia goro, makĩria ma iria ciothe maarutaga na kwĩendera.',
+    7: 'Nĩngĩ Kurusu, mũthamaki wa Perisia, akĩrutithia indo cia nyũmba ya Jehova, iria Nebukadineza aarutithĩtie kuo acirute Jerusalemu, agacikĩra nyũmba ya ngai ciake.',
+    8: 'nacio indo icio-rĩ, Kurusu, mũthamaki wa Perisia, agĩthana akiuga irutwo nĩ Mithiredatehu, mũigi mũthithũ, nake agĩcitarĩra Sheshibazaru, mĩtongoria wa andũ a Juda.',
+    9: 'Naguo mũigana wacio nĩ ũyũ: nĩ thani nene mĩrongo ĩtatũ cia thahabu, o na thani ingĩ nene ngiri ĩmwe cia betha, na hiũ, mĩrongo ĩrĩ na kenda,',
+    10: 'na tũbakũri mĩrongo ĩtatũ twa thahabu, o na tũbakũri twa mũthemba ũngĩ twa betha magana mana na ikũmi, o na indo ingĩ ĩmwe cia mũthemba ũngĩ.',
+    11: 'Indo icio ciothe cia thahabu na cia betha ciarĩ ngiri ĩthano na magana mana igĩtarũo. Nacio indo icio ciothe-rĩ, nĩcio Sheshibazaru aambathĩrie hĩndĩ ĩrĩa andũ arĩa maatahitwo maambatagio makĩrutwo Babuloni, macokio Jerusalemu.'
+      },
+    },
+
+   'Nehemiah': {
+      1: {
+    1: 'ŨYŨ nĩguo ũhoro wa Nehemia, mũrũ wa Hakalia. Atĩrĩrĩ, mweri wa Kiselevu, mwaka wa mĩrongo ĩrĩ, nĩĩ ndĩ kũu Shushani nyũmba ya mũthamaki,',
+    2: 'Hanani, mũndũ ũmwe wa ariũ a awa, agĩũka, o na andũ amwe angĩ moĩmĩte Juda; na nĩĩ ngĩkĩmahoya ũhoro wa Ayahudi arĩa maahonokete, o acio maatigarĩte makahonoka thĩinĩ wa arĩa maatahitwo, o na ũhoro ũkonĩĩ Jerusalemu.',
+    3: 'Nao makĩnjĩra atĩrĩ, Matigari ma andũ arĩa matigarĩte thĩinĩ wa arĩa maatahitwo, o acio marĩ kũu bũrũri ũcio-rĩ, me na mĩnyamarĩko mĩingĩ mũno, o na makamenwo mũno; o naruo rũthingo rũa Jerusalemu rũtũire rũrĩo rũtharĩe rũkagũithio thĩ, nayo mĩrango yarĩo ĩgacinwo na mwaki.',
+    4: 'Na gũgĩkinya atĩrĩ, atĩ ndaigua ciugo icio, ngĩkara thĩ, ngĩrĩra, ngĩgĩkara mĩthenya mĩingai ngĩwetwo nĩ kĩeha; na ngĩhinga kũrĩa irio, ngĩhoya ndĩ mbere ya Ngai wa igũrũ,',
+    5: 'ngiuga atĩrĩ, Ndagũthaitha wee, Jehova Ngai wa igũrũ, wee Mũrungu mũnene na wa kũmakania, wee ũthingagĩria kĩrĩanĩro gĩaku andũ arĩa makwendaga na makamĩnyerera maathani maku, o na ũkamaiguĩra tha;',
+    6: 'ndagũthaitha ũtege matũ, o na ũracũre maitho, nĩ getha ũthikĩrĩrie ihoya rĩakwa, nĩĩ ndungata yaku, rĩrĩa ngũhoya mũthenya o na ũtukũ ndĩ mbere yaku ihinda rĩĩ, nĩ ũndũ wa ciana cia Isiraeli, ndungata ciaku. o hĩndĩ ĩrĩa ngũkuumbũrĩra mehia ma ciana cia Isiraeli, marĩa tũkĩgĩthĩtie-rĩ, nĩĩ mwene, o na andũ a nyũmba ya baba, nĩtũhĩtĩtie.',
+    7: 'Nĩtũgwĩkĩte maũndũ moru mũno mũno, na tũkaaga kũmenyerera maathani marĩa watwathĩre, o na irira cia watho wa kũrũmĩrĩrũo, o na matũĩro maku ma cira, o macio waathĩre Musa ndungata yaku.',
+    8: 'Ndagũthaitha ũrĩkane ũhoro ũrĩa waathĩre Musa, ndungata yaku, ũkĩmwĩra atĩrĩ, Mũngĩkaasarara watho wakwa-rĩ, nĩngamũhurunjĩra ndũrĩrĩ-inĩ mũtwarũo kũndũ kũraya;',
+    9: 'no rĩrĩ, mũngĩkanjokerera, na mũmenyerere maathani makwa mũmekage-rĩ, o na andũ anyu arĩa mateetwo mangĩgakorũo marĩ o gĩtũrĩ-inĩ gĩa kũu igũrũ, ndĩrĩhingo itakamarokorera, ndĩmarute kũu, ndĩmataware o handũ harĩa thũũrĩte nĩ getha ndũme rĩtwa rĩakwa rĩtũũre ho.',
+    10: 'Na rĩrĩ, ici nĩ ndungata ciaku, o na andũ aku, arĩa wakũũrĩre na hinya waku mũnene, o na ũndũ wa guoko gwaku kwĩ hinya.',
+    11: 'Atĩrĩrĩ, Jehova, ndagũthaitha ũtege gũtũ gwaku ũigue mahoya makwa, nĩĩ ndungata yaku, o na mahoya ma ndungata ciaku, o ici ikenagio nĩ gwĩtĩgĩra rĩtwa rĩaku; o na nĩngĩ ndagũthaitha ũtũme nĩĩ ndungata yaku ngĩe na mũnyaka ũmũthĩ, na wĩtĩkĩre ngĩguĩrũo tha ngĩthengerera mũndũ ũcio. (Tondũ nĩĩ ndĩ ndarĩ mũtwarĩ mũthamaki gĩa kũnyua.)' 
+      },
+   }, 
+
+   'Esther': {
+      1: {
+    1: 'GWAKINYIRE atĩrĩ, atĩ matukũ ma Ahasuerusu, (nake Ahasuerusu ũcio nĩwe wathamaka kũndũ guothe gwata bũrũri wa Ahĩndi o nginya bũrũri wa Akushi, nakuo kwarĩ mabũrũri igana rĩa mĩrongo ĩrĩ na mũgwanja maatagwo nĩ abarũthi arĩa aarekagia kuo.)',
+    2: 'o matukũ macio-rĩ, rĩrĩa Ahasuerusu ũcio mũthamaki aaikarĩre gĩtĩ gĩake kĩa ũnene nyũmba ya athamaki ĩrĩa yarĩ kũu Shushani,',
+    3: 'na agĩkorũo athamakĩte mĩaka ĩtatũ-rĩ, nĩaarugithĩrie anene ake othe, o na ndungata ciake, iruga; nao andũ arĩa maarĩ ahoti a Perisia, o arĩa maarĩ igweta inene, o na abarũthi a mabũrũri macio, magĩkorũo me hau mbere yake.',
+    4: 'Nake akĩnina matukũ maingĩ, namo nĩ igana rĩa mĩrongo ĩthano, akĩonania ũtonga wa bũrũri ũcio mwega mũno aathamaka, o na ũrĩa igweta rĩake rĩnanenehete rĩgatũma atũũre atĩkĩte.',
+    5: 'Na rĩrĩ, matukũ macio maahingia, mũthamaki ũcio agĩrũgithĩria andũ othe, arĩa maarĩ kũu Shushani, iruga, narĩo irarugĩrũo nĩja ĩrĩa njirige mũgũnda-inĩ wa mahũa wa nyũmba ĩrĩa ya mũthamaki, mĩthenya mũgwanja.',
+    6: 'Na rĩrĩ hau haacunjũrĩtio matama merũ, o na ma rangi wa nyeki nduru, o na wa bururu; namo mohererũo icũĩ cia betha itugĩ-inĩ cia mahiga marĩa mega merũ na mĩhĩndo ya gatani ĩrĩa njeega, o na ya rangi wa zambarau; o namo morĩrĩ ma gũkarĩra mũndũ etĩranĩtie maathondeketwo na thahabu na betha, makaigwo kũndũ kwarĩtwo mahiga ma nyaigĩ ya mũthemba mwega, namo mahiga macio maarĩ mature, na merũ, na ma rangi wa ngoikoni, na marĩrũ.',
+    7: 'Nao andũ makĩheo gĩa kũnyua ikombe cia thahabu, na nĩkwari ndibei nyingĩ mũno ya mũthemba ũrĩa wanyuagwo nĩ athamaki, o ta ũrĩa ũtana wa mũthamaki watarĩ; nacio ikombe icio-rĩ, hatirĩ o na kĩmwe kĩahaanainie na kĩrĩa kĩngĩ.',
+    8: 'Naguo ũhoro wa kũnyua watarĩ o ta ũrĩa gwathanĩtwo nĩ mũthamaki, naguo ũguo nĩ ta kuuga atĩ hatirĩ mũringanĩrĩrio; nĩ ũndũ ũguo nĩguo mũthamaki aatũĩte gwĩkwo nĩ anene othe a nyũmba yake, atĩ meke mũndũ o mũndũ o ta ũrĩa maũndũ marĩa mekũmũkenia matarĩ.',
+    9: 'O nake Vashiti, mũtumia wa mũthamaki, akĩrũgithĩria atumia iruga o kũu nyũmba ĩo ya mũthamaki tĩ Ahasuerusu.',
+    10: 'Na rĩrĩ, mũthenya wa mũgwanja, hĩndĩ ĩrĩa ngoro ya mũthamaki ũcio tĩ Ahasuerusu yakorirũo ĩkenete nĩ ũndũ wa ndibei-rĩ, agĩgĩathia Mehumani, na Bizatha, na Harabona, na Bigatha, na Abagutha, na Zetharu, na Karikasi, anene arĩa mũgwanja mehekeirũo maũndũ ma nyũmba yake thĩinĩ, arĩa maamũtũngatagĩra,',
+    11: 'akĩmera atĩrĩ, Mũmũrehe Vashiti, mũtumia wa mũthamaki, mamũrehe mbere yake ekĩĩtwo tanji yake ya mũthamaki mũndũ-wa-nja, nĩ getha andũ ake, o na anene ake, monio ũrĩa athakarĩte; nĩ ũndũ aarĩ kĩroroerũa.',
+    12: 'No rĩrĩ Vashiti akĩrega gũthĩĩ ta ũguo gwathanĩtwo nĩ mũthamaki akera anene acio mehekeirũo maũndũ ma nyũmba yake; na tondũ ũcio mũthamaki agĩtũkĩyana mũno, agĩcinwo nĩ marakara.',
+    13: 'Hĩndĩ ĩo mũthamaki agĩgĩtũĩria ũhoro kũrĩ andũ arĩa ogĩ, arĩa maamenyete irira cia matukũ ma tene; (tondũ ũguo nĩguo mũthamaki ũcio aamenyerete kũhoya kũrĩra harĩ andũ othe arĩa maamenyete watho wa bũrũri wake o na matũĩro ma macira;',
+    14: 'nao arĩa maamũrũmĩrĩre wathani-inĩ nĩ Karishena, me na Shetharu, na Adamatha, na Tarashishi, na Meresu, na Marisena, na Memukani, nao nĩ anene arĩa mũgwanja a Perisia na Media, o arĩa meitĩkĩrĩtwo kuonana na mũthamaki, na nĩo maaikaranagia nake.)',
+    15: 'Nake mũthamaki agĩgĩũria andũ acio ũũ: Kĩĩ-rĩ, Vashiti, mũtumia wa mũthamaki, ũndũ ũrĩa tũngĩkĩmwĩka ũrĩngaine na watho nĩ ũrĩkũ, tondũ wa kũrega gwĩka ũrĩa aathĩtwo nĩ mũthamaki Ahasuerusu na ũndũ wa kanua ka anene arĩa mehekeirũo maũndũ ma nyũmba yake?',
+    16: 'Nake Memukani agĩcokia ũhoro e hau mbere ya mũthamaki o na anene ake, akiuga atĩrĩ, Kwĩhia kũrĩa Vashiti, mũtumia wa mũthamaki, ehĩtie-rĩ, ti mũthamaki wiki ehĩtie; no nĩehĩtie anene othe, o na andũ othe a mabũrũri marĩa maathagwo nĩ abarũthi arĩa a mũthamaki Ahasuerusu.',
+    17: 'Nĩ ũndũ-rĩ, ũndũ ũyũ wĩkĩtwo nĩ mũtumia wa mũthamaki nĩrĩhunjia kũrĩ andũ-a-nja othe, naguo nĩrĩtũmaga athuri ao mamenwo nĩo hĩndĩ ĩrĩa ndeto irĩngwata kũheanwo ũũ: Hĩĩ Ahasuerusu, mũthamaki, nĩaathanire akiuga atĩ Vashiti, mũtumia wake, arehwo harĩ we, nake akĩrega gũthĩĩ.',
+    18: 'Na rĩrĩ, o na ũmũthĩ, atumia a anene a Perisia na Media, arĩa maiguĩte ũndũ ũyũ wĩkĩtwo nĩ mũtumia wa mũthamaki-rĩ, nĩmarĩra anene aku othe, mũthamaki ũyũ, o ro ũguo. Na tondũ ũcio nĩgũgũcoka kũgĩa rũmena rũnene, o na marakara.',
+    19: 'Tondũ ũcio, mũthamaki wĩtũ, ũngĩona arĩ wega-rĩ, ndagũthaitha ũtũme atĩ watho ta ũrĩa wathanangwo nĩ athamaki ũhunjaniirũo nĩwe, na wandĩkwo mawatho-inĩ ma Aperisia na Amedia nĩ getha ndũkae kũgarũrũo, wa atĩ Vashiti ndakanacoke gũũka harĩ wee, wee Ahasuerusu mũthamaki wĩtũ; naguo ũhoro wake wa gũtũĩka mũtumia wa mũthamaki, wee mũthamaki wĩtũ, ũtũe ũngĩ ũrĩa mwega kũmũkĩra.',
+    20: 'Na rĩrĩ, ũthamaki ũyũ, hĩndĩ ĩrĩa watho ũcio wathanĩtwo nĩwe ũkaiguwo kũndũ guothe mabũrũri-inĩ marĩa wathanaga, (namo nĩ manene,) atumia othe nĩmarĩtĩgaga athuri ao, arĩa anene o na arĩa anyinyi.',
+    21: 'Naguo uuge ũcio wa Memukani ũgĩkenia mũthamaki o na anene ake; nake mũthamaki agĩgĩĩka o ta ũguo Memukani oigĩte,',
+    22: 'nĩ ũndũ nĩaatwarithirie marũa mabũrũri mothe marĩa maathagwo nĩ abarũthi arĩa aarekagia kuo, o bũrũri o ũrĩa mwandĩkĩre waguo watarĩ, na rũrĩrĩ o rũrĩrĩ o ta ũrĩa mwarĩrie waruo watarĩ; namo nĩ ma atĩ mũthuri o wothe atũĩke mũnene wa mũcĩĩ wake, na aaragio o ta ũrĩa angĩenda.'
+      },
+   },
+
+   'Job': {
+      1: {
+    1: 'KWARĨ mũndũ bũrũri wa Uzu, wetagwo Ayubu; na mũndũ ũcio ndaarĩ na ũcuke na kũrĩngĩhĩra aarĩ o mũrũngĩrũ, na nĩ mũndũ wetigĩte Ngai, agathe maga maũndũ marĩa moru.',
+    2: 'Na nĩeciariire ariũ mũgwanja na airĩtu atatũ.',
+    3: 'Nĩngĩ ũhĩtũ wake warĩ ng\'ondu ngiri mũgwanja, na ngamĩra ngiri ithatũ, na ndegwa cia kũiganĩra macoki magana matano, na ndigiri cia mĩgoma magana matano, na aarĩ na ndungata ciake cia mũcĩĩ nyingĩ mũno; mũndũ ũcio agagĩtũika nĩ mũnene kũrĩ andũ othe a mwena ũrĩa wa irathĩro.',
+    4: 'Na rĩrĩ, ariũ ake maathiaga makagĩa na iruga kwa mũndũ o mũndũ wao, o mũthenya wake wakinya; o na nĩmaarekanagia magetaga airĩtu acio atatũ o ithe wao moke marĩe na manyue hamwe nao.',
+    5: 'Na rĩngwekaga atĩrĩ, mĩthenya ĩo ya maruga macio mao yatũngana, Ayubu nĩ gũtũmana aatũmanaga akamatheria, agokagĩra rũcĩnĩ tene, akaruta mahaki ma njino maringaine na mũigana wao othe, nĩ gũkorũo Ayubu oigaga atĩrĩ, Ariũ akwa no gũtũĩka nĩmahĩtĩtie makaruma Ngai na ngoro. We Ayubu ndaarĩ hingo aafĩragĩra gwĩka ũguo.',
+    6: 'Na rĩrĩ, kwĩ mũthenya ariũ a Ngai maathĩre kũrũgama mbere ya Jehova, na Shaitani o nake agĩthĩĩ hamwe nao.',
+    7: 'Nake Jehova akĩũria Shaitani atĩrĩ, Uuma kũ? Nake Shaitani agĩcokeria Jehova akiuga, Nyuma kũrĩnga thĩ, nĩngĩ gũceeranga kuo o handũ na handũ.',
+    8: 'Nake Jehova agĩcoka akĩũria Shaitani atĩrĩ, Nĩũroranĩtie ũhoro wa ndungata yakwa Ayubu, ũkona atĩ kũu thĩ gũtĩrĩ mũndũ ũngĩ ũhaana take, nĩ gũtũĩka nĩ mũndũ ũtarĩ ũcuke na kũrĩngĩhĩra nĩ mũrũngĩrũ, mũndũ wetigĩte Ngai na agathe maga maũndũ marĩa moru?',
+    9: 'Hĩndĩ ĩo Shaitani agĩgĩcokeria Jehova akiuga,',
+    10: 'He! Ayubu-rĩ, kaĩ etigĩte Ngai o tũhũ? Gĩthĩ ti kũmũrĩgĩra ũmũrĩgĩre mĩena yothe, nyũmba yake, na indo ciothe iria e nacio? Kũrathima nĩũrathĩmĩte wĩra wa moko make, naguo ũhĩtũ wake ũgakĩngĩha thĩinĩ wa bũrũri.',
+    11: 'No rĩrĩ, rũu ta coka ũtambũrũkie guoko, ũhũtie indo ciothe icio e nacio, nake ndaarĩ hingo ategũkũruma o ũthĩ-ĩnĩ waku.',
+    12: 'Nake Jehova akĩĩra Shaitani, Atĩrĩrĩ, indo ciake ciothe nĩndaiga moko-inĩ maku, nowe mwene-rĩ, menya ũmũtambũrũkĩre guoko ũmũhũtie. Nake Shaitani agĩkiuma hau ũthĩ-inĩ wa Jehova.',
+    13: 'Na gũgĩkinya atĩrĩ, mũthenya ũmwe rĩrĩa ariũ ake na airĩtu ake maarĩ kũrĩa na kũnyua ndibei nyũmba ya mũrũwao wa irigithathi,',
+    14: 'atĩ gũgũkĩra mũkinyia-mbũ, agĩkora Ayubu, akĩmwĩra atĩrĩ, Ndegwa-rĩ, ikorirũo ikĩrĩma na thĩ, nacio ndigiri ii ho hakuhĩ nacio,',
+    15: 'Asabea maadharĩkĩra, maataha; nacio ndungata-rĩ, nĩ kũũraga maacĩũragĩte na ũũgi wa rũhiũ; no nĩĩ nyiki ndahonoka ndagũũka gũkũrerehere ũhoro.',
+    16: 'O hĩndĩ ĩo ataananina kwaria, hagĩũka mũndũ ũngĩ, akiuga, Mwaki wa Ngai nĩwagũa uumĩte igũrũ, wacina ng\'ondu, o na ndungata, wanina buru! no nĩĩ nyiki ndahonoka ndagũũka gũkũrerehere ũhoro.',
+    17: 'O kahinda o kau ũcio ataananina kwaria, hagĩũka mũndũ ũngĩ, akiuga, Akalidei meũmba mbũtũ ithatũ, maatharĩkĩra ngamĩra, maataha, nacio ndungata maacĩũraga na ũũgi wa rũhiũ; no nĩĩ nyiki ndahonoka ndagũũka gũkũrerehere ũhoro.',
+    18: 'Nĩngĩ kahinda o kau, hagĩũka o ũngĩ, akiuga atĩrĩ, Ariũ aku na airĩtu aku nĩkĩrĩa mekĩrĩraga makĩnyuaga ndibei nyũmba ya ũrĩa mũkũrũ wao,',
+    19: 'na rĩrĩ, hĩndĩ ĩo gwoka rũhuho rũnene rũtoĩma na werũ-inĩ, rũahũra nyũmba ĩo ituri ciayo o ciothe cio inya, nayo yagũĩra ciana, na nĩciakua; no nĩĩ nyiki ndahonoka ndagũũka gũkũrerehere ũhoro.',
+    20: 'Hĩndĩ ĩo Ayubu agĩtũkĩra, agĩteithũranga nguo yake na igũrũ, nĩngĩ akĩenja mũtwe, agĩcoka akĩgũithia thĩ, akĩnamĩrĩra Ngai.',
+    21: 'akiuga atĩrĩ, Ndoimire nda maithĩ ndĩ ũtheri, na ngacoka kuo nĩ ũtheri; nake Jehova wacokera; rĩtwa rĩa Jehova rĩrogathwo!',
+    22: 'Thĩinĩ wa maũndũ macio mothe Ayubu ndaigana kũhĩtĩa, kana akĩona ta Ngai ekĩte ũndũ ũtaagĩrĩre.'
+        },
+   },
+
+   'Psalms': {
+      1: {
+    1: 'GŨKENA-RĨ, nĩ mũndũ ũrĩa ũtatarwaranaga na ũtaaro wa arĩa aaganu, na ndarũgamaga njĩra-inĩ ya arĩa mehaagia, kana agaikaraga gĩtũndo-inĩ kĩa andũ arĩa atendi.',
+    2: 'No rĩrĩ, kĩrĩra kĩa Jehova ekenagĩra nĩkĩo; na kĩrĩra kĩu gĩake akerurumagia ũhoro wakĩo mũthenya o na ũtukũ.',
+    3: 'Agakĩhaana ta mũtĩ wahandĩrĩo mĩtaro-inĩ ya maĩ, ũciaraga maciaro maguo hingo yamo yakinya, mathangũ maguo namo matihahaga; nake, ũndũ o wothe egwĩka, nĩũgaacagĩra.',
+    4: 'Arĩa aaganu matihana ũguo; o matarĩrĩ ta mũũngũ ũrĩa ũũmbũragwo nĩ rũhuho.',
+    5: 'Tondũ ũcio, arĩa aaganu matingĩtĩrĩrĩria hingo ya cira, kana acio ehia meũmie kĩũngano-inĩ kĩa arĩa athingu.',
+    6: 'Amu Jehova nĩ njĩra ya arĩa athingu oyane nayo, nayo njĩra ya arĩa aaganu nĩ gũtoma ĩgatoma.'
+      },
+    2: {
+    1: 'NDŨRĨRĨ nĩ kĩ gũtũmĩte ithongonjke nĩ ũndũ kĩ irĩndĩ iranogona na ũhoro wa tũhũ?',
+    2: 'Athamaki a thĩ megwikĩnyĩrĩra, anene-rĩ, nĩ kũrĩkanĩra mararĩkanĩra, atĩ mareme Jehova, na mareme ũrĩa wake mũĩtĩrĩre-maguta,',
+    3: 'Makoiga, Nĩtũgũtue mikwa yao, mĩhĩndo yao tũmĩte, tuumwo nĩyo!',
+    4: 'Ũrĩa ũikarĩre gĩtĩ matu-inĩ no gũtheka aratheka, we Mwathani-rĩ, nĩ kũmakenerera aramakenerera.',
+    5: 'Rĩrĩ rĩngĩ no amaarĩrie na marakara make, amatebebie nĩ ũrĩa arũrĩte:',
+    6: 'Nĩĩ nĩ nĩĩ ngĩtĩte mũthamaki wakwa kĩrĩma gĩa Zayuni igũrũ, o kũu gĩakwa kĩamũre.',
+    7: 'Nĩngũkiumbũra itua rĩrĩa rĩatũirĩo: Jehova aanjĩire atĩrĩ, Wee nĩwe mũrũ wakwa; nĩĩ ũmũthĩ nĩndagũciara.',
+    8: '\'Hoya, na nĩngũkũhe ndũrĩrĩ itũike igai rĩaku, nginya ituuri cia thĩ gũtũĩke gwaku kũũmbe.',
+    9: 'Wee no ũcĩunange na rũgũma ya kĩgera; kũmeremenda ũcĩmeremende ta nyũngũ ya mũmũmbi.',
+    10: 'Tondũ ũcio, no kũhĩgei, athamaki aya; inyuĩ atua-cira gũkũ thĩ, taarĩkani.',
+    11: 'Tungatĩrai Jehova mũkĩmwĩtigĩra, na mũcanjamũke o mũkĩnainaga.',
+    12: 'Mumunyani mũrũ, ndagakĩrakare mũthĩrĩre njĩra, thima marakara make maahota gwakana o narua. Gũkena-rĩ, nĩ arĩa othe megiritagia harĩ we.',
+       },
+   3: {
+    1: 'Ĩ JEHOVA, kaĩ arĩa mara\'hatĩka nĩmangingihĩte-ĩ! andũ nĩ aingĩ mũno, acio maranjũkĩra.',
+    2: 'Kũingĩha nĩ arĩa mekuuga ũhoro wa ngoro yakwa atĩrĩ, Ndarĩ ũhonokio angĩona harĩ Ngai.',
+    3: 'No rĩrĩ, wee, Jehova, nĩwe ngo ya kũnjikara mĩena yothe: nowe riri wakwa, nowe mütũũgĩria wa mütwe wakwa.',
+    4: 'Ngayagayaga Jehova na mũgambo, nake akanyamũkĩra e kĩrĩma gĩake kĩamũre.',
+    5: 'Nĩĩ-rĩ, nĩndĩrĩreheme na ndĩnora toro; ndakĩraoka kũhĩndũka toro; thima nĩ Jehova ũndiiragĩrĩra.',
+    6: 'Andũ, o na mangĩrĩ ngiri ikũmi, ndingĩmetĩgĩra, acio maikaire mĩhotoreire mĩena-inĩ yothe.',
+    7: 'Arahuuka, Jehova Ngai wakwa, \'honokia: thĩĩ ciakwa ciothe nĩũcigũthĩte thĩa, magego ma andũ arĩa aaganu ũkamathendũranga.',
+    8: 'Ũhonokio no wa Jehova: kĩrathimo gĩaku kĩrotũũra na kĩrĩndĩ gĩaku.',
+       },
+   4: {
+    1: 'NYAMŨKĨRIA ndakaya, wee Ngai wa ũthingu wakwa; rĩrĩa wana\'he mĩtaramano ndagĩa hatĩka-inĩ; ngingĩrĩria wega waku, ihoya rĩakwa ũkĩrigue.',
+    2: 'Inyuĩ ariũ a andũ-rĩ, nĩ hĩndĩ ĩigana atĩa riri wakwa ũgũtũũra ũnyararagwo, mũkendaga ũhoro wa tũhũ, na mũkarongoragia maheni?',
+    3: 'No rĩrĩ, menyai atĩ ũrĩa mũigu-Ngai, we Jehova nĩamwamũrĩre: Jehova no arĩiguaga ndamũkaĩra.',
+    4: 'Gĩanĩ na guoya, mũtigage kũwĩhia; teretagai o mũndũ na ngoro yake arĩ ũrĩrĩ, mũgĩkĩragĩre.',
+    5: 'Rutai magongona mũrĩrĩte o ũrĩa ũthingu, mũkĩhoke arĩ we.',
+    6: 'Nĩ aingĩ maroria atĩrĩ, Nũ ũngĩtuonania na maũndũ mega? Jehova, wee-rĩ, gũtũtĩĩrĩre ũtheri wa gĩithi gĩaku.',
+    7: 'Wee nĩũnjĩkirĩte gĩkeno ngoro-inĩ yakwa gĩkĩrĩte kĩa rĩrĩa ngano yao na ndibei ciamangĩhĩra.',
+    8: 'Ngũgĩkomera ndĩ na thayũ, njĩke o ngiona toro, tondũ wee, Jehova, nĩwe ũndũũragia mwamũ, ngaikara o ndĩngangarĩte.',
+     },
+
+     5: {
+    1: 'JEHOVA, tegera ciugo ciakwa gũtũ, mwiheeho ũyũ wakwa, ũkĩigue wega.',
+    2: 'Thikĩrĩria mũgambo wakwa ngĩkũrĩrĩra, Mũthamaki wakwa, o wee Ngai wakwa, nĩ gũkorũo nowe ndĩrahoya.',
+    3: 'Ĩ Jehova, ngũkũgũithia mũgambo wakwa o rũcĩnĩ; ũhoro wakwa ngũgũtandaĩria ũkoro, na njikare o ndorereire.',
+    4: 'Amu wee ndũrĩ Mũrungu wa gĩkenera ũmaramari; mũndũ mũũru-rĩ, ndangĩtũĩka mũgeni waku.',
+    5: 'Arĩa erahi matingĩkĩnyĩrĩra matho-inĩ maku; andũ othe arĩa eki maũndũ maaganu, wee nĩũmathũire.',
+    6: 'Arĩa maaragia mathama, nĩ ũkũina maninaga; mũndũ nake wa thakame na ĩrĩa-ithama, nĩ Jehova, amũthĩnyĩte o kũmũnyira.',
+    7: 'No nĩĩ-rĩ, tondũ wa ũtugi waku mũingĩ, ngũgũtonya nyũmba yaku; ngũgũkinamĩrra ngwĩtĩgĩrte, ndorete hekarũ yaku theru.',
+    8: 'Ndongoria, Jehova, na ũthingu waku, nĩ ũndũ wa arĩa makaraga manjohereire; njaraganĩrĩra njĩra yaku mbere ya ũthiũ wakwa.',
+    9: 'Amu tũnua twao tũtĩrĩ na ũhoro ũngĩthokeka; ngoro ciao thĩinĩ no maũndũ ma ũthũkia kũrĩ; mĩmero yao nĩ ta marima icengũ ma gũthikanwo; nĩmĩ ciao nĩĩ kũgathima macigathimaga.',
+    10: 'Ngai, kĩmatue ehia; nĩmagũthĩo nĩĩ maũndũ mao, macio metaaraga o ene; maikanie mehere, tondũ wa ũrĩa mehia mao maingĩhĩte; amu nĩmagĩkũng\'athĩrie.',
+    11: 'Nao andũ othe arĩa megiritagia harĩ we, nĩmakene: nĩmakũngũyagie hingo ciothe, tondũ nĩũmagitagĩra; acio endi rĩtwa rĩaku, o nĩmatũũre macanjamũkĩte nĩ ũndũ waku.',
+    12: 'Amu mũndũ mũthingu-rĩ, nĩ kũrathima ũrĩmũrathimaga; wee Jehova, ũgũtũũra ũmũrigĩre na wega waku o ta arĩ ngo.',
+},
+   },
+
+   'Proverbs': {
+      1: {
+    1: 'ICI NĨ THIMO cia Suleimani mũrũ wa Daudi, ũrĩa warĩ mũthamaki wa Isiraeli:',
+    2: 'Nĩ cia gũtũma mũndũ emenyere ũũgĩ-ũrĩa-wa-ma, na ataarĩke, na ahote gũkũũranaga ndeto iria ciumaine na mbugũiro,',
+    3: 'Na ataarĩke ũhoro-inĩ wa ũgerereri wa maũndũ, akĩge na mĩthĩĩre ya ũthingu, na ya kĩhooto, o ĩrĩa mĩrũngĩrũ:',
+    4: 'Na nĩ cia gũtũma arĩa matarĩ ũgĩ magĩe na wara mwega, na mũndũ mwanake agĩe na ũmenyi, o na ũgerereri;',
+    5: 'Mũndũ ũrĩa mũũgĩ o nake aciigue, ongerereke wĩrũti, ũrĩa mũtaũku akĩrĩkĩe kũigua na wĩtaari ũrĩa mũgima;',
+    6: 'Ningĩ nĩ cia gũtũma mũndũ aahotage kũigua thimo o na ngerekano, ataakĩgĩrũo nĩ mohoro ma andũ arĩa ũgĩ, o na miugire yao ĩrĩa miumbĩke.',
+    7: 'Gwĩtĩgĩra Jehova nĩkĩo Kĩambĩrĩria gĩa kũigua ũmenyi ora-wa-ma-rĩ, ũgĩ o na ũtaaro nĩ kũrũrũka mairũrũkaga.',
+    8: 'Mũrũ wakwa, igua ũtaari wa thoguo, na ũmenye gũgatigana na kĩrĩra kĩa nyũkwa.',
+    9: 'Thima-rĩ, maũndũ macio marĩkaraga ta thũmbĩ ya ngoga wĩ nayo mũtwe, na ta irengeri wĩ nacio ngingo.',
+    10: 'MŨRŨ, ũngĩhenererio nĩ arĩa mehaagia, menya ũhenerereke.',
+    11: 'Mangĩgakwĩra, Ũka, tũthĩĩ, tũkohagĩrĩe andũ, thakame yao tũmĩte, nĩtũmacemagĩrĩe o na matehĩtie tũmahũrage tũhũ-rĩ,',
+    12: 'Tũmamemerũkagie maĩrĩ o muoyo, o ta arĩ Kwa-ngoma kwamameria, tũkĩmameragie marĩ o agima, matũĩke o ta arĩa angĩ maharũrũkaga irima rĩu;',
+    13: 'Nĩ kũgwata tũrĩgwata ũtũmi o wothe wĩ bata, tũkaiyũrie nyũmba ciitũ mataha;',
+    14: 'Ũrĩringaga iringa rĩaku hamwe na ithuĩ; tũgũtũĩka na mondo ĩmwe ithuothe:',
+    15: 'Mũrũ wakwa, menya ũkinye njĩra hamwe nao; giria kũgũrũ gwaku gũtigakinye makinya-inĩ mao,',
+    16: 'Amu magũrũ mao no andũ acio nĩ ũrũ no mateng\'eragĩra, mahiũhaga no getha magaite thakame.',
+    17: 'Thima-a-rĩ, nĩ tũhũ o na gĩkerengo gĩkarorũo gĩtegwo o maitho-inĩ ma nyoni o na ĩrĩ ĩrĩkũ:',
+    18: 'Nao andũ acio nĩ thakame yao ene mohagĩrĩe, mĩoyo yao ene nĩyo macemagĩrĩe.',
+    19: 'Ĩo-rĩ, nĩyo njĩra ya mũndũ o wothe mũhahafĩria wa indo; ũhahafĩria ũcio nĩũtunyanaga mĩoyo ya arĩa me naguo.',
+    20: 'MŨTUMIA ũyũ ũgwĩtwo Ũũgĩ-wa-ma nĩanaagĩrĩra e mabarabara-inĩ; atumũkaga na mũgambo arĩ ihaaro-inĩ;',
+    21: 'Macemanĩrio-inĩ ma njĩra iria itindaga ironja, nĩkuo agũtũkaga arĩ; na rĩingĩrĩro-inĩ rĩa kīhingo gĩa itũũra, o na kũu itũũra thĩinĩ, nĩkuo aaragĩria ciugo ciake:',
+    22: 'Akoria, Inyuĩ andũ aya mũtarĩ ũgĩ-rĩ, nĩ nginya rĩ mĩgũtũũra mwendete o maũndũ ma wagi-ũũgĩ, nao arĩa atendi-ũhoro mekenagĩre nĩ ũtendi wao, na arĩa irimũ matũũre o mathũire ũmenyi?',
+    23: 'Ta garũrũkai, ũtaaro ũyũ wakwa mũkĩtũigue Atĩrĩrĩ nĩngũmũitũrĩrĩra roho wakwa, ngũmũmenyiithia ũhoro ũrĩa ndĩ naguo.',
+    24: 'Tondũ ndĩire o ndĩmũgũtũkagĩra, na inyuĩ mũkarega kũnjigua, ngakũmũtambũrũkĩria guoko, na gũtirĩ mũndũ ũngĩrũmbũiya-rĩ,',
+    25: 'Tiga o kwaga mũkaagĩra ũtaarani wakwa wothe bata, naguo ũtaaro wakwa mũtĩngĩwĩtĩkĩra-rĩ,',
+    26: 'Nĩĩ na nĩĩ, mũthenya wanyu wa kuona gũthĩka nĩ gũtheka nĩngatheka, hingo ĩrĩa hingo ĩrĩa mũkaagwa no guoya no kũmũnyũrĩria ngamũnyũrĩria,',
+    27: 'Rĩrĩa-ni mũgakororero nĩ guoya ũkĩte ta kũhũhũkanio, mũtino ũmũkore ta rũhuho rũa ngoma-cia-aka; rĩrĩa-ni mũgakinyĩrĩrũo nĩ mĩnyamaro na ruo rũa ngoro.',
+    28: 'Hĩndĩ ĩo-rĩ, nĩ kũngaĩra makangaĩra, na ndikamaamũkĩra; nĩ kũnjaria makanjaria na kĩyo, na matikanyona:',
+    29: 'Nĩ ũndũ ũmenyi nĩ kũũthũũtha maũũthũũthĩre, makĩrega gũthura atĩ metigĩre Jehova,',
+    30: 'Magĩgũtũka atĩ ũtaarani wakwa matingĩwĩtĩkĩra, tiga o kũrũrũka makĩrũrũka ũtaaro wakwa wothe.',
+    31: 'Tondũ ũcio-rĩ, maciaro ma njĩra yao nĩmo makarĩa, makĩhũne maũndũ marĩa o ene methugundĩre.',
+    32: 'Nĩ amu kũhũtata kwa andũ arĩa matarĩ ũgĩ nĩ kũmoraga gũkamoraga, naguo mwãraganio wa irimũ no kũinĩnthia ũkainĩnthia.',
+    33: 'No rĩrĩ, mũndũ o wothe ũrĩnjiguaga arĩkaraga o na mwĩgangaro, atũũre o ahoreire gũtĩgĩrĩ ũndũ mũtũ wa gũtũma aiguo guoya.'
+      },
+   },
   },
 
   'KJV': {
     'Genesis': {
       1: {
-        1: 'Jude, the servant of Jesus Christ, and brother of James, '
-            'to them that are sanctified by God the Father, '
-            'and preserved in Jesus Christ, and called.',
-        2: 'Mercy unto you, and peace, and love, be multiplied.',
+        1: 'In the beginning God created the heaven and the earth.',
+        2: 'And the earth was without form, and void; and darkness was upon '
+            'the face of the deep. And the Spirit of God moved upon the face '
+            'of the waters.',
+        3: 'And God said, Let there be light: and there was light.',
+        4: 'And God saw the light, that it was good: and God divided the light '
+            'from the darkness.',
+        5: 'And God called the light Day, and the darkness he called Night. '
+            'And the evening and the morning were the first day.',
+        6: 'And God said, Let there be a firmament in the midst of the waters, '
+            'and let it divide the waters from the waters.',
+        7: 'And God made the firmament, and divided the waters which were under '
+            'the firmament from the waters which were above the firmament: '
+            'and it was so.',
+        8: 'And God called the firmament Heaven. And the evening and the '
+            'morning were the second day.',
+        9: 'And God said, Let the waters under the heaven be gathered together '
+            'unto one place, and let the dry land appear: and it was so.',
+        10: 'And God called the dry land Earth; and the gathering together of '
+            'the waters called he Seas: and God saw that it was good.',
+        11: 'And God said, Let the earth bring forth grass, the herb yielding '
+            'seed, and the fruit tree yielding fruit after his kind, whose '
+            'seed is in itself, upon the earth: and it was so.',
+        12: 'And the earth brought forth grass, and herb yielding seed after '
+            'his kind, and the tree yielding fruit, whose seed was in itself, '
+            'after his kind: and God saw that it was good.',
+        13: 'And the evening and the morning were the third day.',
+        14: 'And God said, Let there be lights in the firmament of the heaven '
+            'to divide the day from the night; and let them be for signs, and '
+            'for seasons, and for days, and years:',
+        15: 'And let them be for lights in the firmament of the heaven to give '
+            'light upon the earth: and it was so.',
+        16: 'And God made two great lights; the greater light to rule the day, '
+            'and the lesser light to rule the night: he made the stars also.',
+        17: 'And God set them in the firmament of the heaven to give light '
+            'upon the earth,',
+        18: 'And to rule over the day and over the night, and to divide the '
+            'light from the darkness: and God saw that it was good.',
+        19: 'And the evening and the morning were the fourth day.',
+        20: 'And God said, Let the waters bring forth abundantly the moving '
+            'creature that hath life, and fowl that may fly above the earth '
+            'in the open firmament of heaven.',
+        21: 'And God created great whales, and every living creature that '
+            'moveth, which the waters brought forth abundantly, after their '
+            'kind, and every winged fowl after his kind: and God saw that it '
+            'was good.',
+        22: 'And God blessed them, saying, Be fruitful, and multiply, and fill '
+            'the waters in the seas, and let fowl multiply in the earth.',
+        23: 'And the evening and the morning were the fifth day.',
+        24: 'And God said, Let the earth bring forth the living creature after '
+            'his kind, cattle, and creeping thing, and beast of the earth '
+            'after his kind: and it was so.',
+        25: 'And God made the beast of the earth after his kind, and cattle '
+            'after their kind, and every thing that creepeth upon the earth '
+            'after his kind: and God saw that it was good.',
+        26: 'And God said, Let us make man in our image, after our likeness: '
+            'and let them have dominion over the fish of the sea, and over the '
+            'fowl of the air, and over the cattle, and over all the earth, '
+            'and over every creeping thing that creepeth upon the earth.',
+        27: 'So God created man in his own image, in the image of God created '
+            'he him; male and female created he them.',
+        28: 'And God blessed them, and God said unto them, Be fruitful, and '
+            'multiply, and replenish the earth, and subdue it: and have '
+            'dominion over the fish of the sea, and over the fowl of the air, '
+            'and over every living thing that moveth upon the earth.',
+        29: 'And God said, Behold, I have given you every herb bearing seed, '
+            'which is upon the face of all the earth, and every tree, in the '
+            'which is the fruit of a tree yielding seed; to you it shall be '
+            'for meat.',
+        30: 'And to every beast of the earth, and to every fowl of the air, '
+            'and to every thing that creepeth upon the earth, wherein there '
+            'is life, I have given every green herb for meat: and it was so.',
+        31: 'And God saw every thing that he had made, and, behold, it was '
+            'very good. And the evening and the morning were the sixth day.',
       },
+      2: {
+        1: 'Thus the heavens and the earth were finished, and all the host of them.',
+        2: 'And on the seventh day God ended his work which he had made; and he '
+            'rested on the seventh day from all his work which he had made.',
+        3: 'And God blessed the seventh day, and sanctified it: because that in '
+            'it he had rested from all his work which God created and made.',
+        4: 'These are the generations of the heavens and of the earth when they '
+            'were created, in the day that the LORD God made the earth and the heavens,',
+        5: 'And every plant of the field before it was in the earth, and every '
+            'herb of the field before it grew: for the LORD God had not caused '
+            'it to rain upon the earth, and there was not a man to till the ground.',
+        6: 'But there went up a mist from the earth, and watered the whole face '
+            'of the ground.',
+        7: 'And the LORD God formed man of the dust of the ground, and breathed '
+            'into his nostrils the breath of life; and man became a living soul.',
+        8: 'And the LORD God planted a garden eastward in Eden; and there he put '
+            'the man whom he had formed.',
+        9: 'And out of the ground made the LORD God to grow every tree that is '
+            'pleasant to the sight, and good for food; the tree of life also in '
+            'the midst of the garden, and the tree of knowledge of good and evil.',
+        10: 'And a river went out of Eden to water the garden; and from thence '
+            'it was parted, and became into four heads.',
+        11: 'The name of the first is Pison: that is it which compasseth the '
+            'whole land of Havilah, where there is gold;',
+        12: 'And the gold of that land is good: there is bdellium and the onyx stone.',
+        13: 'And the name of the second river is Gihon: the same is it that '
+            'compasseth the whole land of Ethiopia.',
+        14: 'And the name of the third river is Hiddekel: that is it which goeth '
+            'toward the east of Assyria. And the fourth river is Euphrates.',
+        15: 'And the LORD God took the man, and put him into the garden of Eden '
+            'to dress it and to keep it.',
+        16: 'And the LORD God commanded the man, saying, Of every tree of the '
+            'garden thou mayest freely eat:',
+        17: 'But of the tree of the knowledge of good and evil, thou shalt not '
+            'eat of it: for in the day that thou eatest thereof thou shalt surely die.',
+        18: 'And the LORD God said, It is not good that the man should be alone; '
+            'I will make him an help meet for him.',
+        19: 'And out of the ground the LORD God formed every beast of the field, '
+            'and every fowl of the air; and brought them unto Adam to see what '
+            'he would call them: and whatsoever Adam called every living creature, '
+            'that was the name thereof.',
+        20: 'And Adam gave names to all cattle, and to the fowl of the air, and '
+            'to every beast of the field; but for Adam there was not found an '
+            'help meet for him.',
+        21: 'And the LORD God caused a deep sleep to fall upon Adam, and he slept: '
+            'and he took one of his ribs, and closed up the flesh instead thereof;',
+        22: 'And the rib, which the LORD God had taken from man, made he a woman, '
+            'and brought her unto the man.',
+        23: 'And Adam said, This is now bone of my bones, and flesh of my flesh: '
+            'she shall be called Woman, because she was taken out of Man.',
+        24: 'Therefore shall a man leave his father and his mother, and shall '
+            'cleave unto his wife: and they shall be one flesh.',
+        25: 'And they were both naked, the man and his wife, and were not ashamed.',
+      },
+      3: {
+            1: 'Now the serpent was more subtil than any beast of the field '
+               'which the Lord God had made. And he said unto the woman, Yea, '
+               'hath God said, Ye shall not eat of every tree of the garden?',
+            2: 'And the woman said unto the serpent, We may eat of the fruit of '
+               'the trees of the garden:',
+            3: 'But of the fruit of the tree which is in the midst of the '
+               'garden, God hath said, Ye shall not eat of it, neither shall '
+               'ye touch it, lest ye die.',
+            4: 'And the serpent said unto the woman, Ye shall not surely die:',
+            5: 'For God doth know that in the day ye eat thereof, then your '
+               'eyes shall be opened, and ye shall be as gods, knowing good '
+               'and evil.',
+            6: 'And when the woman saw that the tree was good for food, and '
+               'that it was pleasant to the eyes, and a tree to be desired to '
+               'make one wise, she took of the fruit thereof, and did eat, and '
+               'gave also unto her husband with her; and he did eat.',
+            7: 'And the eyes of them both were opened, and they knew that they '
+               'were naked; and they sewed fig leaves together, and made '
+               'themselves aprons.',
+            8: 'And they heard the voice of the Lord God walking in the garden '
+               'in the cool of the day: and Adam and his wife hid themselves '
+               'from the presence of the Lord God amongst the trees of the '
+               'garden.',
+            9: 'And the Lord God called unto Adam, and said unto him, Where '
+               'art thou?',
+            10: 'And he said, I heard thy voice in the garden, and I was '
+                'afraid, because I was naked; and I hid myself.',
+            11: 'And he said, Who told thee that thou wast naked? Hast thou '
+                'eaten of the tree, whereof I commanded thee that thou shouldest '
+                'not eat?',
+            12: 'And the man said, The woman whom thou gavest to be with me, '
+                'she gave me of the tree, and I did eat.',
+            13: 'And the Lord God said unto the woman, What is this that thou '
+                'hast done? And the woman said, The serpent beguiled me, and I '
+                'did eat.',
+            14: 'And the Lord God said unto the serpent, Because thou hast done '
+                'this, thou art cursed above all cattle, and above every '
+                'beast of the field; upon thy belly shalt thou go, and dust '
+                'shalt thou eat all the days of thy life:',
+            15: 'And I will put enmity between thee and the woman, and between '
+                'thy seed and her seed; it shall bruise thy head, and thou '
+                'shalt bruise his heel.',
+            16: 'Unto the woman he said, I will greatly multiply thy sorrow '
+                'and thy conception; in sorrow thou shalt bring forth '
+                'children; and thy desire shall be to thy husband, and he '
+                'shall rule over thee.',
+            17: 'And unto Adam he said, Because thou hast hearkened unto the '
+                'voice of thy wife, and hast eaten of the tree, of which I '
+                'commanded thee, saying, Thou shalt not eat of it: cursed is '
+                'the ground for thy sake; in sorrow shalt thou eat of it all '
+                'the days of thy life;',
+            18: 'Thorns also and thistles shall it bring forth to thee; and '
+                'thou shalt eat the herb of the field;',
+            19: 'In the sweat of thy face shalt thou eat bread, till thou '
+                'return unto the ground; for out of it wast thou taken: for dust '
+                'thou art, and unto dust shalt thou return.',
+            20: 'And Adam called his wife’s name Eve; because she was the '
+                'mother of all living.',
+            21: 'Unto Adam also and to his wife did the Lord God make coats of '
+                'skins, and clothed them.',
+            22: 'And the Lord God said, Behold, the man is become as one of '
+                'us, to know good and evil: and now, lest he put forth his '
+                'hand, and take also of the tree of life, and eat, and live '
+                'for ever:',
+            23: 'Therefore the Lord God sent him forth from the garden of Eden, '
+                'to till the ground from whence he was taken.',
+            24: 'So he drove out the man; and he placed at the east of the '
+                'garden of Eden Cherubims, and a flaming sword which turned '
+                'every way, to keep the way of the tree of life.'
+        },
     },
+  
     'Jude': {
       1: {
         1: 'Jude, the servant of Jesus Christ, and brother of James, '
@@ -1520,7 +2350,7 @@ final Map<String, Map<String, Map<int, Map<int, String>>>>
     },
   },
 
-  'WEB': {
+  'CSB': {
     'Jude': {
       1: {
         1: 'Jude, a servant of Jesus Christ, and brother of James, '
@@ -1537,7 +2367,7 @@ final Map<String, Map<String, Map<int, Map<int, String>>>>
       },
     },
   },
-  'BSB': {
+  'NIV': {
     'Jude': {
       1: {
         1: 'Jude, a servant of Jesus Christ and a brother of James, '
