@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -20,7 +19,7 @@ class _BibleSelectorState extends State<BibleSelector> {
   final ScrollController _bibleScrollController = ScrollController();
   final Map<String, GlobalKey> _verseKeys = {};
 
-  final List<String> versions = const ['KJV', 'NIV', 'CSB','OG'];
+  final List<String> versions = const ['KJV', 'NIV', 'CSB', 'OG'];
 
   final Map<String, int> books = const {
     'Genesis': 50,
@@ -96,74 +95,73 @@ class _BibleSelectorState extends State<BibleSelector> {
     'NIV': {},
     'CSB': {},
     'OG': {
-    'Genesis': 'KĨAMBĨRĨRIA',
-    'Exodus': 'THAMA',
-    'Leviticus': 'MAŨNDŨ MA ALAWII',
-    'Numbers': 'NDARI',
-    'Deuteronomy': 'GŨCOKERITHIA MAATHANI',
-    'Joshua': 'IBUKU RĨA JOSHUA',
-    'Judges': 'IBUKU RĨA ATIIRĨRĨRI BŨRŨRI',
-    'Ruth': 'IBUKU RĨA RUTHU',
-    '1 Samuel': '1 SAMUELI',
-    '2 Samuel': '2 SAMUELI',
-    '1 Kings': '1 ATHAMAKI',
-    '2 Kings': '2 ATHAMAKI',
-    '1 Chronicles': '1 MAŨNDŨ MA MATUKŨ MA TENE',
-    '2 Chronicles': '2 MAŨNDŨ MA MATUKŨ MA TENE',
-    'Ezra': 'IBUKU RĨA EZARA',
-    'Nehemiah': 'IBUKU RĨA NEHEMIA',
-    'Esther': 'IBUKU RĨA ESITERI',
-    'Job': 'IBUKU RĨA AYUBU',
-    'Psalms': 'THABURI',
-    'Proverbs': 'THIMO',
-    'Ecclesiastes': 'KOHELETHU',
-    'Song of Solomon': 'RŨĨMBO RŨA SULEIMANI',
-    'Isaiah': 'ISAIA',
-    'Jeremiah': 'JEREMIA',
-    'Lamentations': 'MACAKAYA',
-    'Ezekiel': 'EZEKIELI',
-    'Daniel': 'IBUKU RĨA DANIELI',
-    'Hosea': 'HOSEA',
-    'Joel': 'JOELI',
-    'Amos': 'AMOSI',
-    'Obadiah': 'OBADIA',
-    'Jonah': 'JONA',
-    'Micah': 'MIKA',
-    'Nahum': 'NAHUMU',
-    'Habakkuk': 'HABAKUKU',
-    'Zephaniah': 'ZEFANIA',
-    'Haggai': 'HAGAI',
-    'Zechariah': 'ZEKARIA',
-    'Malachi': 'MALAKI',
-    'Matthew': 'MATHAYO',
-    'Mark': 'MARIKO',
-    'Luke': 'LUKA',
-    'John': 'JOHANA',
-    'Acts': 'ATŨMIO',
-    'Romans': 'AROMA',
-    '1 Corinthians': '1 AKORINTHO',
-    '2 Corinthians': '2 AKORINTHO',
-    'Galatians': 'AGALATIA',
-    'Ephesians': 'AEFESO',
-    'Philippians': 'AFILIPI',
-    'Colossians': 'AKOLOSAI',
-    '1 Thessalonians': '1 ATHESALONIKE',
-    '2 Thessalonians': '2 ATHESALONIKE',
-    '1 Timothy': '1 TIMOTHEO',
-    '2 Timothy': '2 TIMOTHEO',
-    'Titus': 'TITO',
-    'Philemon': 'FILEMONA',
-    'Hebrews': 'AHIBIRANIA',
-    'James': 'JAKUBU',
-    '1 Peter': '1 PETERO',
-    '2 Peter': '2 PETERO',
-    '1 John': '1 JOHANA',
-    '2 John': '2 JOHANA',
-    '3 John': '3 JOHANA',
-    'Jude': 'JUDASI',
-    'Revelation': 'KŨGUŨRĨRIO',
-},
-
+      'Genesis': 'KĨAMBĨRĨRIA',
+      'Exodus': 'THAMA',
+      'Leviticus': 'MAŨNDŨ MA ALAWII',
+      'Numbers': 'NDARI',
+      'Deuteronomy': 'GŨCOKERITHIA MAATHANI',
+      'Joshua': 'IBUKU RĨA JOSHUA',
+      'Judges': 'IBUKU RĨA ATIIRĨRĨRI BŨRŨRI',
+      'Ruth': 'IBUKU RĨA RUTHU',
+      '1 Samuel': '1 SAMUELI',
+      '2 Samuel': '2 SAMUELI',
+      '1 Kings': '1 ATHAMAKI',
+      '2 Kings': '2 ATHAMAKI',
+      '1 Chronicles': '1 MAŨNDŨ MA MATUKŨ MA TENE',
+      '2 Chronicles': '2 MAŨNDŨ MA MATUKŨ MA TENE',
+      'Ezra': 'IBUKU RĨA EZARA',
+      'Nehemiah': 'IBUKU RĨA NEHEMIA',
+      'Esther': 'IBUKU RĨA ESITERI',
+      'Job': 'IBUKU RĨA AYUBU',
+      'Psalms': 'THABURI',
+      'Proverbs': 'THIMO',
+      'Ecclesiastes': 'KOHELETHU',
+      'Song of Solomon': 'RŨĨMBO RŨA SULEIMANI',
+      'Isaiah': 'ISAIA',
+      'Jeremiah': 'JEREMIA',
+      'Lamentations': 'MACAKAYA',
+      'Ezekiel': 'EZEKIELI',
+      'Daniel': 'IBUKU RĨA DANIELI',
+      'Hosea': 'HOSEA',
+      'Joel': 'JOELI',
+      'Amos': 'AMOSI',
+      'Obadiah': 'OBADIA',
+      'Jonah': 'JONA',
+      'Micah': 'MIKA',
+      'Nahum': 'NAHUMU',
+      'Habakkuk': 'HABAKUKU',
+      'Zephaniah': 'ZEFANIA',
+      'Haggai': 'HAGAI',
+      'Zechariah': 'ZEKARIA',
+      'Malachi': 'MALAKI',
+      'Matthew': 'MATHAYO',
+      'Mark': 'MARIKO',
+      'Luke': 'LUKA',
+      'John': 'JOHANA',
+      'Acts': 'ATŨMIO',
+      'Romans': 'AROMA',
+      '1 Corinthians': '1 AKORINTHO',
+      '2 Corinthians': '2 AKORINTHO',
+      'Galatians': 'AGALATIA',
+      'Ephesians': 'AEFESO',
+      'Philippians': 'AFILIPI',
+      'Colossians': 'AKOLOSAI',
+      '1 Thessalonians': '1 ATHESALONIKE',
+      '2 Thessalonians': '2 ATHESALONIKE',
+      '1 Timothy': '1 TIMOTHEO',
+      '2 Timothy': '2 TIMOTHEO',
+      'Titus': 'TITO',
+      'Philemon': 'FILEMONA',
+      'Hebrews': 'AHIBIRANIA',
+      'James': 'JAKUBU',
+      '1 Peter': '1 PETERO',
+      '2 Peter': '2 PETERO',
+      '1 John': '1 JOHANA',
+      '2 John': '2 JOHANA',
+      '3 John': '3 JOHANA',
+      'Jude': 'JUDASI',
+      'Revelation': 'KŨGUŨRĨRIO',
+    },
   };
 
   String selectedVersion = 'KJV';
@@ -229,7 +227,9 @@ class _BibleSelectorState extends State<BibleSelector> {
     super.dispose();
   }
 
-  // Hide selectors when scrolling down and show them when scrolling up.
+  // HIDE SELECTORS WHEN SCROLLING DOWN
+  // SHOW SELECTORS WHEN SCROLLING UP
+
   bool _handleScrollNotification(UserScrollNotification notification) {
     if (notification.direction == ScrollDirection.reverse) {
       if (_showSelectors || _showChapterHeading) {
@@ -249,6 +249,8 @@ class _BibleSelectorState extends State<BibleSelector> {
 
     return false;
   }
+
+  // LOAD SAVED PREFERENCES
 
   Future<void> _loadPreferences() async {
     try {
@@ -305,6 +307,8 @@ class _BibleSelectorState extends State<BibleSelector> {
     }
   }
 
+  // SAVE PREFERENCES
+
   Future<void> _savePreferences() async {
     try {
       final prefs = await SharedPreferences.getInstance();
@@ -319,6 +323,8 @@ class _BibleSelectorState extends State<BibleSelector> {
       debugPrint('Could not save Bible preferences: $error');
     }
   }
+
+  // SCROLL TO SELECTED VERSE
 
   void _scrollToVerse(int verse, {int attempt = 0}) {
     WidgetsBinding.instance.addPostFrameCallback((_) async {
@@ -342,6 +348,8 @@ class _BibleSelectorState extends State<BibleSelector> {
     });
   }
 
+  // BOOK SELECTION
+
   void _selectBook(String value) {
     final firstVerse = _firstAvailableVerseFor(
       selectedVersion,
@@ -360,6 +368,8 @@ class _BibleSelectorState extends State<BibleSelector> {
     _savePreferences();
     _scrollToVerse(firstVerse);
   }
+
+  // VERSION SELECTION
 
   void _selectVersion(String value) {
     final firstVerse = _firstAvailableVerseFor(
@@ -380,6 +390,8 @@ class _BibleSelectorState extends State<BibleSelector> {
     _scrollToVerse(firstVerse);
   }
 
+  // CHAPTER SELECTION
+
   void _selectChapter(int value) {
     final firstVerse = _firstAvailableVerseFor(
       selectedVersion,
@@ -397,6 +409,8 @@ class _BibleSelectorState extends State<BibleSelector> {
     _savePreferences();
     _scrollToVerse(firstVerse);
   }
+
+  // VERSE SELECTION
 
   void _selectVerse(int value) {
     if (!currentChapterVerses.containsKey(value)) return;
@@ -811,10 +825,12 @@ class _BibleSelectorState extends State<BibleSelector> {
 
     return Scaffold(
       backgroundColor: background,
+
       appBar: AppBar(
         backgroundColor: background,
         foregroundColor: primaryText,
         elevation: 0,
+
         title: const Text(
           'HOLY WORD',
           style: TextStyle(
@@ -823,35 +839,51 @@ class _BibleSelectorState extends State<BibleSelector> {
             fontSize: 17,
           ),
         ),
+
+        // SEARCH, MOON/SUN THEME ICON AND SETTINGS
         actions: [
+          // SEARCH ICON
           IconButton(
             tooltip: 'Search Bible',
             onPressed: _showSearchDialog,
             icon: const Icon(Icons.search),
           ),
+
+          // MOON / SUN THEME ICON
           AnimatedBuilder(
             animation: themeController,
             builder: (context, child) {
-              return Transform.scale(
-                scale: 0.8,
-                child: Switch.adaptive(
-                  value: themeController.isDarkMode,
-                  activeTrackColor: purple,
-                  onChanged: (value) {
-                    themeController.setDarkMode(value);
-                  },
+              final isDark = themeController.isDarkMode;
+
+              return IconButton(
+                tooltip: isDark
+                    ? 'Switch to light mode'
+                    : 'Switch to dark mode',
+                onPressed: () {
+                  themeController.toggleTheme();
+                },
+                icon: Icon(
+                  isDark
+                      ? Icons.light_mode_rounded
+                      : Icons.dark_mode_rounded,
+                  color: purple,
+                  size: 26,
                 ),
               );
             },
           ),
+
+          // SETTINGS ICON
           IconButton(
             tooltip: 'Reading settings',
             onPressed: _showSettingsDialog,
             icon: const Icon(Icons.settings_outlined),
           ),
+
           const SizedBox(width: 8),
         ],
       ),
+
       body: SafeArea(
         child: Column(
           children: [
@@ -1044,6 +1076,7 @@ class _BibleSelectorState extends State<BibleSelector> {
                             ),
                           ],
                         ),
+
                         const SizedBox(height: 24),
 
                         if (verses.isEmpty)
@@ -1175,7 +1208,9 @@ class _BibleSelectorState extends State<BibleSelector> {
                             ),
                           ],
                         ),
+
                         const SizedBox(height: 20),
+
                         Center(
                           child: Text(
                             'Read • Reflect • Grow',

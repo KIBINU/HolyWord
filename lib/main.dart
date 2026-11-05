@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'theme_controller.dart';
-import 'home_screen.dart'; // Adjust if your home screen has a different filename.
+import 'home_screen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -13,6 +13,8 @@ Future<void> main() async {
 
 class HolyWordApp extends StatelessWidget {
   const HolyWordApp({super.key});
+
+  static const Color purple = Color(0xFF8B78F6);
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +28,7 @@ class HolyWordApp extends StatelessWidget {
           theme: ThemeData(
             brightness: Brightness.light,
             colorScheme: ColorScheme.fromSeed(
-              seedColor: const Color(0xFF8B78F6),
+              seedColor: purple,
               brightness: Brightness.light,
             ),
             useMaterial3: true,
@@ -35,7 +37,7 @@ class HolyWordApp extends StatelessWidget {
           darkTheme: ThemeData(
             brightness: Brightness.dark,
             colorScheme: ColorScheme.fromSeed(
-              seedColor: const Color(0xFF8B78F6),
+              seedColor: purple,
               brightness: Brightness.dark,
             ),
             useMaterial3: true,
